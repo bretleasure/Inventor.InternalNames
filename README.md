@@ -1,5 +1,7 @@
 # Inventor.InternalNames
 
+[![NuGet version (Inventor.InternalNames)](https://buildstats.info/nuget/Inventor.InternalNames)](https://www.nuget.org/packages/Inventor.InternalNames)
+
 This repository contains a list of internal names for the Autodesk Inventor User Interface Components. The internal names are used to identify the user interface components in the Inventor API. The internal names are used in the `Ribbon`, `RibbonTab`, and `RibbonPanel` classes to identify the user interface components.
 
 ## Ribbon Internal Names
