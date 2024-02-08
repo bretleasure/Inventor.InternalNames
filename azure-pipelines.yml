@@ -1,0 +1,59 @@
+name: $(GITVERSION_SemVer)
+
+trigger:
+- main
+
+pool:
+  name: Azure Pipelines
+  vmImage: 'windows-latest'
+
+steps:
+
+- task: NuGetToolInstaller@1
+  displayName: 'Use NuGet'
+
+- checkout: self
+  fetchDepth: 0
+
+- task: gitversion/setup@0
+  displayName: Setup GitVersion
+  inputs:
+    versionSpec: '5.x'
+
+- task: gitversion/execute@0
+  displayName: Execute GitVersion
+
+- task: NuGetCommand@2
+  displayName: 'NuGet restore'
+
+- task: VSBuild@1
+  displayName: 'Build Solution'
+  inputs:
+    clean: true
+    solution: '**\*.sln'
+    configuration: 'release'
+    msbuildArchitecture: 'x64'
+
+- task: DotNetCoreCLI@2
+  displayName: 'Create NuGet Package'
+  inputs:
+    command: 'pack'
+    packagesToPack: '*.csproj'
+    packDirectory: 'artifacts/nuget'
+    versioningScheme: 'byEnvVar'
+    versionEnvVar: 'GITVERSION_NuGetVersion'
+    configuration: 'release'
+
+- task: ArchiveFiles@2
+  inputs:
+    rootFolderOrFile: '$(Build.SourcesDirectory)\bin\Release\net472'
+    includeRootFolder: false
+    archiveType: 'zip'
+    archiveFile: 'artifacts/addin/$(Build.DefinitionName)Addin-v$(Build.BuildNumber).zip'
+    replaceExistingArchive: true
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: './artifacts'
+    ArtifactName: 'drop'
+    TargetPath: '\\my\share\$(Build.DefinitionName)\$(Build.BuildNumber)'
