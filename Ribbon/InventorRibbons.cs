@@ -1,6 +1,6 @@
 ﻿namespace Inventor.InternalNames.Ribbon
 {
-    public class InventorRibbons
+    public struct InventorRibbons
     {
         public const string Part = "Part";
         public const string Assembly = "Assembly";

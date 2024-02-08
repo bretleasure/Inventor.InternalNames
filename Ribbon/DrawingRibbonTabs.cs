@@ -1,6 +1,6 @@
 ﻿namespace Inventor.InternalNames.Ribbon
 {
-    public class DrawingRibbonTabs
+    public struct DrawingRibbonTabs
     {
         public const string PlaceViews = "id_TabPlaceViews";
         public const string Annotate = "id_TabAnnotate";

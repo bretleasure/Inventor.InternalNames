@@ -1,6 +1,6 @@
 ﻿namespace Inventor.InternalNames.Ribbon
 {
-    public class iFeatureRibbonPanels
+    public struct iFeatureRibbonPanels
     {
         public struct iFeatureTab
         {
