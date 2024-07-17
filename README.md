@@ -39,3 +39,5 @@ var createPlaceViewsPanel = placeViewsTab.RibbonPanels[DrawingRibbonPanels.Place
   * iProperties.Part
   * iProperties.Assembly
   * iProperties.Drawing
+* Command Names
+  * Internal names of `ControlDefinitions` used to Execute commands with `CommandManager`
