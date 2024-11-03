@@ -1,0 +1,154 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - release/*
+      - main
+  workflow_dispatch: #option to manually trigger action
+
+permissions:
+  contents: write
+      
+jobs:
+        
+  Build:
+    if: "!contains(github.event.head_commit.message, 'nobuild')"
+    runs-on: windows-latest
+
+    outputs:
+      gitversion_semver: ${{ steps.gitversion.outputs.semver }}
+      gitversion_nugetversion: ${{ steps.gitversion.outputs.nugetversion }}
+
+    steps:
+    - name: Checkout codegit v
+      uses: actions/checkout@v4.1.7
+      with:
+        fetch-depth: 0
+
+    - name: Setup GitVersion
+      uses: gittools/actions/gitversion/setup@v1.2.0
+      with:
+        versionSpec: '5.x'
+
+    - name: Execute GitVersion
+      id: gitversion
+      uses: gittools/actions/gitversion/execute@v1.2.0
+
+    - name: Setup NuGet
+      uses: NuGet/setup-nuget@v2.0.0
+
+    - name: NuGet restore
+      run: nuget restore
+      
+    - name: Build DotNet
+      run: dotnet build -c Release
+
+    - name: Pack Projects
+      run: dotnet pack --output artifacts --configuration Release /p:PackageVersion=${{ steps.gitversion.outputs.nugetversion }}
+
+    - name: Publish NuGet Build Artifacts
+      uses: actions/upload-artifact@v4.3.4
+      with:
+        name: nuget
+        path: ./artifacts/*.nupkg
+        retention-days: 1
+        overwrite: true
+        
+  Deploy_GitHub_Packages:
+    needs: Build
+    runs-on: windows-latest
+    
+    steps:
+
+    - name: Download a Build Artifact
+      uses: actions/download-artifact@v4.1.8
+      with:
+        name: nuget
+        path: ./artifacts
+
+    - name: Get Secrets
+      uses: bitwarden/sm-action@v2
+      with:
+        access_token: ${{ secrets.BW_ACCESSTOKEN }}
+        base_url: https://vault.bitwarden.com
+        secrets: |
+          f8a86ea6-660e-47d2-917b-b1b800da920e > NUGETORG_API_KEY
+          23f1414f-95aa-4da0-bda7-b1c7015948a5 > GITHUB_PAT
+
+    - name: Push NuGet Packages
+      shell: bash
+      run: |
+        shopt -s globstar
+        for PACKAGE_FILE in ./artifacts/*.nupkg; do
+          echo "Pushing $PACKAGE_FILE"
+          dotnet nuget push "$PACKAGE_FILE" --api-key ${{ env.GITHUB_PAT }} --source "https://nuget.pkg.github.com/bretleasure/index.json"
+        done
+
+  Deploy_NuGet-org:
+    needs: Build
+    runs-on: windows-latest
+    
+    steps:   
+
+    - name: Download a Build Artifact
+      uses: actions/download-artifact@v4.1.8
+      with:
+        name: nuget
+        path: ./artifacts
+        
+    - name: Get Secrets
+      uses: bitwarden/sm-action@v2
+      with:
+        access_token: ${{ secrets.BW_ACCESSTOKEN }}
+        base_url: https://vault.bitwarden.com
+        secrets: |
+          f8a86ea6-660e-47d2-917b-b1b800da920e > NUGETORG_API_KEY
+          23f1414f-95aa-4da0-bda7-b1c7015948a5 > GITHUB_PAT
+
+    - name: Push NuGet Packages
+      shell: bash
+      run: |
+        shopt -s globstar
+        for PACKAGE_FILE in ./artifacts/*.nupkg; do
+          echo "Pushing $PACKAGE_FILE"
+          dotnet nuget push "$PACKAGE_FILE" --api-key ${{ env.NUGETORG_API_KEY }} --source "https://api.nuget.org/v3/index.json"
+        done
+  
+  Create_Release:
+      needs: Build
+      runs-on: windows-latest
+      steps:
+        - name: Get Secrets
+          uses: bitwarden/sm-action@v2
+          with:
+            access_token: ${{ secrets.BW_ACCESSTOKEN }}
+            base_url: https://vault.bitwarden.com
+            secrets: |
+              f8a86ea6-660e-47d2-917b-b1b800da920e > NUGETORG_API_KEY
+              23f1414f-95aa-4da0-bda7-b1c7015948a5 > GITHUB_PAT
+  
+        - name: Create Tag
+          uses: negz/create-tag@v1
+          with:
+            token: ${{ env.GITHUB_PAT }}
+            version: ${{ needs.Build.outputs.gitversion_semver }}
+            message: ${{ needs.Build.outputs.gitversion_semver }}
+  
+        - name: Create GitHub Release
+          if: github.ref == 'refs/heads/main'
+          uses: ncipollo/release-action@v1
+          with:
+            tag: ${{ needs.Build.outputs.gitversion_semver }}
+            prerelease: false
+            artifacts: "./artifacts/**.zip"
+            generateReleaseNotes: true
+
+        - name: Create GitHub Pre-Release
+          if: github.ref != 'refs/heads/main'
+          uses: ncipollo/release-action@v1
+          with:
+            tag: ${{ needs.Build.outputs.gitversion_semver }}
+            prerelease: true
+            artifacts: "./artifacts/**.zip"
+            generateReleaseNotes: true
