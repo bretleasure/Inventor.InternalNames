@@ -33,6 +33,19 @@ var placeViewsTab = drawingRibbon.RibbonTabs[DrawingRibbonTabs.PlaceViews];
 var createPlaceViewsPanel = placeViewsTab.RibbonPanels[DrawingRibbonPanels.PlaceViews.Create];
 ```
 
+## Asset Libraries
+
+Asset Library internal names are found in `AssetLibraryIds`.
+
+### Example:
+```csharp
+using Inventor.InternalNames.AssetLibraries;
+
+// Access appearance assets from the asset library
+var sourceAppearance = ThisApplication.AssetLibraries.Item(AssetLibraryIds.AppearanceAssets).AppearanceAssets.Item("MyAppearance");
+var targetAppearance = sourceAppearance.CopyTo(partDoc);
+```
+
 ## Other Internal Names
 
 * Property Sets
