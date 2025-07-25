@@ -33,6 +33,38 @@ var placeViewsTab = drawingRibbon.RibbonTabs[DrawingRibbonTabs.PlaceViews];
 var createPlaceViewsPanel = placeViewsTab.RibbonPanels[DrawingRibbonPanels.PlaceViews.Create];
 ```
 
+## Asset Libraries
+
+Asset Library internal names are found in `AssetLibraryIds`.
+
+### Example:
+```csharp
+using Inventor.InternalNames.AssetLibraries;
+
+// Access appearance assets from the asset library
+var sourceAppearance = ThisApplication.AssetLibraries.Item(AssetLibraryIds.AppearanceAssets).AppearanceAssets.Item("MyAppearance");
+var targetAppearance = sourceAppearance.CopyTo(partDoc);
+```
+
+### Discovering Additional Asset Library IDs
+
+If you need to discover additional asset library IDs in your Inventor environment, you can use the `AssetLibraryDiscovery` utility:
+
+```csharp
+using Inventor.InternalNames.AssetLibraries;
+
+// Generate C# constants for all available asset libraries
+string constants = AssetLibraryDiscovery.GenerateAssetLibraryConstants(ThisApplication.AssetLibraries);
+Console.WriteLine(constants);
+
+// Or get a dictionary of display names to IDs
+var assetLibraries = AssetLibraryDiscovery.GetAssetLibraryIds(ThisApplication.AssetLibraries);
+foreach (var kvp in assetLibraries)
+{
+    Console.WriteLine($"{kvp.Key}: {kvp.Value}");
+}
+```
+
 ## Other Internal Names
 
 * Property Sets
