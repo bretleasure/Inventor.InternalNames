@@ -46,6 +46,25 @@ var sourceAppearance = ThisApplication.AssetLibraries.Item(AssetLibraryIds.Appea
 var targetAppearance = sourceAppearance.CopyTo(partDoc);
 ```
 
+### Discovering Additional Asset Library IDs
+
+If you need to discover additional asset library IDs in your Inventor environment, you can use the `AssetLibraryDiscovery` utility:
+
+```csharp
+using Inventor.InternalNames.AssetLibraries;
+
+// Generate C# constants for all available asset libraries
+string constants = AssetLibraryDiscovery.GenerateAssetLibraryConstants(ThisApplication.AssetLibraries);
+Console.WriteLine(constants);
+
+// Or get a dictionary of display names to IDs
+var assetLibraries = AssetLibraryDiscovery.GetAssetLibraryIds(ThisApplication.AssetLibraries);
+foreach (var kvp in assetLibraries)
+{
+    Console.WriteLine($"{kvp.Key}: {kvp.Value}");
+}
+```
+
 ## Other Internal Names
 
 * Property Sets
