@@ -73,74 +73,45 @@ User Interface Components. The internal names are used to identify the user inte
 
 ### Available Ribbons
 
-The `InventorRibbons` struct provides access to all main ribbon types:
+The [`InventorRibbons`](Ribbon/InventorRibbons.cs) struct provides access to all main ribbon types for different Inventor environments:
 
-```csharp
-public struct InventorRibbons
-{
-    public const string Part = "Part";                        // Part modeling environment
-    public const string Assembly = "Assembly";                // Assembly environment  
-    public const string Drawing = "Drawing";                  // Drawing environment
-    public const string ZeroDoc = "ZeroDoc";                 // Zero document state
-    public const string Presentation = "Presentation";        // Presentation environment
-    public const string iFeatures = "iFeatures";             // iFeature environment
-    public const string UnknownDocument = "UnknownDocument"; // Unknown document type
-}
-```
+- **Part** - Part modeling environment
+- **Assembly** - Assembly environment  
+- **Drawing** - Drawing environment
+- **ZeroDoc** - Zero document state
+- **Presentation** - Presentation environment
+- **iFeatures** - iFeature environment
+- **UnknownDocument** - Unknown document type
+
+📁 **Source:** [Ribbon/InventorRibbons.cs](Ribbon/InventorRibbons.cs)
 
 ### Ribbon Tabs
 
 Each document type has its own set of ribbon tabs:
 
-#### Part Document Tabs (`PartRibbonTabs`)
-- `SheetMetal` - Sheet metal modeling
-- `FlatPattern` - Flat pattern operations  
-- `k3DModel` - 3D modeling tools
-- `Sketch` - 2D sketching
-- `Annotate` - Annotations and dimensions
-- `Inspect` - Inspection tools
-- `Tools` - General tools
-- `Manage` - File and project management
-- `View` - View controls
-- `Environments` - Environment switching
-- And many more specialized tabs...
+#### Part Document Tabs
+📁 **Source:** [`PartRibbonTabs`](Ribbon/PartRibbonTabs.cs) - Contains 46+ ribbon tabs including:
+- `SheetMetal`, `FlatPattern`, `k3DModel`, `Sketch`, `Annotate`, `Inspect`, `Tools`, `Manage`, `View`, `Environments`, and many more specialized tabs.
 
-#### Assembly Document Tabs (`AssemblyRibbonTabs`)
-- `Assemble` - Assembly tools
-- `Design` - Design features
-- `k3DModel` - 3D modeling
-- `Weld` - Welding features
-- `Electromechanical` - Electrical components
-- `TubeAndPipe` - Tube and pipe routing
-- `CableAndHarness` - Cable and harness design
-- And many more...
+#### Assembly Document Tabs  
+📁 **Source:** [`AssemblyRibbonTabs`](Ribbon/AssemblyRibbonTabs.cs) - Contains tabs for:
+- `Assemble`, `Design`, `k3DModel`, `Weld`, `Electromechanical`, `TubeAndPipe`, `CableAndHarness`, and more.
 
-#### Drawing Document Tabs (`DrawingRibbonTabs`)
-- `PlaceViews` - View placement
-- `Annotate` - Drawing annotations
+#### Drawing Document Tabs
+📁 **Source:** [`DrawingRibbonTabs`](Ribbon/DrawingRibbonTabs.cs) - Contains tabs for:
+- `PlaceViews`, `Annotate`, and more drawing-specific functionality.
 - `Sketch` - Sketching in drawings
 - `Tools` - Drawing tools
 - And more...
 
 ### Ribbon Panels
 
-Each tab contains multiple panels. Panels are organized as nested structures within each document type.
+Each tab contains multiple panels organized as nested structures within each document type:
 
-#### Part Ribbon Panels Example (`PartRibbonPanels`)
-
-```csharp
-// 3D Model tab panels
-public struct k3DModelTab
-{
-    public const string Sketch = "id_PanelP_Model2DSketchCreate";
-    public const string Primitives = "id_PanelP_ModelPrimitives";
-    public const string Create = "id_PanelP_ModelCreate";
-    public const string Modify = "id_PanelP_ModelModify";
-    public const string WorkFeatures = "id_PanelA_ModelWorkFeatures";
-    public const string Pattern = "id_PanelP_ModelPattern";
-    // ... and more
-}
-```
+📁 **Sources:**
+- [`PartRibbonPanels`](Ribbon/PartRibbonPanels.cs) - All Part document ribbon panels
+- [`AssemblyRibbonPanels`](Ribbon/AssemblyRibbonPanels.cs) - All Assembly document ribbon panels  
+- [`DrawingRibbonPanels`](Ribbon/DrawingRibbonPanels.cs) - All Drawing document ribbon panels
 
 ### Ribbon Examples
 
@@ -186,39 +157,18 @@ Property sets contain groups of related properties in Inventor documents. Each d
 
 ### Available Property Sets
 
-#### Part Document Property Sets (`PropertySets.Part`)
-```csharp
-public struct Part
-{
-    public const string SummaryInformation = "Inventor Summary Information";
-    public const string DocumentSummaryInformation = "Inventor Document Summary Information";
-    public const string DesignTracking = "Design Tracking Properties";
-    public const string UserDefined = "Inventor User Defined Properties";
-}
-```
+Each document type has access to different property sets for managing document metadata and properties:
 
-#### Assembly Document Property Sets (`PropertySets.Assembly`)
-```csharp
-public struct Assembly
-{
-    public const string SummaryInformation = "Inventor Summary Information";
-    public const string DocumentSummaryInformation = "Inventor Document Summary Information";
-    public const string DesignTracking = "Design Tracking Properties";
-    public const string UserDefined = "Inventor User Defined Properties";
-}
-```
+📁 **Sources:**
+- [`PropertySets.Part`](PropertySets/Part.cs) - Part document property sets
+- [`PropertySets.Assembly`](PropertySets/Assembly.cs) - Assembly document property sets
+- [`PropertySets.Drawing`](PropertySets/Drawing.cs) - Drawing document property sets
 
-#### Drawing Document Property Sets (`PropertySets.Drawing`)
-```csharp
-public struct Drawing
-{
-    public const string SummaryInformation = "Inventor Summary Information";
-    public const string DocumentSummaryInformation = "Inventor Document Summary Information";
-    public const string DesignTracking = "Design Tracking Properties";
-    public const string UserDefined = "Inventor User Defined Properties";
-    public const string PipingStyle = "Piping Style";
-}
-```
+**Common Property Sets:**
+- `SummaryInformation` - Basic document information
+- `DocumentSummaryInformation` - Extended document details
+- `DesignTracking` - Design tracking and workflow properties
+- `UserDefined` - Custom user-defined properties
 
 ### Property Set Examples
 
@@ -264,65 +214,19 @@ iProperties are individual property names within property sets. Each document ty
 
 ### Available iProperties
 
-#### Part Document iProperties (`iProperties.Part`)
+iProperties are individual property names within property sets. Each document type has an extensive collection of available property names:
 
-The Part struct contains over 100 property name constants, including:
+📁 **Sources:**
+- [`iProperties.Part`](iProperties/Part.cs) - 100+ Part document property constants
+- [`iProperties.Assembly`](iProperties/Assembly.cs) - Assembly document property constants  
+- [`iProperties.Drawing`](iProperties/Drawing.cs) - Drawing document property constants
 
-**Basic Properties:**
-```csharp
-public const string Title = "Title";
-public const string Subject = "Subject";
-public const string Author = "Author";
-public const string Keywords = "Keywords";
-public const string Comments = "Comments";
-public const string PartNumber = "Part Number";
-public const string Description = "Description";
-public const string Material = "Material";
-```
-
-**Design Tracking:**
-```csharp
-public const string Project = "Project";
-public const string CostCenter = "Cost Center";
-public const string CheckedBy = "Checked By";
-public const string DateChecked = "Date Checked";
-public const string EngrApprovedBy = "Engr Approved By";
-public const string EngrDateApproved = "Engr Date Approved";
-public const string Designer = "Designer";
-public const string Engineer = "Engineer";
-```
-
-**Physical Properties:**
-```csharp
-public const string Mass = "Mass";
-public const string SurfaceArea = "SurfaceArea";
-public const string Volume = "Volume";
-public const string Density = "Density";
-```
-
-**Sheet Metal Properties:**
-```csharp
-public const string FlatPatternWidth = "Flat Pattern Width";
-public const string FlatPatternLength = "Flat Pattern Length";
-public const string FlatPatternArea = "Flat Pattern Area";
-public const string SheetMetalRule = "Sheet Metal Rule";
-```
-
-#### Assembly Document iProperties (`iProperties.Assembly`)
-
-Assembly documents have similar properties to parts, with additional assembly-specific properties.
-
-#### Drawing Document iProperties (`iProperties.Drawing`)
-
-Drawing documents include all standard properties plus drawing-specific properties like piping and routing information:
-
-```csharp
-public const string PipeType = "PipeType";
-public const string RoutePreview = "RoutePreview";
-public const string FittingMaterial = "FittingMaterial";
-public const string Diameter = "Diameter";
-public const string Schedule = "Schedule";
-```
+**Property Categories Include:**
+- **Basic Properties:** Title, Subject, Author, Keywords, Comments, Part Number, Description, Material
+- **Design Tracking:** Project, Cost Center, Designer, Engineer, Checked By, Approved By
+- **Physical Properties:** Mass, Surface Area, Volume, Density  
+- **Sheet Metal Properties:** Flat Pattern dimensions, Sheet Metal Rule
+- **Drawing-Specific:** Pipe Type, Route Preview, Fitting Material, Diameter, Schedule
 
 ### iProperty Examples
 
@@ -375,53 +279,14 @@ Command names are internal identifiers for Inventor commands that can be execute
 
 ### Available Commands
 
-The `CommandNames` struct provides access to all Inventor commands, including:
+📁 **Source:** [`CommandNames`](Commands/CommandNames.cs) - Contains hundreds of Inventor command constants
 
-#### General Commands
-```csharp
-public const string Update = "Update";
-public const string Continue = "Continue";
-```
-
-#### Assembly Commands
-```csharp
-public const string AssemblyCreateComponentCmd = "AssemblyCreateComponentCmd";
-public const string AssemblyPlaceComponentCmd = "AssemblyPlaceComponentCmd";
-public const string AssemblyConstraintCmd = "AssemblyConstraintCmd";
-public const string AssemblyMoveComponentCmd = "AssemblyMoveComponentCmd";
-public const string AssemblyReplaceCmd = "AssemblyReplaceCmd";
-public const string AssemblyPatternComponentCmd = "AssemblyPatternComponentCmd";
-public const string AssemblyMirrorComponentCmd = "AssemblyMirrorComponentCmd";
-```
-
-#### Part Modeling Commands
-```csharp
-public const string PartExtrudeCmd = "PartExtrudeCmd";
-public const string PartRevolveCmd = "PartRevolveCmd";
-public const string PartSweepCmd = "PartSweepCmd";
-public const string PartLoftCmd = "PartLoftCmd";
-public const string PartHoleCmd = "PartHoleCmd";
-public const string PartFilletCmd = "PartFilletCmd";
-public const string PartChamferCmd = "PartChamferCmd";
-```
-
-#### Drawing Commands
-```csharp
-public const string DrawingBaseViewCmd = "DrawingBaseViewCmd";
-public const string DrawingProjectedViewCmd = "DrawingProjectedViewCmd";
-public const string DrawingSectionViewCmd = "DrawingSectionViewCmd";
-public const string DrawingDetailViewCmd = "DrawingDetailViewCmd";
-public const string DrawingGeneralDimensionCmd = "DrawingGeneralDimensionCmd";
-```
-
-#### Sketch Commands
-```csharp
-public const string SketchLineCmd = "SketchLineCmd";
-public const string SketchCircleCmd = "SketchCircleCmd";
-public const string SketchRectangleCmd = "SketchRectangleCmd";
-public const string SketchArcCmd = "SketchArcCmd";
-public const string SketchSplineCmd = "SketchSplineCmd";
-```
+**Command Categories Include:**
+- **General Commands:** Update, Continue, Save, Export operations
+- **Assembly Commands:** Create/Place/Move components, Constraints, Patterns, Mirroring  
+- **Part Modeling Commands:** Extrude, Revolve, Sweep, Loft, Hole, Fillet, Chamfer
+- **Drawing Commands:** Base View, Projected View, Section View, Detail View, Dimensions
+- **Sketch Commands:** Line, Circle, Rectangle, Arc, Spline and geometric operations
 
 ### Command Examples
 
