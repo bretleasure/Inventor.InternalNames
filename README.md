@@ -450,6 +450,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🔗 Related Resources
 
-- [Autodesk Inventor API Documentation](https://help.autodesk.com/view/INVNTOR/2024/ENU/?guid=GUID-C3F3C736-1AB0-4956-B7B5-FF61A0A5E0AC)
-- [Inventor Developer Center](https://www.autodesk.com/developer-network/platform-technologies/inventor)
+- [Autodesk Inventor API Documentation](https://help.autodesk.com/view/INVNTOR/2026/ENU/?guid=UserManualIndex)
 - [NuGet Package](https://www.nuget.org/packages/Inventor.InternalNames)
