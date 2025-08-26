@@ -26,6 +26,9 @@ This repository contains a comprehensive collection of internal names for Autode
 - [Command Names](#-command-names)
   - [Available Commands](#available-commands)
   - [Command Examples](#command-examples)
+- [Asset Library Names](#-asset-library-names)
+  - [Available Asset Libraries](#available-asset-libraries)
+  - [Asset Library Examples](#asset-library-examples)
 - [Complete Reference](#-complete-reference)
 
 ## 📦 Installation
@@ -73,7 +76,7 @@ User Interface Components. The internal names are used to identify the user inte
 
 ### Available Ribbons
 
-The [`InventorRibbons`](Ribbon/InventorRibbons.cs) struct provides access to all main ribbon types for different Inventor environments:
+The [`InventorRibbons`](src/Inventor.InternalNames/Ribbon/InventorRibbons.cs) struct provides access to all main ribbon types for different Inventor environments:
 
 - **Part** - Part modeling environment
 - **Assembly** - Assembly environment  
@@ -83,22 +86,22 @@ The [`InventorRibbons`](Ribbon/InventorRibbons.cs) struct provides access to all
 - **iFeatures** - iFeature environment
 - **UnknownDocument** - Unknown document type
 
-📁 **Source:** [Ribbon/InventorRibbons.cs](Ribbon/InventorRibbons.cs)
+📁 **Source:** [src/Inventor.InternalNames/Ribbon/InventorRibbons.cs](src/Inventor.InternalNames/Ribbon/InventorRibbons.cs)
 
 ### Ribbon Tabs
 
 Each document type has its own set of ribbon tabs:
 
 #### Part Document Tabs
-📁 **Source:** [`PartRibbonTabs`](Ribbon/PartRibbonTabs.cs) - Contains 46+ ribbon tabs including:
+📁 **Source:** [`PartRibbonTabs`](src/Inventor.InternalNames/Ribbon/PartRibbonTabs.cs) - Contains 46+ ribbon tabs including:
 - `SheetMetal`, `FlatPattern`, `k3DModel`, `Sketch`, `Annotate`, `Inspect`, `Tools`, `Manage`, `View`, `Environments`, and many more specialized tabs.
 
 #### Assembly Document Tabs  
-📁 **Source:** [`AssemblyRibbonTabs`](Ribbon/AssemblyRibbonTabs.cs) - Contains tabs for:
+📁 **Source:** [`AssemblyRibbonTabs`](src/Inventor.InternalNames/Ribbon/AssemblyRibbonTabs.cs) - Contains tabs for:
 - `Assemble`, `Design`, `k3DModel`, `Weld`, `Electromechanical`, `TubeAndPipe`, `CableAndHarness`, and more.
 
 #### Drawing Document Tabs
-📁 **Source:** [`DrawingRibbonTabs`](Ribbon/DrawingRibbonTabs.cs) - Contains tabs for:
+📁 **Source:** [`DrawingRibbonTabs`](src/Inventor.InternalNames/Ribbon/DrawingRibbonTabs.cs) - Contains tabs for:
 - `PlaceViews`, `Annotate`, and more drawing-specific functionality.
 - `Sketch` - Sketching in drawings
 - `Tools` - Drawing tools
@@ -109,9 +112,9 @@ Each document type has its own set of ribbon tabs:
 Each tab contains multiple panels organized as nested structures within each document type:
 
 📁 **Sources:**
-- [`PartRibbonPanels`](Ribbon/PartRibbonPanels.cs) - All Part document ribbon panels
-- [`AssemblyRibbonPanels`](Ribbon/AssemblyRibbonPanels.cs) - All Assembly document ribbon panels  
-- [`DrawingRibbonPanels`](Ribbon/DrawingRibbonPanels.cs) - All Drawing document ribbon panels
+- [`PartRibbonPanels`](src/Inventor.InternalNames/Ribbon/PartRibbonPanels.cs) - All Part document ribbon panels
+- [`AssemblyRibbonPanels`](src/Inventor.InternalNames/Ribbon/AssemblyRibbonPanels.cs) - All Assembly document ribbon panels  
+- [`DrawingRibbonPanels`](src/Inventor.InternalNames/Ribbon/DrawingRibbonPanels.cs) - All Drawing document ribbon panels
 
 ### Ribbon Examples
 
@@ -160,9 +163,9 @@ Property sets contain groups of related properties in Inventor documents. Each d
 Each document type has access to different property sets for managing document metadata and properties:
 
 📁 **Sources:**
-- [`PropertySets.Part`](PropertySets/Part.cs) - Part document property sets
-- [`PropertySets.Assembly`](PropertySets/Assembly.cs) - Assembly document property sets
-- [`PropertySets.Drawing`](PropertySets/Drawing.cs) - Drawing document property sets
+- [`PropertySets.Part`](src/Inventor.InternalNames/PropertySets/Part.cs) - Part document property sets
+- [`PropertySets.Assembly`](src/Inventor.InternalNames/PropertySets/Assembly.cs) - Assembly document property sets
+- [`PropertySets.Drawing`](src/Inventor.InternalNames/PropertySets/Drawing.cs) - Drawing document property sets
 
 **Common Property Sets:**
 - `SummaryInformation` - Basic document information
@@ -217,9 +220,9 @@ iProperties are individual property names within property sets. Each document ty
 iProperties are individual property names within property sets. Each document type has an extensive collection of available property names:
 
 📁 **Sources:**
-- [`iProperties.Part`](iProperties/Part.cs) - 100+ Part document property constants
-- [`iProperties.Assembly`](iProperties/Assembly.cs) - Assembly document property constants  
-- [`iProperties.Drawing`](iProperties/Drawing.cs) - Drawing document property constants
+- [`iProperties.Part`](src/Inventor.InternalNames/iProperties/Part.cs) - 100+ Part document property constants
+- [`iProperties.Assembly`](src/Inventor.InternalNames/iProperties/Assembly.cs) - Assembly document property constants  
+- [`iProperties.Drawing`](src/Inventor.InternalNames/iProperties/Drawing.cs) - Drawing document property constants
 
 **Property Categories Include:**
 - **Basic Properties:** Title, Subject, Author, Keywords, Comments, Part Number, Description, Material
@@ -279,7 +282,7 @@ Command names are internal identifiers for Inventor commands that can be execute
 
 ### Available Commands
 
-📁 **Source:** [`CommandNames`](Commands/CommandNames.cs) - Contains hundreds of Inventor command constants
+📁 **Source:** [`CommandNames`](src/Inventor.InternalNames/Commands/CommandNames.cs) - Contains hundreds of Inventor command constants
 
 **Command Categories Include:**
 - **General Commands:** Update, Continue, Save, Export operations
@@ -349,6 +352,86 @@ if (controlDef.Enabled)
 }
 ```
 
+## 🎨 Asset Library Names
+
+Asset Library Names provide internal identifiers for Autodesk's built-in asset libraries in Inventor. These identifiers are used to programmatically access material libraries, appearance libraries, and other asset collections.
+
+### Available Asset Libraries
+
+📁 **Source:** [`AssetLibraryNames`](src/Inventor.InternalNames/AssetLibraryNames.cs) - Contains asset library GUID constants
+
+**Available Libraries:**
+- **Autodesk Material Library** - Standard Autodesk material library
+- **Autodesk Appearance Library** - Standard Autodesk appearance library  
+- **Favorites** - User's favorites collection
+- **Inventor Material Library** - Inventor-specific material library
+
+### Asset Library Examples
+
+#### Example 1: Accessing Material Libraries
+```csharp
+// Get the asset library manager
+AssetLibraries assetLibraries = inventorApplication.AssetLibraries;
+
+// Access the Autodesk Material Library
+AssetLibrary materialLibrary = assetLibraries[AssetLibraryNames.AutodeskMaterialLibrary];
+
+// Access the Inventor Material Library
+AssetLibrary inventorMaterialLibrary = assetLibraries[AssetLibraryNames.InventorMaterialLibrary];
+```
+
+#### Example 2: Working with Appearance Libraries
+```csharp
+// Access the Autodesk Appearance Library
+AssetLibrary appearanceLibrary = assetLibraries[AssetLibraryNames.AutodeskAppearanceLibrary];
+
+// Browse available appearances
+foreach (Asset appearance in appearanceLibrary.AppearanceAssets)
+{
+    Console.WriteLine($"Appearance: {appearance.DisplayName}");
+}
+```
+
+#### Example 3: Managing Favorites
+```csharp
+// Access user favorites
+AssetLibrary favorites = assetLibraries[AssetLibraryNames.Favorites];
+
+// Check if favorites library is available
+if (favorites != null)
+{
+    // Work with favorite materials and appearances
+    foreach (Asset favoriteAsset in favorites.MaterialAssets)
+    {
+        Console.WriteLine($"Favorite Material: {favoriteAsset.DisplayName}");
+    }
+}
+```
+
+#### Example 4: Library Validation
+```csharp
+// Validate library availability before use
+bool IsLibraryAvailable(string libraryId)
+{
+    try
+    {
+        AssetLibrary library = inventorApplication.AssetLibraries[libraryId];
+        return library != null;
+    }
+    catch
+    {
+        return false;
+    }
+}
+
+// Usage
+if (IsLibraryAvailable(AssetLibraryNames.AutodeskMaterialLibrary))
+{
+    // Safely access the library
+    AssetLibrary library = assetLibraries[AssetLibraryNames.AutodeskMaterialLibrary];
+}
+```
+
 ## 📚 Complete Reference
 
 ### Namespace Organization
@@ -356,7 +439,7 @@ if (controlDef.Enabled)
 The library is organized into the following namespaces:
 
 ```csharp
-Inventor.InternalNames                  // Base namespace with CommandNames
+Inventor.InternalNames                  // Base namespace with CommandNames and AssetLibraryNames
 ├── Ribbon                             // Ribbon-related constants
 │   ├── InventorRibbons               // Main ribbon types
 │   ├── PartRibbonTabs                // Part document ribbon tabs
@@ -385,15 +468,15 @@ Inventor.InternalNames                  // Base namespace with CommandNames
 
 ### Document Type Support
 
-| Document Type | Ribbons | Tabs | Panels | Property Sets | iProperties | Commands |
-|---------------|---------|------|--------|---------------|-------------|----------|
-| Part          | ✅      | ✅   | ✅     | ✅            | ✅          | ✅       |
-| Assembly      | ✅      | ✅   | ✅     | ✅            | ✅          | ✅       |
-| Drawing       | ✅      | ✅   | ✅     | ✅            | ✅          | ✅       |
-| Presentation  | ✅      | ✅   | ✅     | ❌            | ❌          | ✅       |
-| iFeature      | ✅      | ✅   | ✅     | ❌            | ❌          | ✅       |
-| ZeroDoc       | ✅      | ✅   | ✅     | ❌            | ❌          | ✅       |
-| Unknown       | ✅      | ✅   | ✅     | ❌            | ❌          | ✅       |
+| Document Type | Ribbons | Tabs | Panels | Property Sets | iProperties | Commands | Asset Libraries |
+|---------------|---------|------|--------|---------------|-------------|----------|-----------------|
+| Part          | ✅      | ✅   | ✅     | ✅            | ✅          | ✅       | ✅              |
+| Assembly      | ✅      | ✅   | ✅     | ✅            | ✅          | ✅       | ✅              |
+| Drawing       | ✅      | ✅   | ✅     | ✅            | ✅          | ✅       | ✅              |
+| Presentation  | ✅      | ✅   | ✅     | ❌            | ❌          | ✅       | ✅              |
+| iFeature      | ✅      | ✅   | ✅     | ❌            | ❌          | ✅       | ✅              |
+| ZeroDoc       | ✅      | ✅   | ✅     | ❌            | ❌          | ✅       | ✅              |
+| Unknown       | ✅      | ✅   | ✅     | ❌            | ❌          | ✅       | ✅              |
 
 ### Usage Best Practices
 
@@ -429,6 +512,10 @@ public class InventorIntegrationExample
             // 3. Execute commands
             var cmdMgr = _inventorApp.CommandManager;
             cmdMgr.ControlDefinitions[CommandNames.PartExtrudeCmd].Execute();
+            
+            // 4. Work with asset libraries
+            var assetLibraries = _inventorApp.AssetLibraries;
+            var materialLibrary = assetLibraries[AssetLibraryNames.AutodeskMaterialLibrary];
         }
     }
 }
