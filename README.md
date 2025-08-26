@@ -424,7 +424,6 @@ if (addIns.ItemById[ApplicationAddinIds.iLogic] != null)
     
     // Get the iLogic add-in
     ApplicationAddIn iLogicAddin = addIns.ItemById[ApplicationAddinIds.iLogic];
-    Console.WriteLine($"iLogic Status: {(iLogicAddin.Loaded ? "Loaded" : "Not Loaded")}");
 }
 ```
 
@@ -452,9 +451,9 @@ foreach (string translatorId in translatorIds)
 
 #### Example 3: Loading Add-ins Programmatically
 ```csharp
-// Load the Content Center add-in if it's not already loaded
+// Load the Content Center add-in if available
 ApplicationAddIn contentCenter = addIns.ItemById[ApplicationAddinIds.ContentCenter];
-if (contentCenter != null && !contentCenter.Loaded)
+if (contentCenter != null)
 {
     try
     {
@@ -470,12 +469,11 @@ if (contentCenter != null && !contentCenter.Loaded)
 
 #### Example 4: Enumerating All Available Add-ins
 ```csharp
-// Get all add-ins and their status
+// Get all add-ins and their information
 foreach (ApplicationAddIn addIn in addIns)
 {
     Console.WriteLine($"Add-in: {addIn.DisplayName}");
     Console.WriteLine($"  ID: {addIn.ClassIdString}");
-    Console.WriteLine($"  Loaded: {addIn.Loaded}");
     Console.WriteLine($"  Description: {addIn.Description}");
     Console.WriteLine();
 }
@@ -569,7 +567,7 @@ public class InventorIntegrationExample
             // 5. Check and manage add-ins
             var addIns = _inventorApp.ApplicationAddIns;
             var iLogicAddin = addIns.ItemById[ApplicationAddinIds.iLogic];
-            if (iLogicAddin != null && !iLogicAddin.Loaded)
+            if (iLogicAddin != null)
             {
                 iLogicAddin.Activate();
             }
