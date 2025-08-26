@@ -29,6 +29,9 @@ This repository contains a comprehensive collection of internal names for Autode
 - [Asset Library Names](#-asset-library-names)
   - [Available Asset Libraries](#available-asset-libraries)
   - [Asset Library Examples](#asset-library-examples)
+- [Application Add-in IDs](#-application-add-in-ids)
+  - [Available Add-in IDs](#available-add-in-ids)
+  - [Add-in ID Examples](#add-in-id-examples)
 - [Complete Reference](#-complete-reference)
 
 ## 📦 Installation
@@ -392,6 +395,90 @@ foreach (Asset appearance in appearanceLibrary.AppearanceAssets)
 }
 ```
 
+## 🔌 Application Add-in IDs
+
+Application Add-in IDs provide internal identifiers for Autodesk Inventor add-ins and translators. These GUID constants allow developers to programmatically identify and interact with specific add-ins installed in Inventor.
+
+### Available Add-in IDs
+
+📁 **Source:** [`ApplicationAddinIds`](src/Inventor.InternalNames/ApplicationAddinIds.cs) - Contains 70+ application add-in GUID constants
+
+**Add-in Categories Include:**
+- **Core Inventor Add-ins:** Content Center, Design Accelerator, Frame Generator, iLogic, iCopy
+- **Simulation Add-ins:** Stress Analysis, Frame Analysis, Dynamic Simulation  
+- **Manufacturing Add-ins:** Additive Manufacturing, Mold Design, Presentations
+- **Translators:** STEP, IGES, CATIA V5, SolidWorks, Fusion 360, DWG/DXF, STL, PDF, and many more
+- **Specialized Tools:** BIM Content, Assembly Bonus Tools, Shared Views, Interactive Tutorial
+
+### Add-in ID Examples
+
+#### Example 1: Checking If Add-ins Are Available
+```csharp
+// Get the application add-ins collection
+ApplicationAddIns addIns = inventorApplication.ApplicationAddIns;
+
+// Check if iLogic add-in is available
+if (addIns.ItemById[ApplicationAddinIds.iLogic] != null)
+{
+    Console.WriteLine("iLogic add-in is available");
+    
+    // Get the iLogic add-in
+    ApplicationAddIn iLogicAddin = addIns.ItemById[ApplicationAddinIds.iLogic];
+}
+```
+
+#### Example 2: Working with Translator Add-ins
+```csharp
+// Check available translators
+var translatorIds = new string[]
+{
+    ApplicationAddinIds.TranslatorSTEP,
+    ApplicationAddinIds.TranslatorIGES,
+    ApplicationAddinIds.TranslatorCATIAV5Import,
+    ApplicationAddinIds.TranslatorSolidWorks,
+    ApplicationAddinIds.TranslatorFusion
+};
+
+foreach (string translatorId in translatorIds)
+{
+    var translator = addIns.ItemById[translatorId];
+    if (translator != null)
+    {
+        Console.WriteLine($"Translator Available: {translator.DisplayName}");
+    }
+}
+```
+
+#### Example 3: Loading Add-ins Programmatically
+```csharp
+// Load the Content Center add-in if available
+ApplicationAddIn contentCenter = addIns.ItemById[ApplicationAddinIds.ContentCenter];
+if (contentCenter != null)
+{
+    try
+    {
+        contentCenter.Activate();
+        Console.WriteLine("Content Center add-in loaded successfully");
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"Failed to load Content Center: {ex.Message}");
+    }
+}
+```
+
+#### Example 4: Enumerating All Available Add-ins
+```csharp
+// Get all add-ins and their information
+foreach (ApplicationAddIn addIn in addIns)
+{
+    Console.WriteLine($"Add-in: {addIn.DisplayName}");
+    Console.WriteLine($"  ID: {addIn.ClassIdString}");
+    Console.WriteLine($"  Description: {addIn.Description}");
+    Console.WriteLine();
+}
+```
+
 ## 📚 Complete Reference
 
 ### Namespace Organization
@@ -399,7 +486,7 @@ foreach (Asset appearance in appearanceLibrary.AppearanceAssets)
 The library is organized into the following namespaces:
 
 ```csharp
-Inventor.InternalNames                  // Base namespace with CommandNames and AssetLibraryNames
+Inventor.InternalNames                  // Base namespace with CommandNames, AssetLibraryNames, and ApplicationAddinIds
 ├── Ribbon                             // Ribbon-related constants
 │   ├── InventorRibbons               // Main ribbon types
 │   ├── PartRibbonTabs                // Part document ribbon tabs
@@ -428,15 +515,15 @@ Inventor.InternalNames                  // Base namespace with CommandNames and 
 
 ### Document Type Support
 
-| Document Type | Ribbons | Tabs | Panels | Property Sets | iProperties | Commands | Asset Libraries |
-|---------------|---------|------|--------|---------------|-------------|----------|-----------------|
-| Part          | ✅      | ✅   | ✅     | ✅            | ✅          | ✅       | ✅              |
-| Assembly      | ✅      | ✅   | ✅     | ✅            | ✅          | ✅       | ✅              |
-| Drawing       | ✅      | ✅   | ✅     | ✅            | ✅          | ✅       | ✅              |
-| Presentation  | ✅      | ✅   | ✅     | ❌            | ❌          | ✅       | ✅              |
-| iFeature      | ✅      | ✅   | ✅     | ❌            | ❌          | ✅       | ✅              |
-| ZeroDoc       | ✅      | ✅   | ✅     | ❌            | ❌          | ✅       | ✅              |
-| Unknown       | ✅      | ✅   | ✅     | ❌            | ❌          | ✅       | ✅              |
+| Document Type | Ribbons | Tabs | Panels | Property Sets | iProperties | Commands | Asset Libraries | Add-in IDs |
+|---------------|---------|------|--------|---------------|-------------|----------|-----------------|------------|
+| Part          | ✅      | ✅   | ✅     | ✅            | ✅          | ✅       | ✅              | ✅         |
+| Assembly      | ✅      | ✅   | ✅     | ✅            | ✅          | ✅       | ✅              | ✅         |
+| Drawing       | ✅      | ✅   | ✅     | ✅            | ✅          | ✅       | ✅              | ✅         |
+| Presentation  | ✅      | ✅   | ✅     | ❌            | ❌          | ✅       | ✅              | ✅         |
+| iFeature      | ✅      | ✅   | ✅     | ❌            | ❌          | ✅       | ✅              | ✅         |
+| ZeroDoc       | ✅      | ✅   | ✅     | ❌            | ❌          | ✅       | ✅              | ✅         |
+| Unknown       | ✅      | ✅   | ✅     | ❌            | ❌          | ✅       | ✅              | ✅         |
 
 ### Usage Best Practices
 
@@ -476,6 +563,14 @@ public class InventorIntegrationExample
             // 4. Work with asset libraries
             var assetLibraries = _inventorApp.AssetLibraries;
             var materialLibrary = assetLibraries[AssetLibraryNames.AutodeskMaterialLibrary];
+            
+            // 5. Check and manage add-ins
+            var addIns = _inventorApp.ApplicationAddIns;
+            var iLogicAddin = addIns.ItemById[ApplicationAddinIds.iLogic];
+            if (iLogicAddin != null)
+            {
+                iLogicAddin.Activate();
+            }
         }
     }
 }
