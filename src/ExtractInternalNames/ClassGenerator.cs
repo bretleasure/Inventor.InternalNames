@@ -11,7 +11,7 @@ public static class ClassGenerator
         sb.AppendLine($"public struct {className}");
         sb.AppendLine("{");
 
-        foreach (var kvp in constants)
+        foreach (var kvp in constants.OrderBy(c => c.Key))
         {
             sb.AppendLine($"\tpublic const string {ToValidIdentifier(kvp.Key)} = \"{kvp.Value}\";");
         }
