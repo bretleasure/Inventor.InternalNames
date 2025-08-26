@@ -392,46 +392,6 @@ foreach (Asset appearance in appearanceLibrary.AppearanceAssets)
 }
 ```
 
-#### Example 3: Managing Favorites
-```csharp
-// Access user favorites
-AssetLibrary favorites = assetLibraries[AssetLibraryNames.Favorites];
-
-// Check if favorites library is available
-if (favorites != null)
-{
-    // Work with favorite materials and appearances
-    foreach (Asset favoriteAsset in favorites.MaterialAssets)
-    {
-        Console.WriteLine($"Favorite Material: {favoriteAsset.DisplayName}");
-    }
-}
-```
-
-#### Example 4: Library Validation
-```csharp
-// Validate library availability before use
-bool IsLibraryAvailable(string libraryId)
-{
-    try
-    {
-        AssetLibrary library = inventorApplication.AssetLibraries[libraryId];
-        return library != null;
-    }
-    catch
-    {
-        return false;
-    }
-}
-
-// Usage
-if (IsLibraryAvailable(AssetLibraryNames.AutodeskMaterialLibrary))
-{
-    // Safely access the library
-    AssetLibrary library = assetLibraries[AssetLibraryNames.AutodeskMaterialLibrary];
-}
-```
-
 ## 📚 Complete Reference
 
 ### Namespace Organization
