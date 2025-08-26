@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net472</TargetFramework>
+        <LangVersion>latest</LangVersion>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UseWindowsForms>true</UseWindowsForms>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <LocalizeTemplates>false</LocalizeTemplates>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Reference Include="Autodesk.Inventor.Interop">
+            <HintPath>lib\Autodesk.Inventor.Interop.dll</HintPath>
+        </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Inventor.InternalNames" Version="0.4.1"/>
+        <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="stdole" Version="17.13.40008"/>
+        <PackageReference Include="System.Resources.Extensions" Version="9.0.3"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Update="ExtractInternalNames.addin">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+
+    <ItemGroup>
+        <EmbeddedResource Include="Buttons\Assets\Default-Light.png"/>
+        <EmbeddedResource Include="Buttons\Assets\Default-Dark.png"/>
+    </ItemGroup>
+</Project>

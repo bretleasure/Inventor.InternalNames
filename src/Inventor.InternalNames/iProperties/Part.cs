@@ -1,0 +1,71 @@
+namespace Inventor.InternalNames.iProperties
+{
+	public struct Part
+	{
+		public const string Title = "Title";
+		public const string Subject = "Subject";
+		public const string Author = "Author";
+		public const string Keywords = "Keywords";
+		public const string Comments = "Comments";
+		public const string LastSavedBy = "Last Saved By";
+		public const string RevisionNumber = "Revision Number";
+		public const string Thumbnail = "Thumbnail";
+		public const string Category = "Category";
+		public const string Manager = "Manager";
+		public const string Company = "Company";
+		public const string CreationDate = "Creation Time";
+		public const string PartNumber = "Part Number";
+		public const string Project = "Project";
+		public const string CostCenter = "Cost Center";
+		public const string CheckedBy = "Checked By";
+		public const string DateChecked = "Date Checked";
+		public const string EngrApprovedBy = "Engr Approved By";
+		public const string EngrDateApproved = "Engr Date Approved";
+		public const string UserStatus = "User Status";
+		public const string Material = "Material";
+		public const string PartPropertyRevisionId = "Part Property Revision Id";
+		public const string CatalogWebLink = "Catalog Web Link";
+		public const string PartIcon = "Part Icon";
+		public const string Description = "Description";
+		public const string Vendor = "Vendor";
+		public const string DocumentSubType = "Document SubType";
+		public const string DocumentSubTypeName = "Document SubType Name";
+		public const string ProxyRefreshDate = "Proxy Refresh Date";
+		public const string MfgApprovedBy = "Mfg Approved By";
+		public const string MfgDateApproved = "Mfg Date Approved";
+		public const string Cost = "Cost";
+		public const string Standard = "Standard";
+		public const string DesignStatus = "Design Status";
+		public const string Designer = "Designer";
+		public const string Engineer = "Engineer";
+		public const string Authority = "Authority";
+		public const string ParameterizedTemplate = "Parameterized Template";
+		public const string TemplateRow = "Template Row";
+		public const string ExternalPropertyRevisionId = "External Property Revision Id";
+		public const string StandardRevision = "Standard Revision";
+		public const string Manufacturer = "Manufacturer";
+		public const string StandardsOrganization = "Standards Organization";
+		public const string Language = "Language";
+		public const string DeferUpdates = "Defer Updates";
+		public const string SizeDesignation = "Size Designation";
+		public const string Categories = "Categories";
+		public const string StockNumber = "Stock Number";
+		public const string WeldMaterial = "Weld Material";
+		public const string Mass = "Mass";
+		public const string SurfaceArea = "SurfaceArea";
+		public const string Volume = "Volume";
+		public const string Density = "Density";
+		public const string ValidMassProps = "Valid MassProps";
+		public const string FlatPatternWidth = "Flat Pattern Width";
+		public const string FlatPatternLength = "Flat Pattern Length";
+		public const string FlatPatternArea = "Flat Pattern Area";
+		public const string SheetMetalRule = "Sheet Metal Rule";
+		public const string LastUpdatedWith = "Last Updated With";
+		public const string SheetMetalWidth = "Sheet Metal Width";
+		public const string SheetMetalLength = "Sheet Metal Length";
+		public const string SheetMetalArea = "Sheet Metal Area";
+		public const string MaterialIdentifier = "Material Identifier";
+		public const string Appearance = "Appearance";
+		public const string FlatPatternDeferUpdate = "Flat Pattern Defer Update";
+	}
+}

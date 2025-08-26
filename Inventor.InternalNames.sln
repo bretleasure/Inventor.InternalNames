@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventor.InternalNames", "Inventor.InternalNames.csproj", "{66F6E908-B2F1-4EF8-B23D-463BF3FA3CF1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventor.InternalNames", "src/Inventor.InternalNames/Inventor.InternalNames.csproj", "{66F6E908-B2F1-4EF8-B23D-463BF3FA3CF1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtractInternalNames", "src\ExtractInternalNames\ExtractInternalNames.csproj", "{A77F7FE4-EAC1-44D8-9047-D8CB22FB331E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,5 +14,9 @@ Global
 		{66F6E908-B2F1-4EF8-B23D-463BF3FA3CF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66F6E908-B2F1-4EF8-B23D-463BF3FA3CF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66F6E908-B2F1-4EF8-B23D-463BF3FA3CF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A77F7FE4-EAC1-44D8-9047-D8CB22FB331E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A77F7FE4-EAC1-44D8-9047-D8CB22FB331E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A77F7FE4-EAC1-44D8-9047-D8CB22FB331E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A77F7FE4-EAC1-44D8-9047-D8CB22FB331E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
