@@ -18,7 +18,6 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Inventor.InternalNames" Version="0.4.1"/>
         <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3">
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -36,5 +35,9 @@
     <ItemGroup>
         <EmbeddedResource Include="Buttons\Assets\Default-Light.png"/>
         <EmbeddedResource Include="Buttons\Assets\Default-Dark.png"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Inventor.InternalNames\Inventor.InternalNames.csproj" />
     </ItemGroup>
 </Project>
