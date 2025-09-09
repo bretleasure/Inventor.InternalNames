@@ -14,11 +14,8 @@ public class GetAssetLibraryNames : BaseGetButton
         
         var names = assetLibraries.ToDictionary(l => l.DisplayName, l => l.InternalName);
         
-        var code = ClassGenerator.GenerateCode("AssetLibraryNames", names);
-
-        MessageBox.Show(code);
+        WriteClass("AssetLibraryNames", names);
     }
 
     protected override string RibbonName => InventorRibbons.Assembly;
-    protected override string Label => "Get Asset Library Names";
 }

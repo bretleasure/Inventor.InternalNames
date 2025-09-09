@@ -14,11 +14,8 @@ public class GetApplicationAddins : BaseGetButton
         
         var names = addins.ToDictionary(a => a.DisplayName, a => a.ClassIdString);
         
-        var code = ClassGenerator.GenerateCode("ApplicationAddinIds", names);
-        
-        MessageBox.Show(code);
+        WriteClass("ApplicationAddinIds", names);
     }
 
     protected override string RibbonName => InventorRibbons.Assembly;
-    protected override string Label => "Get Application Addins";
 }

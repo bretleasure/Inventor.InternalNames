@@ -4,7 +4,7 @@ namespace ExtractInternalNames;
 
 public static class ClassGenerator
 {
-    public static string GenerateCode(string className, Dictionary<string, string> constants)
+    public static string GenerateCode(string className, Dictionary<string, string> constants, string prefix = "e")
     {
         var sb = new StringBuilder();
 
@@ -13,7 +13,7 @@ public static class ClassGenerator
 
         foreach (var kvp in constants.OrderBy(c => c.Key))
         {
-            sb.AppendLine($"\tpublic const string {ToValidIdentifier(kvp.Key)} = \"{kvp.Value}\";");
+            sb.AppendLine($"\tpublic const string {ToValidIdentifier(kvp.Key, prefix)} = \"{kvp.Value}\";");
         }
 
         sb.AppendLine("}");
@@ -21,7 +21,7 @@ public static class ClassGenerator
         return sb.ToString();
     }
     
-    private static string ToValidIdentifier(string input)
+    private static string ToValidIdentifier(string input, string prefix = "e")
     {
         if (string.IsNullOrWhiteSpace(input))
             return "Empty";
@@ -40,9 +40,9 @@ public static class ClassGenerator
         if (string.IsNullOrEmpty(result))
             result = "Empty";
 
-        // If starts with digit, add 'e'
+        // If starts with digit, add prefix
         if (char.IsDigit(result[0]))
-            result = "e" + result;
+            result = prefix + result;
 
         // Optionally, make first letter uppercase for style
         // result = char.ToUpper(result[0]) + result.Substring(1);
