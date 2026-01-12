@@ -709,7 +709,8 @@ foreach (ApplicationAddIn addIn in addIns)
 The library is organized into the following namespaces:
 
 ```csharp
-Inventor.InternalNames                  // Base namespace with CommandNames, AssetLibraryNames, AssetPropertyNames, Environments, and ApplicationAddinIds
+Inventor.InternalNames                  // Base namespace: CommandNames, AssetLibraryNames,
+                                        // AssetPropertyNames, Environments, ApplicationAddinIds
 ├── Ribbon                             // Ribbon-related constants
 │   ├── InventorRibbons               // Main ribbon types
 │   ├── PartRibbonTabs                // Part document ribbon tabs
