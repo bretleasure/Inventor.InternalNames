@@ -409,21 +409,9 @@ Asset Property Names provide internal identifiers for properties within Autodesk
 
 📁 **Source:** [`AssetPropertyNames`](src/Inventor.InternalNames/AssetPropertyNames.cs) - Contains asset property name constants
 
-**Available Property Categories:**
-- **Asset Identification:** AssetLibID, ExchangeGUID, common_Shared_Asset
-- **Color & Tint Properties:** color_by_object, common_Tint_color, common_Tint_toggle, common_Tint_color_colorspace
-- **Diffuse Properties:** generic_diffuse, generic_diffuse_colorspace, generic_diffuse_image_fade
-- **Reflection Properties:** generic_reflectivity_at_0deg, generic_reflectivity_at_90deg, generic_reflection_glossy_samples, generic_refl_depth
-- **Refraction Properties:** generic_refraction_index, generic_refraction_translucency_weight, generic_refraction_glossy_samples, generic_refr_depth
-- **Surface Properties:** generic_glossiness, generic_is_metal, generic_bump_map, generic_bump_amount
-- **Transparency & Opacity:** generic_transparency, generic_transparency_image_fade, generic_cutout_opacity
-- **Self-Illumination:** generic_self_illum_luminance, generic_self_illum_color_temperature, generic_self_illum_filter_map
-- **Ambient Occlusion:** generic_ao_on, generic_ao_samples, generic_ao_distance, generic_ao_details
-- **Advanced Properties:** generic_roundcorners_radius, generic_backface_cull, mode
-
 ### Asset Property Examples
 
-#### Example 1: Accessing Material Properties
+#### Example: Accessing and Modifying Asset Properties
 ```csharp
 // Get a material asset from the library
 AssetLibrary materialLibrary = inventorApplication.AssetLibraries[AssetLibraryNames.AutodeskMaterialLibrary];
@@ -436,71 +424,10 @@ if (materialAsset.HasProperty(AssetPropertyNames.generic_diffuse))
     Console.WriteLine($"Diffuse Color: {diffuseColor}");
 }
 
-// Check metallic property
-if (materialAsset.HasProperty(AssetPropertyNames.generic_is_metal))
+// Modify properties
+if (materialAsset.HasProperty(AssetPropertyNames.generic_glossiness))
 {
-    bool isMetal = (bool)materialAsset[AssetPropertyNames.generic_is_metal].Value;
-    Console.WriteLine($"Is Metal: {isMetal}");
-}
-```
-
-#### Example 2: Modifying Appearance Properties
-```csharp
-// Get an appearance asset
-AssetLibrary appearanceLibrary = inventorApplication.AssetLibraries[AssetLibraryNames.AutodeskAppearanceLibrary];
-Asset appearanceAsset = appearanceLibrary.AppearanceAssets["Polished"];
-
-// Modify glossiness
-if (appearanceAsset.HasProperty(AssetPropertyNames.generic_glossiness))
-{
-    appearanceAsset[AssetPropertyNames.generic_glossiness].Value = 0.9;
-}
-
-// Set transparency
-if (appearanceAsset.HasProperty(AssetPropertyNames.generic_transparency))
-{
-    appearanceAsset[AssetPropertyNames.generic_transparency].Value = 0.5;
-}
-```
-
-#### Example 3: Working with Reflectivity
-```csharp
-// Configure reflection properties for a material
-Asset asset = materialLibrary.MaterialAssets["CustomMaterial"];
-
-// Set reflectivity at different angles
-if (asset.HasProperty(AssetPropertyNames.generic_reflectivity_at_0deg))
-{
-    asset[AssetPropertyNames.generic_reflectivity_at_0deg].Value = 0.3;
-}
-
-if (asset.HasProperty(AssetPropertyNames.generic_reflectivity_at_90deg))
-{
-    asset[AssetPropertyNames.generic_reflectivity_at_90deg].Value = 1.0;
-}
-
-// Configure reflection quality
-if (asset.HasProperty(AssetPropertyNames.generic_reflection_glossy_samples))
-{
-    asset[AssetPropertyNames.generic_reflection_glossy_samples].Value = 16;
-}
-```
-
-#### Example 4: Configuring Self-Illumination
-```csharp
-// Create a self-illuminating material
-Asset glowingAsset = appearanceLibrary.AppearanceAssets["Glowing"];
-
-// Set luminance
-if (glowingAsset.HasProperty(AssetPropertyNames.generic_self_illum_luminance))
-{
-    glowingAsset[AssetPropertyNames.generic_self_illum_luminance].Value = 1500.0; // cd/m²
-}
-
-// Set color temperature
-if (glowingAsset.HasProperty(AssetPropertyNames.generic_self_illum_color_temperature))
-{
-    glowingAsset[AssetPropertyNames.generic_self_illum_color_temperature].Value = 5000.0; // Kelvin
+    materialAsset[AssetPropertyNames.generic_glossiness].Value = 0.9;
 }
 ```
 
@@ -512,21 +439,9 @@ Environment Names provide internal identifiers for Inventor's various working en
 
 📁 **Source:** [`Environments`](src/Inventor.InternalNames/Environments.cs) - Contains environment identifier constants
 
-**Available Environments Include:**
-- **Part Environments:** PMxPartEnvironment, PMxPartSketchEnvironment, PMxPartSketch3dEnvironment, PMxPartSolidEditEnvironment
-- **Sheet Metal:** MBxSheetMetalEnvironment, PMxPartFlatPatternEditEnvironment
-- **Assembly Environments:** AMxAssemblyEnvironment, AMxAssemblySketchEnvironment, AMxWeldmentEnvironment
-- **Drawing Environments:** DLxDrawingEnvironment, DLxDrawingSketchEnvironment, DLxDrawingModelSpaceEnvironment, DLxDrawingCustomViewEnvironment
-- **Specialized Environments:**
-  - Cable & Harness: HSLCableAssemblyEnvironment, HSLCablePartEnvironment, HSLCableNailboardDrawingEnvironment
-  - Piping & Tubing: PipingRouteEnvironment, PipingRunEnvironment, PipingRunsEnvironment, PipingHoseEnvironment
-  - Frame Analysis: FrameAnalysisEnvironment, FWxMainFrameEnvironment
-  - Simulation: DynamicSimulationEnvironmentInternalName, FEAEnvironmentInternalName
-- **Other Environments:** DXxPresentationEnvironment, PMxiFeatureEnvironment, MoldEnvironment, PMx3DPrintEnvironment
-
 ### Environment Examples
 
-#### Example 1: Detecting Current Environment
+#### Example: Detecting and Working with Environments
 ```csharp
 // Get the active environment
 if (inventorApplication.ActiveDocument != null)
@@ -542,78 +457,6 @@ if (inventorApplication.ActiveDocument != null)
     else if (envName == Environments.PMxPartSketchEnvironment)
     {
         Console.WriteLine("Currently in Part sketch environment");
-    }
-    else if (envName == Environments.MBxSheetMetalEnvironment)
-    {
-        Console.WriteLine("Currently in Sheet Metal environment");
-    }
-}
-```
-
-#### Example 2: Activating a Specific Environment
-```csharp
-// Switch to a specific environment in a part document
-PartDocument partDoc = (PartDocument)inventorApplication.ActiveDocument;
-
-// Access available environments
-Environments environments = partDoc.EnvironmentManager.Environments;
-
-// Activate the sketch environment
-Environment sketchEnv = environments[Environments.PMxPartSketchEnvironment];
-if (sketchEnv != null)
-{
-    sketchEnv.Activate();
-    Console.WriteLine("Sketch environment activated");
-}
-```
-
-#### Example 3: Environment-Specific Operations
-```csharp
-// Perform different operations based on current environment
-string currentEnv = inventorApplication.ActiveDocument.ActiveEnvironment.InternalName;
-
-switch (currentEnv)
-{
-    case Environments.PMxPartEnvironment:
-        // Part modeling operations
-        Console.WriteLine("Perform part modeling operations");
-        break;
-        
-    case Environments.MBxSheetMetalEnvironment:
-        // Sheet metal operations
-        Console.WriteLine("Perform sheet metal operations");
-        break;
-        
-    case Environments.AMxAssemblyEnvironment:
-        // Assembly operations
-        Console.WriteLine("Perform assembly operations");
-        break;
-        
-    case Environments.DLxDrawingEnvironment:
-        // Drawing operations
-        Console.WriteLine("Perform drawing operations");
-        break;
-        
-    default:
-        Console.WriteLine($"Unknown environment: {currentEnv}");
-        break;
-}
-```
-
-#### Example 4: Checking Environment Availability
-```csharp
-// Check if a specific environment is available in the document
-PartDocument partDoc = (PartDocument)inventorApplication.ActiveDocument;
-
-// List all available environments
-foreach (Environment env in partDoc.EnvironmentManager.Environments)
-{
-    Console.WriteLine($"Available Environment: {env.InternalName}");
-    
-    // Check for specific environments
-    if (env.InternalName == Environments.MBxSheetMetalEnvironment)
-    {
-        Console.WriteLine("  -> Sheet Metal environment is available");
     }
 }
 ```
