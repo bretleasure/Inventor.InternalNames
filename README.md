@@ -29,6 +29,12 @@ This repository contains a comprehensive collection of internal names for Autode
 - [Asset Library Names](#-asset-library-names)
   - [Available Asset Libraries](#available-asset-libraries)
   - [Asset Library Examples](#asset-library-examples)
+- [Asset Property Names](#-asset-property-names)
+  - [Available Asset Property Names](#available-asset-property-names)
+  - [Asset Property Examples](#asset-property-examples)
+- [Environment Names](#-environment-names)
+  - [Available Environments](#available-environments)
+  - [Environment Examples](#environment-examples)
 - [Application Add-in IDs](#-application-add-in-ids)
   - [Available Add-in IDs](#available-add-in-ids)
   - [Add-in ID Examples](#add-in-id-examples)
@@ -395,6 +401,66 @@ foreach (Asset appearance in appearanceLibrary.AppearanceAssets)
 }
 ```
 
+## 🎭 Asset Property Names
+
+Asset Property Names provide internal identifiers for properties within Autodesk's asset system in Inventor. These property names are used to programmatically access and modify material and appearance properties, such as colors, textures, reflectivity, transparency, and other rendering attributes.
+
+### Available Asset Property Names
+
+📁 **Source:** [`AssetPropertyNames`](src/Inventor.InternalNames/AssetPropertyNames.cs) - Contains asset property name constants
+
+### Asset Property Examples
+
+#### Example: Accessing and Modifying Asset Properties
+```csharp
+// Get a material asset from the library
+AssetLibrary materialLibrary = inventorApplication.AssetLibraries[AssetLibraryNames.AutodeskMaterialLibrary];
+Asset materialAsset = materialLibrary.MaterialAssets["Steel"];
+
+// Read asset properties
+if (materialAsset.HasProperty(AssetPropertyNames.generic_diffuse))
+{
+    AssetValue diffuseColor = materialAsset[AssetPropertyNames.generic_diffuse];
+    Console.WriteLine($"Diffuse Color: {diffuseColor}");
+}
+
+// Modify properties
+if (materialAsset.HasProperty(AssetPropertyNames.generic_glossiness))
+{
+    materialAsset[AssetPropertyNames.generic_glossiness].Value = 0.9;
+}
+```
+
+## 🌍 Environment Names
+
+Environment Names provide internal identifiers for Inventor's various working environments. These identifiers are used to programmatically detect, switch between, or interact with different Inventor environments such as Part modeling, Assembly, Drawing, Sheet Metal, Weld, Cable & Harness, and many specialized environments.
+
+### Available Environments
+
+📁 **Source:** [`Environments`](src/Inventor.InternalNames/Environments.cs) - Contains environment identifier constants
+
+### Environment Examples
+
+#### Example: Detecting and Working with Environments
+```csharp
+// Get the active environment
+if (inventorApplication.ActiveDocument != null)
+{
+    Environment activeEnv = inventorApplication.ActiveDocument.ActiveEnvironment;
+    string envName = activeEnv.InternalName;
+    
+    // Check which environment is active
+    if (envName == Environments.PMxPartEnvironment)
+    {
+        Console.WriteLine("Currently in Part modeling environment");
+    }
+    else if (envName == Environments.PMxPartSketchEnvironment)
+    {
+        Console.WriteLine("Currently in Part sketch environment");
+    }
+}
+```
+
 ## 🔌 Application Add-in IDs
 
 Application Add-in IDs provide internal identifiers for Autodesk Inventor add-ins and translators. These GUID constants allow developers to programmatically identify and interact with specific add-ins installed in Inventor.
@@ -486,7 +552,8 @@ foreach (ApplicationAddIn addIn in addIns)
 The library is organized into the following namespaces:
 
 ```csharp
-Inventor.InternalNames                  // Base namespace with CommandNames, AssetLibraryNames, and ApplicationAddinIds
+Inventor.InternalNames                  // Base namespace: CommandNames, AssetLibraryNames,
+                                        // AssetPropertyNames, Environments, ApplicationAddinIds
 ├── Ribbon                             // Ribbon-related constants
 │   ├── InventorRibbons               // Main ribbon types
 │   ├── PartRibbonTabs                // Part document ribbon tabs
@@ -515,15 +582,15 @@ Inventor.InternalNames                  // Base namespace with CommandNames, Ass
 
 ### Document Type Support
 
-| Document Type | Ribbons | Tabs | Panels | Property Sets | iProperties | Commands | Asset Libraries | Add-in IDs |
-|---------------|---------|------|--------|---------------|-------------|----------|-----------------|------------|
-| Part          | ✅      | ✅   | ✅     | ✅            | ✅          | ✅       | ✅              | ✅         |
-| Assembly      | ✅      | ✅   | ✅     | ✅            | ✅          | ✅       | ✅              | ✅         |
-| Drawing       | ✅      | ✅   | ✅     | ✅            | ✅          | ✅       | ✅              | ✅         |
-| Presentation  | ✅      | ✅   | ✅     | ❌            | ❌          | ✅       | ✅              | ✅         |
-| iFeature      | ✅      | ✅   | ✅     | ❌            | ❌          | ✅       | ✅              | ✅         |
-| ZeroDoc       | ✅      | ✅   | ✅     | ❌            | ❌          | ✅       | ✅              | ✅         |
-| Unknown       | ✅      | ✅   | ✅     | ❌            | ❌          | ✅       | ✅              | ✅         |
+| Document Type | Ribbons | Tabs | Panels | Property Sets | iProperties | Commands | Asset Libraries | Asset Properties | Environments | Add-in IDs |
+|---------------|---------|------|--------|---------------|-------------|----------|-----------------|------------------|--------------|------------|
+| Part          | ✅      | ✅   | ✅     | ✅            | ✅          | ✅       | ✅              | ✅               | ✅           | ✅         |
+| Assembly      | ✅      | ✅   | ✅     | ✅            | ✅          | ✅       | ✅              | ✅               | ✅           | ✅         |
+| Drawing       | ✅      | ✅   | ✅     | ✅            | ✅          | ✅       | ✅              | ✅               | ✅           | ✅         |
+| Presentation  | ✅      | ✅   | ✅     | ❌            | ❌          | ✅       | ✅              | ✅               | ✅           | ✅         |
+| iFeature      | ✅      | ✅   | ✅     | ❌            | ❌          | ✅       | ✅              | ✅               | ✅           | ✅         |
+| ZeroDoc       | ✅      | ✅   | ✅     | ❌            | ❌          | ✅       | ✅              | ✅               | ❌           | ✅         |
+| Unknown       | ✅      | ✅   | ✅     | ❌            | ❌          | ✅       | ✅              | ✅               | ❌           | ✅         |
 
 ### Usage Best Practices
 
@@ -564,7 +631,21 @@ public class InventorIntegrationExample
             var assetLibraries = _inventorApp.AssetLibraries;
             var materialLibrary = assetLibraries[AssetLibraryNames.AutodeskMaterialLibrary];
             
-            // 5. Check and manage add-ins
+            // 5. Work with asset properties
+            Asset materialAsset = materialLibrary.MaterialAssets["Steel"];
+            if (materialAsset.HasProperty(AssetPropertyNames.generic_diffuse))
+            {
+                AssetValue diffuseColor = materialAsset[AssetPropertyNames.generic_diffuse];
+            }
+            
+            // 6. Check current environment
+            string currentEnv = partDoc.ActiveEnvironment.InternalName;
+            if (currentEnv == Environments.PMxPartEnvironment)
+            {
+                Console.WriteLine("In Part modeling environment");
+            }
+            
+            // 7. Check and manage add-ins
             var addIns = _inventorApp.ApplicationAddIns;
             var iLogicAddin = addIns.ItemById[ApplicationAddinIds.iLogic];
             if (iLogicAddin != null)
