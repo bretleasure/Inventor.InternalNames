@@ -38,6 +38,13 @@ This repository contains a comprehensive collection of internal names for Autode
 - [Application Add-in IDs](#-application-add-in-ids)
   - [Available Add-in IDs](#available-add-in-ids)
   - [Add-in ID Examples](#add-in-id-examples)
+- [Work Features](#-work-features)
+  - [Available Work Features](#available-work-features)
+  - [Work Feature Examples](#work-feature-examples)
+- [Model States](#-model-states)
+  - [Model State Examples](#model-state-examples)
+- [View Representations](#-view-representations)
+  - [View Representation Examples](#view-representation-examples)
 - [Complete Reference](#-complete-reference)
 
 ## 📦 Installation
@@ -291,7 +298,7 @@ Command names are internal identifiers for Inventor commands that can be execute
 
 ### Available Commands
 
-📁 **Source:** [`CommandNames`](src/Inventor.InternalNames/Commands/CommandNames.cs) - Contains hundreds of Inventor command constants
+📁 **Source:** [`CommandNames`](src/Inventor.InternalNames/CommandNames.cs) - Contains hundreds of Inventor command constants
 
 **Command Categories Include:**
 - **General Commands:** Update, Continue, Save, Export operations
@@ -545,6 +552,77 @@ foreach (ApplicationAddIn addIn in addIns)
 }
 ```
 
+## 🛠️ Work Features
+
+Work Features provide internal identifiers for the default origin work features (planes, axes, and points) that exist in every Inventor document. These names are used to programmatically access the origin geometry of parts and assemblies.
+
+### Available Work Features
+
+📁 **Sources:**
+- [`WorkPlanes`](src/Inventor.InternalNames/WorkPlanes.cs) - Origin work plane names (`XY`, `XZ`, `YZ`)
+- [`WorkAxes`](src/Inventor.InternalNames/WorkAxes.cs) - Origin work axis names (`X`, `Y`, `Z`)
+- [`WorkPoints`](src/Inventor.InternalNames/WorkPoints.cs) - Origin work point names (`CenterPoint`)
+
+### Work Feature Examples
+
+#### Example 1: Accessing Origin Work Planes
+```csharp
+// Get the origin work plane by name
+WorkPlane xyPlane = partDoc.ComponentDefinition.WorkPlanes[WorkPlanes.XY];
+WorkPlane xzPlane = partDoc.ComponentDefinition.WorkPlanes[WorkPlanes.XZ];
+WorkPlane yzPlane = partDoc.ComponentDefinition.WorkPlanes[WorkPlanes.YZ];
+```
+
+#### Example 2: Accessing Origin Work Axes and Center Point
+```csharp
+// Access origin work axes
+WorkAxis xAxis = partDoc.ComponentDefinition.WorkAxes[WorkAxes.X];
+WorkAxis yAxis = partDoc.ComponentDefinition.WorkAxes[WorkAxes.Y];
+WorkAxis zAxis = partDoc.ComponentDefinition.WorkAxes[WorkAxes.Z];
+
+// Access the origin center point
+WorkPoint centerPoint = partDoc.ComponentDefinition.WorkPoints[WorkPoints.CenterPoint];
+```
+
+## 🧩 Model States
+
+Model State Names provide internal identifiers for Inventor model states. Model states allow multiple configurations of a part or assembly within a single document.
+
+📁 **Source:** [`ModelStates`](src/Inventor.InternalNames/ModelStates.cs) - Contains model state name constants
+
+### Model State Examples
+
+#### Example: Accessing the Primary Model State
+```csharp
+// Access the primary model state of a part
+ModelState primaryState = partDoc.ComponentDefinition.ModelStates[ModelStates.Primary];
+
+// Activate the primary model state
+primaryState.Activate();
+```
+
+## 👁️ View Representations
+
+View Representation Names provide internal identifiers for Inventor's default view representations. View representations capture visibility and appearance settings within assemblies and parts.
+
+📁 **Source:** [`ViewRepresentations`](src/Inventor.InternalNames/ViewRepresentations.cs) - Contains view representation name constants
+
+### View Representation Examples
+
+#### Example: Accessing Default View Representations
+```csharp
+// Access the primary (master) view representation
+DesignViewRepresentation primaryView = assemblyDoc.ComponentDefinition
+    .RepresentationsManager.DesignViewRepresentations[ViewRepresentations.Primary];
+
+// Access the default view representation
+DesignViewRepresentation defaultView = assemblyDoc.ComponentDefinition
+    .RepresentationsManager.DesignViewRepresentations[ViewRepresentations.Default];
+
+// Activate a view representation
+defaultView.Activate();
+```
+
 ## 📚 Complete Reference
 
 ### Namespace Organization
@@ -553,7 +631,9 @@ The library is organized into the following namespaces:
 
 ```csharp
 Inventor.InternalNames                  // Base namespace: CommandNames, AssetLibraryNames,
-                                        // AssetPropertyNames, Environments, ApplicationAddinIds
+                                        // AssetPropertyNames, Environments, ApplicationAddinIds,
+                                        // ModelStates, ViewRepresentations,
+                                        // WorkPlanes, WorkAxes, WorkPoints
 ├── Ribbon                             // Ribbon-related constants
 │   ├── InventorRibbons               // Main ribbon types
 │   ├── PartRibbonTabs                // Part document ribbon tabs
