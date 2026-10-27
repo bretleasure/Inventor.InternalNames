@@ -1,6 +1,6 @@
 ﻿namespace Inventor.InternalNames.Ribbon
 {
-    public struct UnknownDocumentRibbonTabs
+    public static class UnknownDocumentRibbonTabs
     {
         public const string CustomView = "id_TabCustomView";
         public const string EngineersNotebook = "id_TabEngineersNotebook";

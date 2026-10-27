@@ -1,6 +1,6 @@
 namespace Inventor.InternalNames;
 
-public struct Environments
+public static class Environments
 {
 	public const string AEC_ExchangeEnvironment = "AEC_Exchange:Environment";
 	public const string AMxAssemblyEnvironment = "AMxAssemblyEnvironment";

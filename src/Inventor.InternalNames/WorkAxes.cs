@@ -1,6 +1,6 @@
 namespace Inventor.InternalNames;
 
-public struct WorkAxes
+public static class WorkAxes
 {
 	public const string X = "X Axis";
 	public const string Y = "Y Axis";

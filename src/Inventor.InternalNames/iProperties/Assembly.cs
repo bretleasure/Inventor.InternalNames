@@ -1,6 +1,6 @@
 namespace Inventor.InternalNames.iProperties
 {
-	public struct Assembly
+	public static class Assembly
 	{
 		public const string Title = "Title";
 		public const string Subject = "Subject";

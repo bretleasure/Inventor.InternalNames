@@ -1,8 +1,8 @@
 ﻿namespace Inventor.InternalNames.Ribbon
 {
-    public struct AssemblyRibbonPanels
+    public static class AssemblyRibbonPanels
     {
-        public struct MoldLayoutTab
+        public static class MoldLayoutTab
         {
             public const string MoldLayout = "MoldPanelLayout"; //Mold Layout
             public const string RunnersAndChannels = "MoldPanelRunnerChannel"; //Mold Layout
@@ -10,7 +10,7 @@
             public const string Tools = "MoldPanelTools"; //Mold Layout
         }
 
-        public struct CoreCavityTab
+        public static class CoreCavityTab
         {
             public const string PlasticPart = "MoldPanelPlasticPart"; //Core/Cavity
             public const string PartingDesign = "MoldPanelPartingDesign"; //Core/Cavity
@@ -18,7 +18,7 @@
             public const string Tools = "MoldPanelTools"; //Core/Cavity
         }
 
-        public struct MoldAssemblyTab
+        public static class MoldAssemblyTab
         {
             public const string MoldAssembly = "MoldPanelStandardComponents"; //Mold Assembly
             public const string Boolean = "MoldPanelMoldBoolean"; //Mold Assembly
@@ -26,7 +26,7 @@
             public const string Author = "MoldPanelAuthor"; //Mold Assembly
         }
 
-        public struct AssembleTab
+        public static class AssembleTab
         {
             public const string Component = "id_PanelA_AssembleComponent"; //Assemble
             public const string Position = "id_PanelA_AssemblePosition"; //Assemble
@@ -41,7 +41,7 @@
             public const string ShowPanels = "id_PanelP_ShowPanels"; //Assemble
         }
 
-        public struct DesignTab
+        public static class DesignTab
         {
             public const string Fasten = "id_PanelA_DesignFasten"; //Design
             public const string Frame = "id_PanelA_DesignFrame"; //Design
@@ -52,7 +52,7 @@
             public const string ShowPanels = "id_PanelP_ShowPanels"; //Design
         }
 
-        public struct k3DModelTab
+        public static class k3DModelTab
         {
             public const string Sketch = "id_PanelA_ModelSketch"; //3D Model
             public const string ModifyAssembly = "id_PanelA_ModelModify"; //3D Model
@@ -63,7 +63,7 @@
             public const string ShowPanels = "id_PanelP_ShowPanels"; //3D Model
         }
 
-        public struct SketchTab
+        public static class SketchTab
         {
             public const string Sketch = "id_PanelA_ModelSketch"; //Sketch
             public const string Create = "id_PanelA_2DSketchDraw"; //Sketch
@@ -76,7 +76,7 @@
             public const string ShowPanels = "id_PanelP_ShowPanels"; //Sketch
         }
 
-        public struct AnnotateTab
+        public static class AnnotateTab
         {
             public const string GeneralAnnotation = "id_PanelAdskMBDGeneralAnno"; //Annotate
             public const string Notes = "id_PanelAdskMBDNotes"; //Annotate
@@ -85,7 +85,7 @@
             public const string Export = "id_PanelAdskMBDExport"; //Annotate
         }
 
-        public struct WeldTab
+        public static class WeldTab
         {
             public const string Process = "id_PanelA_WeldProcess"; //Weld
             public const string Weld = "id_PanelA_WeldWeld"; //Weld
@@ -98,12 +98,12 @@
             public const string ShowPanels = "id_PanelP_ShowPanels"; //Weld
         }
 
-        public struct WeldReturnToParentTab
+        public static class WeldReturnToParentTab
         {
             public const string Return = "id_PanelA_WeldReturnToParent"; //Weld Return to Parent
         }
 
-        public struct InspectTab
+        public static class InspectTab
         {
             public const string Interference = "id_PanelA_ToolsAnalysis"; //Inspect
             public const string Analyze = "id_PanelP_ToleranceAnalyze"; //Inspect
@@ -112,7 +112,7 @@
             public const string ShowPanels = "id_PanelP_ShowPanels"; //Inspect
         }
 
-        public struct ToolsTab
+        public static class ToolsTab
         {
             public const string Measure = "id_PanelA_ToolsMeasure"; //Tools
             public const string MaterialAndAppearance = "id_PanelP_ToolsMaterial"; //Tools
@@ -122,7 +122,7 @@
             public const string ShowPanels = "id_PanelP_ShowPanels"; //Tools
         }
 
-        public struct ManageTab
+        public static class ManageTab
         {
             public const string Update = "id_PanelA_ToolsUpdate"; //Manage
             public const string Manage = "id_PanelA_AssembleManage"; //Manage
@@ -135,7 +135,7 @@
             public const string ShowPanels = "id_PanelP_ShowPanels"; //Manage
         }
 
-        public struct ViewTab
+        public static class ViewTab
         {
             public const string Visibility = "id_PanelA_ViewVisibility"; //View
             public const string Appearance = "id_PanelA_ViewAppearance"; //View
@@ -144,7 +144,7 @@
             public const string ShowPanels = "id_PanelP_ShowPanels"; //View
         }
 
-        public struct EnvironmentsTab
+        public static class EnvironmentsTab
         {
             public const string Begin = "id_Panel_EnvironmentsBegin"; //Environments
             public const string Convert = "id_PanelA_ConvertWeld"; //Environments
@@ -153,14 +153,14 @@
             public const string ShowPanels = "id_PanelP_ShowPanels"; //Environments
         }
 
-        public struct DataStandardTab
+        public static class DataStandardTab
         {
             public const string File = "AD:dataStandardAddIn:PanelAssemblyFile"; //Data Standard
             public const string Copy = "AD:dataStandardAddIn:PanelAssemblyCopy"; //Data Standard
             public const string Settings = "AD:dataStandardAddIn:PanelAssemblySettings"; //Data Standard
         }
 
-        public struct GetStartedTab
+        public static class GetStartedTab
         {
             public const string Launch = "id_Panel_Launch"; //Get Started
             public const string MyHome = "id_Panel_MyHome"; //Get Started
@@ -169,7 +169,7 @@
             public const string ShowPanels = "id_PanelP_ShowPanels"; //Get Started
         }
 
-        public struct VaultTab
+        public static class VaultTab
         {
             public const string Access = "id_PanelZ_VaultAccess"; //Vault
             public const string FileStatus = "id_PanelZ_VaultStatusUpgrade"; //Vault
@@ -177,7 +177,7 @@
             public const string Find = "id_PanelZ_VaultFind"; //Vault
         }
 
-        public struct CollaborateTab
+        public static class CollaborateTab
         {
             public const string Share = "id_Panel_OnlineDocument"; //Collaborate
             public const string Web = "id_PanelP_ToolsWebTools"; //Collaborate
@@ -185,22 +185,22 @@
             public const string ShowPanels = "id_PanelP_ShowPanels"; //Collaborate
         }
 
-        public struct ElectromechanicalTab
+        public static class ElectromechanicalTab
         {
             public const string Setup = "id_PanelA_Mechatronics"; //Electromechanical
         }
 
-        public struct Exit2DSketchTab
+        public static class Exit2DSketchTab
         {
             public const string Exit = "id_PanelA_2DSketchExit"; //Exit 2D Sketch
         }
 
-        public struct ModeTab
+        public static class ModeTab
         {
             public const string Express = "id_PanelA_AssembleExpress"; //Mode
         }
 
-        public struct TubeAndPipeTab
+        public static class TubeAndPipeTab
         {
             public const string Run = "id_PanelA_TubePipeRoute"; //Tube and Pipe
             public const string Content = "id_PanelA_TubePipeContentCenter"; //Tube and Pipe
@@ -212,12 +212,12 @@
             public const string iPart_iAssembly = "id_PanelA_TubePipeIPartIAssembly"; //Tube and Pipe
         }
 
-        public struct ExitTubeAndPipeTab
+        public static class ExitTubeAndPipeTab
         {
             public const string Exit = "id_PanelA_TubePipeExit"; //Exit Tube and Pipe
         }
 
-        public struct PipeRunTab
+        public static class PipeRunTab
         {
             public const string Route = "id_PanelA_TubePipeRunCreate"; //Pipe Run
             public const string Content = "id_PanelA_TubePipeRunContentCenter"; //Pipe Run
@@ -225,12 +225,12 @@
             public const string Parameters = "id_PanelP_ToolsParameters"; //Pipe Run
         }
 
-        public struct ExitTubeAndPipeRunTab
+        public static class ExitTubeAndPipeRunTab
         {
             public const string Exit = "id_PanelA_TubePipeRunExit"; //Exit Tube and Pipe Run
         }
 
-        public struct CableAndHarnessTab
+        public static class CableAndHarnessTab
         {
             public const string Create = "id_PanelA_CableHarnessCreate"; //Cable and Harness
             public const string Route = "id_PanelA_CableHarnessRoute"; //Cable and Harness
@@ -238,12 +238,12 @@
             public const string Visibility = "id_PanelA_CableHarnessVisibility"; //Cable and Harness
         }
 
-        public struct ExitCableAndHarnessTab
+        public static class ExitCableAndHarnessTab
         {
             public const string Exit = "id_PanelA_CableHarnessExit"; //Exit Cable and Harness
         }
 
-        public struct RenderTab
+        public static class RenderTab
         {
             public const string Render = "id_PanelA_StudioRender"; //Render
             public const string Scene = "id_PanelA_StudioScene"; //Render
@@ -251,12 +251,12 @@
             public const string Manage = "id_PanelA_StudioManage"; //Render
         }
 
-        public struct ExitStudioTab
+        public static class ExitStudioTab
         {
             public const string Exit = "id_PanelA_StudioExit"; //Exit Studio
         }
 
-        public struct DynamicSimulationTab
+        public static class DynamicSimulationTab
         {
             public const string Joint = "id_PanelA_SimulationJoint"; //Dynamic Simulation
             public const string Load = "id_PanelA_SimulationLoad"; //Dynamic Simulation
@@ -266,17 +266,17 @@
             public const string StressAnalysis = "id_PanelA_SimulationExport"; //Dynamic Simulation
         }
 
-        public struct ExitDynamicSimulationTab
+        public static class ExitDynamicSimulationTab
         {
             public const string Exit = "id_PanelA_SimulationExit"; //Exit Dynamic Simulation
         }
 
-        public struct ReturnTab
+        public static class ReturnTab
         {
             public const string Return = "id_PanelA_AssmReturn"; //Return
         }
 
-        public struct AnalysisTab
+        public static class AnalysisTab
         {
             public const string Manage = "id_PanelA_AFEAManage"; //Analysis
             public const string Material = "id_PanelA_AFEAMaterial"; //Analysis
@@ -296,12 +296,12 @@
             public const string Settings = "id_PanelA_AFEASettings"; //Analysis
         }
 
-        public struct ExitStressAnalysisTab
+        public static class ExitStressAnalysisTab
         {
             public const string Exit = "id_PanelA_AFEAExit"; //Exit Stress Analysis
         }
 
-        public struct FrameAnalysisTab
+        public static class FrameAnalysisTab
         {
             public const string Manage = "id_PanelA_IFAManage"; //Frame Analysis
             public const string Beams = "id_PanelA_IFAProperties"; //Frame Analysis
@@ -315,12 +315,12 @@
             public const string Settings = "id_PanelA_IFA_Settings"; //Frame Analysis
         }
 
-        public struct ExitFrameAnalysisTab
+        public static class ExitFrameAnalysisTab
         {
             public const string Exit = "id_PanelA_IFAExit"; //Exit Frame Analysis
         }
 
-        public struct BIMContentTab
+        public static class BIMContentTab
         {
             public const string Simplify = "id_PanelA_AECExchangeSimplify"; //BIM Content
             public const string MEPConnectors = "id_PanelA_AECExchangeConnectors"; //BIM Content

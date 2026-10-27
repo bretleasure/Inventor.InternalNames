@@ -1,6 +1,6 @@
 namespace Inventor.InternalNames;
 
-public struct WorkPoints
+public static class WorkPoints
 {
 	public const string CenterPoint = "Center Point";
 }

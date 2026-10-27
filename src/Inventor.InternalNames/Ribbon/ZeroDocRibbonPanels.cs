@@ -1,8 +1,8 @@
 ﻿namespace Inventor.InternalNames.Ribbon
 {
-    public struct ZeroDocRibbonPanels
+    public static class ZeroDocRibbonPanels
     {
-        public struct GetStartedTab
+        public static class GetStartedTab
         {
             public const string Launch = "id_Panel_Launch"; //Get Started
             public const string MyHome = "id_Panel_MyHome"; //Get Started
@@ -12,7 +12,7 @@
             public const string ShowPanels = "id_PanelP_ShowPanels"; //Get Started
         }
 
-        public struct ToolsTab
+        public static class ToolsTab
         {
             public const string Options = "id_PanelP_ToolsOptions"; //Tools
             public const string ContentCenter = "id_PanelZ_ToolsContentCenter"; //Tools
@@ -21,7 +21,7 @@
             public const string ShowPanels = "id_PanelP_ShowPanels"; //Tools
         }
 
-        public struct VaultTab
+        public static class VaultTab
         {
             public const string Access = "id_PanelZ_VaultAccess"; //Vault
             public const string FileStatus = "id_PanelZ_VaultStatusUpgrade"; //Vault
@@ -29,7 +29,7 @@
             public const string Find = "id_PanelZ_VaultFind"; //Vault
         }
 
-        public struct CollaborateTab
+        public static class CollaborateTab
         {
             public const string Share = "id_Panel_OnlineDocument"; //Collaborate
             public const string DataManagement = "id_PanelP_PDMAndPLM"; //Collaborate

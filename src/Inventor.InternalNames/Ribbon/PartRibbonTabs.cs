@@ -1,6 +1,6 @@
 ﻿namespace Inventor.InternalNames.Ribbon
 {
-    public struct PartRibbonTabs
+    public static class PartRibbonTabs
     {
         public const string SheetMetal = "id_TabSheetMetal";
         public const string FlatPattern = "id_TabFlatPattern";

@@ -1,6 +1,6 @@
 ﻿namespace Inventor.InternalNames.Ribbon
 {
-    public struct iFeatureRibbonTabs
+    public static class iFeatureRibbonTabs
     {
         public const string iFeature = "id_TabiFeature";
         public const string Tools = "id_TabTools";

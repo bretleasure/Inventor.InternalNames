@@ -8,6 +8,10 @@
 
 This repository contains a comprehensive collection of internal names for Autodesk Inventor. These internal names are essential for accessing various Inventor API components programmatically. Each category is organized into its own namespace (e.g., Ribbon, PropertySets, iProperties, Commands, etc.) for easy navigation and usage.
 
+Internal names are exposed as `public const string` fields grouped in static classes, including nested classes for ribbon panels. These classes organize constants and cannot be instantiated. Access constants directly, for example `CommandNames.Update`.
+
+Previously, these containers were structs or instantiable classes. Existing constant access remains the same, but consumers that instantiated a container or used it as a variable, parameter, or generic type argument must update their code.
+
 ## 📋 Table of Contents
 
 - [Installation](#-installation)
@@ -92,7 +96,7 @@ User Interface Components. The internal names are used to identify the user inte
 
 ### Available Ribbons
 
-The [`InventorRibbons`](src/Inventor.InternalNames/Ribbon/InventorRibbons.cs) struct provides access to all main ribbon types for different Inventor environments:
+The [`InventorRibbons`](src/Inventor.InternalNames/Ribbon/InventorRibbons.cs) static class provides access to all main ribbon types for different Inventor environments:
 
 - **Part** - Part modeling environment
 - **Assembly** - Assembly environment  
@@ -125,7 +129,7 @@ Each document type has its own set of ribbon tabs:
 
 ### Ribbon Panels
 
-Each tab contains multiple panels organized as nested structures within each document type:
+Each tab contains multiple panels organized as nested static classes within each document type:
 
 📁 **Sources:**
 - [`PartRibbonPanels`](src/Inventor.InternalNames/Ribbon/PartRibbonPanels.cs) - All Part document ribbon panels
@@ -294,7 +298,7 @@ if (partDoc.SubType == PartDocumentSubTypeEnum.kSheetMetalDocumentSubType)
 
 ## ⚡ Command Names
 
-Command names are internal identifiers for Inventor commands that can be executed programmatically using the CommandManager. The `CommandNames` struct contains hundreds of command constants.
+Command names are internal identifiers for Inventor commands that can be executed programmatically using the CommandManager. The `CommandNames` static class contains hundreds of command constants.
 
 ### Available Commands
 

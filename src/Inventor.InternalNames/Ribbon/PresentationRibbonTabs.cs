@@ -1,6 +1,6 @@
 ﻿namespace Inventor.InternalNames.Ribbon
 {
-    public struct PresentationRibbonTabs
+    public static class PresentationRibbonTabs
     {
         public const string Presentation = "id_TabManage";
         public const string EditView = "id_TabEditView";

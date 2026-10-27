@@ -1,8 +1,8 @@
 ﻿namespace Inventor.InternalNames.Ribbon
 {
-    public struct DrawingRibbonPanels
+    public static class DrawingRibbonPanels
     {
-        public struct PlaceViewsTab
+        public static class PlaceViewsTab
         {
             public const string Create = "id_PanelD_PlaceViewsCreate"; //Place Views
             public const string Modify = "id_PanelD_PlaceViewsModify"; //Place Views
@@ -11,7 +11,7 @@
             public const string ShowPanels = "id_PanelP_ShowPanels"; //Place Views
         }
 
-        public class AnnotateTab
+        public static class AnnotateTab
         {
             public const string Dimension = "id_PanelD_AnnotateDimension"; //Annotate
             public const string FeatureNotes = "id_PanelD_AnnotateFeatureNotes"; //Annotate
@@ -24,7 +24,7 @@
             public const string ShowPanels = "id_PanelP_ShowPanels"; //Annotate
         }
 
-        public class AnnotateESKDTab
+        public static class AnnotateESKDTab
         {
             public const string DrawingSheets = "id_PanelD_ESKDDrawingSheets"; //Annotate (ESKD)
             public const string Dimension = "id_PanelD_ESKDAnnotateDimension"; //Annotate (ESKD)
@@ -38,7 +38,7 @@
             public const string ShowPanels = "id_PanelP_ShowPanels"; //Annotate (ESKD)
         }
 
-        public class SketchTab
+        public static class SketchTab
         {
             public const string Sketch = "id_PanelD_Annotate2DSketchCreate"; //Sketch
             public const string Create = "id_PanelD_2DSketchDraw"; //Sketch
@@ -51,7 +51,7 @@
             public const string ShowPanels = "id_PanelP_ShowPanels"; //Sketch
         }
 
-        public class ToolsTab
+        public static class ToolsTab
         {
             public const string Measure = "id_PanelD_ToolsMeasure"; //Tools
             public const string Options = "id_PanelP_ToolsOptions"; //Tools
@@ -59,7 +59,7 @@
             public const string ShowPanels = "id_PanelP_ShowPanels"; //Tools
         }
 
-        public class ManageTab
+        public static class ManageTab
         {
             public const string Update = "id_PanelP_ToolsUpdate"; //Manage
             public const string Parameters = "id_PanelP_ToolsParameters"; //Manage
@@ -73,21 +73,21 @@
             public const string ShowPanels = "id_PanelP_ShowPanels"; //Manage
         }
 
-        public class ViewTab
+        public static class ViewTab
         {
             public const string Windows = "id_PanelP_ViewWindow"; //View
             public const string Navigate = "id_PanelD_ViewNavigate"; //View
             public const string ShowPanels = "id_PanelP_ShowPanels"; //View
         }
 
-        public class EnvironmentsTab
+        public static class EnvironmentsTab
         {
             public const string Begin = "id_Panel_EnvironmentsBegin"; //Environments
             public const string Manage = "id_PanelD_EnvironmentsAddIns"; //Environments
             public const string ShowPanels = "id_PanelP_ShowPanels"; //Environments
         }
 
-        public class NailboardTab
+        public static class NailboardTab
         {
             public const string Create = "id_PanelD_NailboardCreate"; //Nailboard
             public const string Edit = "id_PanelD_NailboardEdit"; //Nailboard
@@ -96,14 +96,14 @@
             public const string ShowPanels = "id_PanelP_ShowPanels"; //Nailboard
         }
 
-        public class DataStandardTab
+        public static class DataStandardTab
         {
             public const string File = "AD:dataStandardAddIn:PanelDrawingFile"; //Data Standard
             public const string Copy = "AD:dataStandardAddIn:PanelDrawingCopy"; //Data Standard
             public const string Settings = "AD:dataStandardAddIn:PanelDrawingSettings"; //Data Standard
         }
 
-        public class GetStartedTab
+        public static class GetStartedTab
         {
             public const string Launch = "id_Panel_Launch"; //Get Started
             public const string MyHome = "id_Panel_MyHome"; //Get Started
@@ -112,7 +112,7 @@
             public const string ShowPanels = "id_PanelP_ShowPanels"; //Get Started
         }
 
-        public class VaultTab
+        public static class VaultTab
         {
             public const string Access = "id_PanelZ_VaultAccess"; //Vault
             public const string FileStatus = "id_PanelZ_VaultStatusUpgrade"; //Vault
@@ -120,24 +120,24 @@
             public const string Find = "id_PanelZ_VaultFind"; //Vault
         }
 
-        public class CollaborateTab
+        public static class CollaborateTab
         {
             public const string Share = "id_Panel_OnlineDocument"; //Collaborate
             public const string DataManagement = "id_PanelP_PDMAndPLM"; //Collaborate
             public const string ShowPanels = "id_PanelP_ShowPanels"; //Collaborate
         }
 
-        public class Exit2DSketchTab
+        public static class Exit2DSketchTab
         {
             public const string Exit = "id_PanelD_2DSketchExit"; //Exit 2D Sketch
         }
 
-        public class ExitNailboardSketchTab
+        public static class ExitNailboardSketchTab
         {
             public const string Exit = "id_PanelD_NailboardExit"; //Exit Nailboard Sketch
         }
 
-        public class ReviewTab
+        public static class ReviewTab
         {
             public const string Navigate = "id_PanelD_ReviewNavigate"; //Review
             public const string Create = "id_PanelD_ReviewCreate"; //Review
@@ -146,12 +146,12 @@
             public const string Sheets = "id_PanelD_PlaceViewsSheets"; //Review
         }
 
-        public class ExitReviewTab
+        public static class ExitReviewTab
         {
             public const string Exit = "id_PanelD_ReviewExit"; //Exit Review
         }
 
-        public class ReturnTab
+        public static class ReturnTab
         {
             public const string Return = "id_PanelD_DrawingReturn"; //Return
         }

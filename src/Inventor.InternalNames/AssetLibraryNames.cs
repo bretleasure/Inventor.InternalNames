@@ -1,6 +1,6 @@
 namespace Inventor.InternalNames;
 
-public struct AssetLibraryNames
+public static class AssetLibraryNames
 {
     public const string AutodeskMaterialLibrary = "AD121259-C03E-4A1D-92D8-59A22B4807AD";
     public const string AutodeskAppearanceLibrary = "314DE259-5443-4621-BFBD-1730C6CC9AE9";

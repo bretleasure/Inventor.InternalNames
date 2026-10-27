@@ -8,7 +8,7 @@ public static class ClassGenerator
     {
         var sb = new StringBuilder();
 
-        sb.AppendLine($"public struct {className}");
+        sb.AppendLine($"public static class {className}");
         sb.AppendLine("{");
 
         foreach (var kvp in constants.OrderBy(c => c.Key))

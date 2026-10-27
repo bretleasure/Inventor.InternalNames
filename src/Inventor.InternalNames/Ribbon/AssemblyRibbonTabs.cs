@@ -1,6 +1,6 @@
 ﻿namespace Inventor.InternalNames.Ribbon
 {
-    public struct AssemblyRibbonTabs
+    public static class AssemblyRibbonTabs
     {
         public const string MoldLayout = "MoldTabLayout";
         public const string CoreCavity = "MoldTabCoreCavity";

@@ -1,6 +1,6 @@
 namespace Inventor.InternalNames;
 
-public struct ApplicationAddinIds
+public static class ApplicationAddinIds
 {
 	public const string e3dAnnotation = "{F3FB67F9-57B9-4DEE-A1EC-29A6970F603D}";
 	public const string AdditiveManufacturing = "{4E2D52FB-8288-4427-B912-20EF97F073C9}";

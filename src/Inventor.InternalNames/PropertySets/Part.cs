@@ -1,6 +1,6 @@
 namespace Inventor.InternalNames.PropertySets
 {
-	public struct Part
+	public static class Part
 	{
 		public const string SummaryInformation = "Inventor Summary Information";
 		public const string DocumentSummaryInformation = "Inventor Document Summary Information";

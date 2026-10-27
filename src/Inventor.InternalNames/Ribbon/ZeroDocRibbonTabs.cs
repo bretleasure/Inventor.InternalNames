@@ -1,6 +1,6 @@
 ﻿namespace Inventor.InternalNames.Ribbon
 {
-    public struct ZeroDocRibbonTabs
+    public static class ZeroDocRibbonTabs
     {
         public const string GetStarted = "id_GetStarted";
         public const string Tools = "id_TabTools";

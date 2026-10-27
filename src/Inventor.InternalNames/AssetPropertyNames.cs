@@ -1,6 +1,6 @@
 namespace Inventor.InternalNames;
 
-public struct AssetPropertyNames
+public static class AssetPropertyNames
 {
 	public const string AssetLibID = "AssetLibID";
 	public const string color_by_object = "color_by_object";

@@ -1,6 +1,6 @@
 namespace Inventor.InternalNames;
 
-public struct ModelStates
+public static class ModelStates
 {
 	public const string Primary = "[Primary]";
 }

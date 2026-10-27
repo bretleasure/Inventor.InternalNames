@@ -1,8 +1,8 @@
 ﻿namespace Inventor.InternalNames.Ribbon
 {
-    public struct UnknownDocumentRibbonPanels
+    public static class UnknownDocumentRibbonPanels
     {
-        public struct CustomViewTab
+        public static class CustomViewTab
         {
             public const string Navigate = "id_PanelU_CustomViewNavigate"; //Custom View
             public const string Appearance = "id_PanelU_CustomViewAppearance"; //Custom View
@@ -10,7 +10,7 @@
             public const string ShowPanels = "id_PanelP_ShowPanels"; //Custom View
         }
 
-        public struct EngineersNotebookTab
+        public static class EngineersNotebookTab
         {
             public const string Notes = "id_PanelU_EngineersNotebookNotes"; //Engineer's Notebook
             public const string Format = "id_PanelU_EngineersNotebookFormat"; //Engineer's Notebook
@@ -19,7 +19,7 @@
             public const string ShowPanels = "id_PanelP_ShowPanels"; //Engineer's Notebook
         }
 
-        public struct ToolsTab
+        public static class ToolsTab
         {
             public const string Options = "id_PanelP_ToolsOptions"; //Tools
             public const string Clipboard = "id_PanelP_ToolsClipboard"; //Tools
@@ -28,7 +28,7 @@
             public const string ShowPanels = "id_PanelP_ShowPanels"; //Tools
         }
 
-        public struct ViewTab
+        public static class ViewTab
         {
             public const string Appearance = "id_PanelU_ViewAppearance"; //View
             public const string Windows = "id_PanelP_ViewWindow"; //View
@@ -36,7 +36,7 @@
             public const string ShowPanels = "id_PanelP_ShowPanels"; //View
         }
 
-        public struct GetStartedTab
+        public static class GetStartedTab
         {
             public const string Launch = "id_Panel_Launch"; //Get Started
             public const string MyHome = "id_Panel_MyHome"; //Get Started
@@ -45,7 +45,7 @@
             public const string ShowPanels = "id_PanelP_ShowPanels"; //Get Started
         }
 
-        public struct VaultTab
+        public static class VaultTab
         {
             public const string Access = "id_PanelZ_VaultAccess"; //Vault
             public const string FileStatus = "id_PanelZ_VaultStatusUpgrade"; //Vault
@@ -53,7 +53,7 @@
             public const string Find = "id_PanelZ_VaultFind"; //Vault
         }
 
-        public struct CollaborateTab
+        public static class CollaborateTab
         {
             public const string Share = "id_Panel_OnlineDocument"; //Collaborate
             public const string DataManagement = "id_PanelP_PDMAndPLM"; //Collaborate

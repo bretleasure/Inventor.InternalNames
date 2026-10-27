@@ -1,6 +1,6 @@
 namespace Inventor.InternalNames;
 
-public struct CommandNames
+public static class CommandNames
 {
 	public const string _DrawingCommitViewCmd = "_DrawingCommitViewCmd";
 	public const string c3DSketchConstrainVisibility = "3D-Sketch Constrain Visibility";
