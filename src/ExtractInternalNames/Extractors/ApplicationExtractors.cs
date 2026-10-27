@@ -14,7 +14,11 @@ internal sealed class CommandsExtractor : INameExtractor
         var group = context.Group(Id, "CommandNames.cs", "CommandNames");
         foreach (ControlDefinition command in context.Application.CommandManager.ControlDefinitions)
             ExtractionContext.Add(group, command.InternalName, command.InternalName, command.InternalName);
-        if (group.Names.Count == 0) throw new InvalidOperationException("Inventor returned no commands.");
+        if (group.Names.Count == 0)
+        {
+            throw new InvalidOperationException("Inventor returned no commands.");
+        }
+
         return new[] { group };
     }
 }
@@ -75,7 +79,11 @@ internal sealed class AssetPropertiesExtractor : INameExtractor
             Read(library.MaterialAssets, group);
             Read(library.PhysicalAssets, group);
         }
-        if (group.Names.Count == 0) throw new InvalidOperationException("No asset properties were found. Check the configured asset libraries.");
+        if (group.Names.Count == 0)
+        {
+            throw new InvalidOperationException("No asset properties were found. Check the configured asset libraries.");
+        }
+
         return new[] { group };
     }
 

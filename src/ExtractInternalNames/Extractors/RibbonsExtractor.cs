@@ -53,12 +53,23 @@ internal sealed class RibbonsExtractor : INameExtractor
     {
         var baseline = context.Catalog.Groups.SingleOrDefault(g => g.Category == group.Category && g.Key == group.Key);
         var known = baseline?.Names.FirstOrDefault(n => n.Key == key || (n.Key == null && n.Value == key));
-        if (known != null) return known.Name;
+        if (known != null)
+        {
+            return known.Name;
+        }
+
         var observed = group.Names.FirstOrDefault(n => n.Key == key);
-        if (observed != null) return observed.Name;
+        if (observed != null)
+        {
+            return observed.Name;
+        }
+
         var name = CatalogMerger.Identifier(label);
         if ((baseline?.Names ?? new List<NameEntry>()).Concat(group.Names).Any(n => n.Name == name && n.Key != key))
+        {
             name += "_" + CatalogMerger.StableSuffix(key);
+        }
+
         return name;
     }
 }

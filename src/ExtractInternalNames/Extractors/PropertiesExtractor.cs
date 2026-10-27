@@ -30,7 +30,9 @@ internal sealed class PropertiesExtractor : INameExtractor
                     ExtractionContext.Add(properties, setKey + ":" + property.PropId, property.Name, property.Name);
             }
             if (sets.Names.Count == 0 || properties.Names.Count == 0)
+            {
                 throw new InvalidOperationException($"No standard properties were returned for {pair.Item1}.");
+            }
         }
         return groups;
     }

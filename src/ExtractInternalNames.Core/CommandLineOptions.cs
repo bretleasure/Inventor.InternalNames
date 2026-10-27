@@ -18,7 +18,11 @@ public sealed class CommandLineOptions
     public static string FindRepository(string start)
     {
         for (var directory = new DirectoryInfo(start); directory != null; directory = directory.Parent)
-            if (File.Exists(Path.Combine(directory.FullName, "Inventor.InternalNames.sln"))) return directory.FullName;
+            if (File.Exists(Path.Combine(directory.FullName, "Inventor.InternalNames.sln")))
+            {
+                return directory.FullName;
+            }
+
         return null;
     }
 }

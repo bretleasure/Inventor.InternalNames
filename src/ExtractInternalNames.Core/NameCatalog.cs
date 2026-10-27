@@ -31,7 +31,10 @@ public sealed class NameCatalog
     {
         var document = XDocument.Load(path);
         if (document.Root?.Name != "names" || (string)document.Root.Attribute("version") != "1")
+        {
             throw new InvalidDataException("Unsupported name catalog format.");
+        }
+
         var catalog = new NameCatalog();
         foreach (var element in document.Root.Elements("group"))
         {
@@ -57,7 +60,10 @@ public sealed class NameCatalog
     {
         var value = ReadAttribute(element, attribute);
         if (value == null || (!allowEmpty && string.IsNullOrWhiteSpace(value)))
+        {
             throw new InvalidDataException($"Missing {attribute} on {element.Name}.");
+        }
+
         return value;
     }
 
@@ -80,7 +86,11 @@ public sealed class NameCatalog
             foreach (var name in group.Names.OrderBy(n => n.Name, StringComparer.Ordinal))
             {
                 var entry = new XElement("name", new XAttribute("name", name.Name), StringAttribute("value", name.Value));
-                if (name.Key != null) entry.Add(StringAttribute("key", name.Key));
+                if (name.Key != null)
+                {
+                    entry.Add(StringAttribute("key", name.Key));
+                }
+
                 element.Add(entry);
             }
             root.Add(element);
@@ -90,28 +100,45 @@ public sealed class NameCatalog
 
     public void Validate()
     {
-        if (Groups.Count == 0) throw new InvalidDataException("The catalog has no groups.");
+        if (Groups.Count == 0)
+        {
+            throw new InvalidDataException("The catalog has no groups.");
+        }
+
         var identities = new HashSet<string>(StringComparer.Ordinal);
         var types = new HashSet<string>(StringComparer.Ordinal);
         foreach (var group in Groups)
         {
             SafePath.ValidateRelative(group.File);
             if (!group.File.EndsWith(".cs", StringComparison.OrdinalIgnoreCase))
+            {
                 throw new InvalidDataException("Catalog output files must end in .cs.");
+            }
+
             if (string.IsNullOrWhiteSpace(group.Category) || string.IsNullOrWhiteSpace(group.Key) ||
                 !identities.Add(group.Category + "|" + group.Key))
+            {
                 throw new InvalidDataException($"Duplicate or empty group identity: {group.Key}");
+            }
+
             if (!QualifiedIdentifier(group.Namespace) || !QualifiedIdentifier(group.Class) ||
                 !types.Add(group.Namespace + "." + group.Class))
+            {
                 throw new InvalidDataException($"Invalid or duplicate type: {group.Namespace}.{group.Class}");
+            }
+
             var members = new HashSet<string>(StringComparer.Ordinal);
             foreach (var name in group.Names)
                 if (!SyntaxFacts.IsValidIdentifier(name.Name) || name.Value == null || !members.Add(name.Name))
+                {
                     throw new InvalidDataException($"Invalid or duplicate constant: {group.Class}.{name.Name}");
+                }
         }
         foreach (var file in Groups.GroupBy(g => g.File, StringComparer.OrdinalIgnoreCase))
             if (file.Select(g => g.Namespace).Distinct(StringComparer.Ordinal).Count() != 1)
+            {
                 throw new InvalidDataException($"Multiple namespaces in output file {file.Key}.");
+            }
     }
 
     private static bool QualifiedIdentifier(string value) => !string.IsNullOrWhiteSpace(value) &&
@@ -125,6 +152,8 @@ public static class SafePath
         if (string.IsNullOrWhiteSpace(path) || path.IndexOfAny("\\:<>\"|?*".ToCharArray()) >= 0 ||
             Path.IsPathRooted(path) || path.Split('/').Any(p => p.Length == 0 || p == "." || p == ".." ||
                 p.EndsWith(".", StringComparison.Ordinal) || p.EndsWith(" ", StringComparison.Ordinal)))
+        {
             throw new InvalidDataException($"Unsafe output path: {path}");
+        }
     }
 }

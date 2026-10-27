@@ -47,7 +47,10 @@ internal sealed class ExtractionContext : IDisposable
         Document(DocumentTypeEnum.kPartDocumentObject);
         Document(DocumentTypeEnum.kAssemblyDocumentObject);
         Document(DocumentTypeEnum.kDrawingDocumentObject);
-        if (includePresentation) Document(DocumentTypeEnum.kPresentationDocumentObject);
+        if (includePresentation)
+        {
+            Document(DocumentTypeEnum.kPresentationDocumentObject);
+        }
     }
 
     public NameGroup Group(string category, string file, string classPath, string key = null,
@@ -55,7 +58,11 @@ internal sealed class ExtractionContext : IDisposable
     {
         key ??= classPath;
         var identity = category + "|" + key;
-        if (groups.TryGetValue(identity, out var existing)) return existing;
+        if (groups.TryGetValue(identity, out var existing))
+        {
+            return existing;
+        }
+
         var known = Catalog.Groups.SingleOrDefault(g => g.Category == category && g.Key == key);
         if (known != null)
         {
@@ -64,7 +71,10 @@ internal sealed class ExtractionContext : IDisposable
             namespaceName = known.Namespace;
         }
         else if (Catalog.Groups.Concat(groups.Values).Any(g => g.Namespace == namespaceName && g.Class == classPath))
+        {
             classPath += "_" + CatalogMerger.StableSuffix(key);
+        }
+
         var group = new NameGroup { Category = category, File = file, Namespace = namespaceName, Class = classPath, Key = key };
         groups.Add(identity, group);
         return group;
@@ -75,7 +85,11 @@ internal sealed class ExtractionContext : IDisposable
         var existing = group.Names.SingleOrDefault(n => n.Key == key);
         if (existing != null)
         {
-            if (existing.Value != value) throw new InvalidDataException($"Conflicting observations for {group.Class}: {key}");
+            if (existing.Value != value)
+            {
+                throw new InvalidDataException($"Conflicting observations for {group.Class}: {key}");
+            }
+
             return;
         }
         group.Names.Add(new NameEntry { Key = key, Name = suggestedName, Value = value });
@@ -88,6 +102,9 @@ internal sealed class ExtractionContext : IDisposable
             try { document.Close(true); } catch (Exception error) { errors.Add(error); }
         try { originalDocument?.Activate(); } catch (Exception error) { errors.Add(error); }
         try { Application.SilentOperation = originalSilentOperation; } catch (Exception error) { errors.Add(error); }
-        if (errors.Count != 0) throw new AggregateException("Could not restore the Inventor session after extraction.", errors);
+        if (errors.Count != 0)
+        {
+            throw new AggregateException("Could not restore the Inventor session after extraction.", errors);
+        }
     }
 }

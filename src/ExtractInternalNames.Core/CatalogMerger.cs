@@ -34,13 +34,22 @@ public static class CatalogMerger
                          .ThenBy(n => n.Value, StringComparer.Ordinal))
             {
                 if (string.IsNullOrWhiteSpace(entry.Key) || entry.Value == null)
+                {
                     throw new InvalidDataException($"Missing discovered identity or value in {group.Class}.");
+                }
+
                 var matches = group.Names.Where(n => n.Key == entry.Key).ToList();
                 if (matches.Any(n => n.Value != entry.Value))
+                {
                     throw new InvalidDataException($"Value conflict in {group.Class} for {entry.Key}. " +
-                        "Existing values are preserved; review the catalog before accepting a changed value.");
+                                                   "Existing values are preserved; review the catalog before accepting a changed value.");
+                }
+
                 if (matches.Count == 0)
+                {
                     matches = group.Names.Where(n => n.Key == null && n.Value == entry.Value).ToList();
+                }
+
                 if (matches.Count == 0)
                 {
                     var name = Identifier(entry.Name);
@@ -50,8 +59,16 @@ public static class CatalogMerger
                     foreach (var child in catalog.Groups.Where(g => g.Namespace == group.Namespace &&
                                  g.Class.StartsWith(group.Class + ".", StringComparison.Ordinal)))
                         reserved.Add(child.Class.Substring(group.Class.Length + 1).Split('.')[0]);
-                    if (reserved.Contains(name)) name += "_" + StableSuffix(entry.Key);
-                    if (reserved.Contains(name)) throw new InvalidDataException($"Name collision in {group.Class}: {name}");
+                    if (reserved.Contains(name))
+                    {
+                        name += "_" + StableSuffix(entry.Key);
+                    }
+
+                    if (reserved.Contains(name))
+                    {
+                        throw new InvalidDataException($"Name collision in {group.Class}: {name}");
+                    }
+
                     var added = new NameEntry { Name = name, Value = entry.Value, Key = entry.Key };
                     group.Names.Add(added);
                     matches.Add(added);
@@ -74,11 +91,27 @@ public static class CatalogMerger
     {
         var sb = new StringBuilder();
         foreach (var c in label ?? "")
-            if (SyntaxFacts.IsIdentifierPartCharacter(c)) sb.Append(c);
-        if (sb.Length == 0) sb.Append("Unnamed");
-        if (!SyntaxFacts.IsIdentifierStartCharacter(sb[0])) sb.Insert(0, 'e');
+            if (SyntaxFacts.IsIdentifierPartCharacter(c))
+            {
+                sb.Append(c);
+            }
+
+        if (sb.Length == 0)
+        {
+            sb.Append("Unnamed");
+        }
+
+        if (!SyntaxFacts.IsIdentifierStartCharacter(sb[0]))
+        {
+            sb.Insert(0, 'e');
+        }
+
         var identifier = sb.ToString();
-        if (SyntaxFacts.GetKeywordKind(identifier) != SyntaxKind.None) identifier = "_" + identifier;
+        if (SyntaxFacts.GetKeywordKind(identifier) != SyntaxKind.None)
+        {
+            identifier = "_" + identifier;
+        }
+
         return identifier;
     }
 

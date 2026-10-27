@@ -36,8 +36,15 @@ public static class FileTransaction
             }
             foreach (var path in changed)
             {
-                if (backups[path] != null) File.Replace(staged[path], path, null);
-                else File.Move(staged[path], path);
+                if (backups[path] != null)
+                {
+                    File.Replace(staged[path], path, null);
+                }
+                else
+                {
+                    File.Move(staged[path], path);
+                }
+
                 applied.Add(path);
             }
         }
@@ -48,20 +55,37 @@ public static class FileTransaction
             {
                 try
                 {
-                    if (backups[path] == null) File.Delete(path);
-                    else File.WriteAllBytes(path, backups[path]);
+                    if (backups[path] == null)
+                    {
+                        File.Delete(path);
+                    }
+                    else
+                    {
+                        File.WriteAllBytes(path, backups[path]);
+                    }
                 }
                 catch (Exception rollback) { failures.Add(rollback); }
             }
-            if (failures.Count > 1) throw new AggregateException("File update and rollback failed.", failures);
+            if (failures.Count > 1)
+            {
+                throw new AggregateException("File update and rollback failed.", failures);
+            }
+
             throw;
         }
         finally
         {
             foreach (var temp in staged.Values)
-                if (File.Exists(temp)) File.Delete(temp);
+                if (File.Exists(temp))
+                {
+                    File.Delete(temp);
+                }
+
             foreach (var directory in createdDirectories.AsEnumerable().Reverse())
-                if (Directory.Exists(directory) && !Directory.EnumerateFileSystemEntries(directory).Any()) Directory.Delete(directory);
+                if (Directory.Exists(directory) && !Directory.EnumerateFileSystemEntries(directory).Any())
+                {
+                    Directory.Delete(directory);
+                }
         }
     }
 }
