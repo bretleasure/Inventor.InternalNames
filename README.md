@@ -12,6 +12,8 @@ Internal names are exposed as `public const string` fields grouped in static cla
 
 Previously, these containers were structs or instantiable classes. Existing constant access remains the same, but consumers that instantiated a container or used it as a variable, parameter, or generic type argument must update their code.
 
+To regenerate the library from an Inventor installation, use the [ExtractInternalNames console utility](src/ExtractInternalNames/README.md). It preserves existing public names, discovers new constants, and updates source files without manual copying. It also supports offline regeneration from its checked-in catalog.
+
 ## 📋 Table of Contents
 
 - [Installation](#-installation)

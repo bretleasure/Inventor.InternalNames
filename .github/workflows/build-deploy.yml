@@ -38,11 +38,22 @@ jobs:
     - name: Setup NuGet
       uses: NuGet/setup-nuget@v2.0.0
 
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '10.0.x'
+
     - name: NuGet restore
       run: nuget restore
       
     - name: Build DotNet
       run: dotnet build -c Release
+
+    - name: Test offline generation
+      run: dotnet test tests/ExtractInternalNames.Core.Tests -c Release --no-build
+
+    - name: Verify generated sources match the catalog
+      run: dotnet src/ExtractInternalNames/bin/Release/net10.0-windows/ExtractInternalNames.dll --from-catalog --check
 
     - name: Pack Projects
       run: dotnet pack src/Inventor.InternalNames/Inventor.InternalNames.csproj --output artifacts --configuration Release /p:PackageVersion=${{ steps.gitversion.outputs.nugetversion }}
@@ -54,6 +65,17 @@ jobs:
         path: ./artifacts/*.nupkg
         retention-days: 1
         overwrite: true
+
+    - name: Package console extractor
+      shell: pwsh
+      run: Compress-Archive -Path src/ExtractInternalNames/bin/Release/net10.0-windows/* -DestinationPath artifacts/ExtractInternalNames-win-x64.zip
+
+    - name: Publish console extractor artifact
+      uses: actions/upload-artifact@v4.3.4
+      with:
+        name: extractor
+        path: artifacts/ExtractInternalNames-win-x64.zip
+        retention-days: 7
         
   Deploy_GitHub_Packages:
     needs: Build

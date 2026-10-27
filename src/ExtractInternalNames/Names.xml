@@ -3239,214 +3239,6 @@
     <name name="UserDefined" value="Inventor User Defined Properties" />
   </group>
   <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels" key="AssemblyRibbonPanels" />
-  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.MoldLayoutTab" key="Assembly|MoldTabLayout">
-    <name name="MoldLayout" value="MoldPanelLayout" key="MoldPanelLayout" />
-    <name name="MoldSimulation" value="MoldPanelSimulation" key="MoldPanelSimulation" />
-    <name name="RunnersAndChannels" value="MoldPanelRunnerChannel" key="MoldPanelRunnerChannel" />
-    <name name="Tools" value="MoldPanelTools" key="MoldPanelTools" />
-  </group>
-  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.CoreCavityTab" key="Assembly|MoldTabCoreCavity">
-    <name name="Insert" value="MoldPanelInsert" key="MoldPanelInsert" />
-    <name name="PartingDesign" value="MoldPanelPartingDesign" key="MoldPanelPartingDesign" />
-    <name name="PlasticPart" value="MoldPanelPlasticPart" key="MoldPanelPlasticPart" />
-    <name name="Tools" value="MoldPanelTools" key="MoldPanelTools" />
-  </group>
-  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.MoldAssemblyTab" key="Assembly|MoldTabMoldBase">
-    <name name="Author" value="MoldPanelAuthor" key="MoldPanelAuthor" />
-    <name name="Boolean" value="MoldPanelMoldBoolean" key="MoldPanelMoldBoolean" />
-    <name name="MoldAssembly" value="MoldPanelStandardComponents" key="MoldPanelStandardComponents" />
-    <name name="k2DDrawing" value="MoldPanel2DDrawing" key="MoldPanel2DDrawing" />
-  </group>
-  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.AssembleTab" key="Assembly|id_TabAssemble">
-    <name name="Component" value="id_PanelA_AssembleComponent" key="id_PanelA_AssembleComponent" />
-    <name name="Manage" value="id_PanelA_AssembleManage" key="id_PanelA_AssembleManage" />
-    <name name="Measure" value="id_PanelA_ToolsMeasure" key="id_PanelA_ToolsMeasure" />
-    <name name="Pattern" value="id_PanelA_AssemblePattern" key="id_PanelA_AssemblePattern" />
-    <name name="Position" value="id_PanelA_AssemblePosition" key="id_PanelA_AssemblePosition" />
-    <name name="Productivity" value="id_PanelA_AssembleAssemblyTools" key="id_PanelA_AssembleAssemblyTools" />
-    <name name="Relationships" value="id_PanelA_AssembleRelationships" key="id_PanelA_AssembleRelationships" />
-    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
-    <name name="Simplification" value="id_PanelAssm_Simplification" key="id_PanelAssm_Simplification" />
-    <name name="WorkFeatures" value="id_PanelA_ModelWorkFeatures" key="id_PanelA_ModelWorkFeatures" />
-    <name name="iPart_iAssembly" value="id_PanelA_AssembleIPartIAssembly" key="id_PanelA_AssembleIPartIAssembly" />
-  </group>
-  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.DesignTab" key="Assembly|id_TabDesign">
-    <name name="Analyze" value="id_PanelP_ToleranceAnalyze" key="id_PanelP_ToleranceAnalyze" />
-    <name name="Fasten" value="id_PanelA_DesignFasten" key="id_PanelA_DesignFasten" />
-    <name name="Frame" value="id_PanelA_DesignFrame" key="id_PanelA_DesignFrame" />
-    <name name="Measure" value="id_PanelA_ToolsMeasure" key="id_PanelA_ToolsMeasure" />
-    <name name="PowerTransmission" value="id_PanelA_DesignPowerTransmission" key="id_PanelA_DesignPowerTransmission" />
-    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
-    <name name="Spring" value="id_PanelA_DesignSpring" key="id_PanelA_DesignSpring" />
-  </group>
-  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.k3DModelTab" key="Assembly|id_TabModel">
-    <name name="Measure" value="id_PanelA_ToolsMeasure" key="id_PanelA_ToolsMeasure" />
-    <name name="ModifyAssembly" value="id_PanelA_ModelModify" key="id_PanelA_ModelModify" />
-    <name name="Parameters" value="id_PanelA_ModelManage" key="id_PanelA_ModelManage" />
-    <name name="Pattern" value="id_PanelA_ModelPattern" key="id_PanelA_ModelPattern" />
-    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
-    <name name="Sketch" value="id_PanelA_ModelSketch" key="id_PanelA_ModelSketch" />
-    <name name="WorkFeatures" value="id_PanelA_ModelWorkFeatures" key="id_PanelA_ModelWorkFeatures" />
-  </group>
-  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.SketchTab" key="Assembly|id_TabSketch">
-    <name name="Constrain" value="id_PanelA_2DSketchConstrain" key="id_PanelA_2DSketchConstrain" />
-    <name name="Create" value="id_PanelA_2DSketchDraw" key="id_PanelA_2DSketchDraw" />
-    <name name="Format" value="id_PanelA_2DSketchFormat" key="id_PanelA_2DSketchFormat" />
-    <name name="Insert" value="id_PanelA_2DSketchInsert" key="id_PanelA_2DSketchInsert" />
-    <name name="Measure" value="id_PanelA_ToolsMeasure" key="id_PanelA_ToolsMeasure" />
-    <name name="Modify" value="id_PanelA_2DSketchModify" key="id_PanelA_2DSketchModify" />
-    <name name="Pattern" value="id_PanelA_2DSketchPattern" key="id_PanelA_2DSketchPattern" />
-    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
-    <name name="Sketch" value="id_PanelA_ModelSketch" key="id_PanelA_ModelSketch" />
-  </group>
-  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.AnnotateTab" key="Assembly|id_TabAdskMBD">
-    <name name="Analyze" value="id_PanelAdskMBDAnalyze" key="id_PanelAdskMBDAnalyze" />
-    <name name="Export" value="id_PanelAdskMBDExport" key="id_PanelAdskMBDExport" />
-    <name name="GeneralAnnotation" value="id_PanelAdskMBDGeneralAnno" key="id_PanelAdskMBDGeneralAnno" />
-    <name name="Manage" value="id_PanelAdskMBDManage" key="id_PanelAdskMBDManage" />
-    <name name="Notes" value="id_PanelAdskMBDNotes" key="id_PanelAdskMBDNotes" />
-  </group>
-  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.WeldTab" key="Assembly|id_TabWeld">
-    <name name="Measure" value="id_PanelA_ToolsMeasure" key="id_PanelA_ToolsMeasure" />
-    <name name="Parameters" value="id_PanelA_WeldManage" key="id_PanelA_WeldManage" />
-    <name name="Pattern" value="id_PanelA_WeldPattern" key="id_PanelA_WeldPattern" />
-    <name name="PreparationAndMachining" value="id_PanelA_WeldModify" key="id_PanelA_WeldModify" />
-    <name name="Process" value="id_PanelA_WeldProcess" key="id_PanelA_WeldProcess" />
-    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
-    <name name="Sketch" value="id_PanelA_WeldSketch" key="id_PanelA_WeldSketch" />
-    <name name="Weld" value="id_PanelA_WeldWeld" key="id_PanelA_WeldWeld" />
-    <name name="WorkFeatures" value="id_PanelA_ModelWorkFeatures" key="id_PanelA_ModelWorkFeatures" />
-  </group>
-  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.WeldReturnToParentTab" key="Assembly|id_TabWeld_ReturnParent">
-    <name name="Return" value="id_PanelA_WeldReturnToParent" key="id_PanelA_WeldReturnToParent" />
-  </group>
-  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.InspectTab" key="Assembly|id_TabInspect">
-    <name name="Analyze" value="id_PanelP_ToleranceAnalyze" key="id_PanelP_ToleranceAnalyze" />
-    <name name="AutoLimits" value="id_PanelA_ToolsAutoLimits" key="id_PanelA_ToolsAutoLimits" />
-    <name name="Interference" value="id_PanelA_ToolsAnalysis" key="id_PanelA_ToolsAnalysis" />
-    <name name="Measure" value="id_PanelA_AnalysisMeasure" key="id_PanelA_AnalysisMeasure" />
-    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
-  </group>
-  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.ToolsTab" key="Assembly|id_TabTools">
-    <name name="Clipboard" value="id_PanelP_ToolsClipboard" key="id_PanelP_ToolsClipboard" />
-    <name name="Find" value="id_PanelP_ToolsFind" key="id_PanelP_ToolsFind" />
-    <name name="MaterialAndAppearance" value="id_PanelP_ToolsMaterial" key="id_PanelP_ToolsMaterial" />
-    <name name="Measure" value="id_PanelA_ToolsMeasure" key="id_PanelA_ToolsMeasure" />
-    <name name="Options" value="id_PanelP_ToolsOptions" key="id_PanelP_ToolsOptions" />
-    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
-  </group>
-  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.ManageTab" key="Assembly|id_TabManage">
-    <name name="Author" value="id_PanelA_ToolsAuthor" key="id_PanelA_ToolsAuthor" />
-    <name name="ContentCenter" value="id_PanelA_ToolsContentCenter" key="id_PanelA_ToolsContentCenter" />
-    <name name="Insert" value="id_PanelA_ToolsInsert" key="id_PanelA_ToolsInsert" />
-    <name name="Manage" value="id_PanelA_AssembleManage" key="id_PanelA_AssembleManage" />
-    <name name="PointCloud" value="id_PanelP_ToolsPointCloud" key="id_PanelP_ToolsPointCloud" />
-    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
-    <name name="StylesAndStandards" value="id_PanelA_ToolsStylesAndStandards" key="id_PanelA_ToolsStylesAndStandards" />
-    <name name="Update" value="id_PanelA_ToolsUpdate" key="id_PanelA_ToolsUpdate" />
-    <name name="iLogic" value="iLogic.RibbonPanel" key="iLogic.RibbonPanel" />
-  </group>
-  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.ViewTab" key="Assembly|id_TabView">
-    <name name="Appearance" value="id_PanelA_ViewAppearance" key="id_PanelA_ViewAppearance" />
-    <name name="Navigate" value="id_PanelC_ViewNavigate" key="id_PanelC_ViewNavigate" />
-    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
-    <name name="Visibility" value="id_PanelA_ViewVisibility" key="id_PanelA_ViewVisibility" />
-    <name name="Windows" value="id_PanelP_ViewWindow" key="id_PanelP_ViewWindow" />
-  </group>
-  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.EnvironmentsTab" key="Assembly|id_TabEnvironments">
-    <name name="Begin" value="id_Panel_EnvironmentsBegin" key="id_Panel_EnvironmentsBegin" />
-    <name name="Convert" value="id_PanelA_ConvertWeld" key="id_PanelA_ConvertWeld" />
-    <name name="Manage" value="id_PanelA_EnvironmentsAddIns" key="id_PanelA_EnvironmentsAddIns" />
-    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
-    <name name="k3DPrint" value="id_PanelP_3DPrint_Legacy" key="id_PanelP_3DPrint_Legacy" />
-  </group>
-  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.DataStandardTab" key="Assembly|AD:dataStandardAddIn:TabAssembly">
-    <name name="Copy" value="AD:dataStandardAddIn:PanelAssemblyCopy" key="AD:dataStandardAddIn:PanelAssemblyCopy" />
-    <name name="File" value="AD:dataStandardAddIn:PanelAssemblyFile" key="AD:dataStandardAddIn:PanelAssemblyFile" />
-    <name name="Settings" value="AD:dataStandardAddIn:PanelAssemblySettings" key="AD:dataStandardAddIn:PanelAssemblySettings" />
-  </group>
-  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.GetStartedTab" key="Assembly|id_GetStarted">
-    <name name="Help" value="AutodeskTutorialAddInHelpPanel" key="AutodeskTutorialAddInHelpPanel" />
-    <name name="Launch" value="id_Panel_Launch" key="id_Panel_Launch" />
-    <name name="MyHome" value="id_Panel_MyHome" key="id_Panel_MyHome" />
-    <name name="NewFeatures" value="id_Panel_GetStartedWhatsNew" key="id_Panel_GetStartedWhatsNew" />
-    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
-  </group>
-  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.VaultTab" key="Assembly|id_TabVault">
-    <name name="Access" value="id_PanelZ_VaultAccess" key="id_PanelZ_VaultAccess" />
-    <name name="Control" value="id_PanelZ_VaultControl" key="id_PanelZ_VaultControl" />
-    <name name="FileStatus" value="id_PanelZ_VaultStatusUpgrade" key="id_PanelZ_VaultStatusUpgrade" />
-    <name name="Find" value="id_PanelZ_VaultFind" key="id_PanelZ_VaultFind" />
-  </group>
-  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.CollaborateTab" key="Assembly|id_OnlineTab">
-    <name name="DataManagement" value="id_PanelP_PDMAndPLM" key="id_PanelP_PDMAndPLM" />
-    <name name="Share" value="id_Panel_OnlineDocument" key="id_Panel_OnlineDocument" />
-    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
-    <name name="Web" value="id_PanelP_ToolsWebTools" key="id_PanelP_ToolsWebTools" />
-  </group>
-  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.ElectromechanicalTab" key="Assembly|id_TabMechatronics">
-    <name name="Setup" value="id_PanelA_Mechatronics" key="id_PanelA_Mechatronics" />
-  </group>
-  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.Exit2DSketchTab" key="Assembly|id_TabSketch_Exit">
-    <name name="Exit" value="id_PanelA_2DSketchExit" key="id_PanelA_2DSketchExit" />
-  </group>
-  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.ModeTab" key="Assembly|id_TabExpressMode">
-    <name name="Express" value="id_PanelA_AssembleExpress" key="id_PanelA_AssembleExpress" />
-  </group>
-  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.TubeAndPipeTab" key="Assembly|id_TabTube_Pipe">
-    <name name="Component" value="id_PanelA_TubePipeComponent" key="id_PanelA_TubePipeComponent" />
-    <name name="Content" value="id_PanelA_TubePipeContentCenter" key="id_PanelA_TubePipeContentCenter" />
-    <name name="Manage" value="id_PanelA_TubePipeManage" key="id_PanelA_TubePipeManage" />
-    <name name="Parameters" value="id_PanelP_ToolsParameters" key="id_PanelP_ToolsParameters" />
-    <name name="Position" value="id_PanelA_TubePipePosition" key="id_PanelA_TubePipePosition" />
-    <name name="Relationships" value="id_PanelA_TubePipeRelationships" key="id_PanelA_TubePipeRelationships" />
-    <name name="Run" value="id_PanelA_TubePipeRoute" key="id_PanelA_TubePipeRoute" />
-    <name name="iPart_iAssembly" value="id_PanelA_TubePipeIPartIAssembly" key="id_PanelA_TubePipeIPartIAssembly" />
-  </group>
-  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.ExitTubeAndPipeTab" key="Assembly|id_TabTube_Pipe_Exit">
-    <name name="Exit" value="id_PanelA_TubePipeExit" key="id_PanelA_TubePipeExit" />
-  </group>
-  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.PipeRunTab" key="Assembly|id_TabTube_Pipe_Run">
-    <name name="Content" value="id_PanelA_TubePipeRunContentCenter" key="id_PanelA_TubePipeRunContentCenter" />
-    <name name="Manage" value="id_PanelA_TubePipeRunManage" key="id_PanelA_TubePipeRunManage" />
-    <name name="Parameters" value="id_PanelP_ToolsParameters" key="id_PanelP_ToolsParameters" />
-    <name name="Route" value="id_PanelA_TubePipeRunCreate" key="id_PanelA_TubePipeRunCreate" />
-  </group>
-  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.ExitTubeAndPipeRunTab" key="Assembly|id_TabTube_Pipe_Run_Exit">
-    <name name="Exit" value="id_PanelA_TubePipeRunExit" key="id_PanelA_TubePipeRunExit" />
-  </group>
-  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.CableAndHarnessTab" key="Assembly|id_TabCable_Harness">
-    <name name="Create" value="id_PanelA_CableHarnessCreate" key="id_PanelA_CableHarnessCreate" />
-    <name name="Manage" value="id_PanelA_CableHarnessManage" key="id_PanelA_CableHarnessManage" />
-    <name name="Route" value="id_PanelA_CableHarnessRoute" key="id_PanelA_CableHarnessRoute" />
-    <name name="Visibility" value="id_PanelA_CableHarnessVisibility" key="id_PanelA_CableHarnessVisibility" />
-  </group>
-  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.ExitCableAndHarnessTab" key="Assembly|id_TabCable_Harness_Exit">
-    <name name="Exit" value="id_PanelA_CableHarnessExit" key="id_PanelA_CableHarnessExit" />
-  </group>
-  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.RenderTab" key="Assembly|id_TabRender">
-    <name name="Animate" value="id_PanelA_StudioAnimate" key="id_PanelA_StudioAnimate" />
-    <name name="Manage" value="id_PanelA_StudioManage" key="id_PanelA_StudioManage" />
-    <name name="Render" value="id_PanelA_StudioRender" key="id_PanelA_StudioRender" />
-    <name name="Scene" value="id_PanelA_StudioScene" key="id_PanelA_StudioScene" />
-  </group>
-  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.ExitStudioTab" key="Assembly|id_TabRender_Exit">
-    <name name="Exit" value="id_PanelA_StudioExit" key="id_PanelA_StudioExit" />
-  </group>
-  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.DynamicSimulationTab" key="Assembly|id_TabSimulation">
-    <name name="Animate" value="id_PanelA_SimulationAnimate" key="id_PanelA_SimulationAnimate" />
-    <name name="Joint" value="id_PanelA_SimulationJoint" key="id_PanelA_SimulationJoint" />
-    <name name="Load" value="id_PanelA_SimulationLoad" key="id_PanelA_SimulationLoad" />
-    <name name="Manage" value="id_PanelA_SimulationMaterial" key="id_PanelA_SimulationMaterial" />
-    <name name="Results" value="id_PanelA_SimulationResults" key="id_PanelA_SimulationResults" />
-    <name name="StressAnalysis" value="id_PanelA_SimulationExport" key="id_PanelA_SimulationExport" />
-  </group>
-  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.ExitDynamicSimulationTab" key="Assembly|id_TabSimulation_Exit">
-    <name name="Exit" value="id_PanelA_SimulationExit" key="id_PanelA_SimulationExit" />
-  </group>
-  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.ReturnTab" key="Assembly|id_TabReturn">
-    <name name="Return" value="id_PanelA_AssmReturn" key="id_PanelA_AssmReturn" />
-  </group>
   <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.AnalysisTab" key="Assembly|id_TabAFEA">
     <name name="Constraints" value="id_PanelA_AFEAConstraints" key="id_PanelA_AFEAConstraints" />
     <name name="Contacts" value="id_PanelA_AFEAContacts" key="id_PanelA_AFEAContacts" />
@@ -3465,8 +3257,105 @@
     <name name="Settings" value="id_PanelA_AFEASettings" key="id_PanelA_AFEASettings" />
     <name name="Solve" value="id_PanelA_AFEASolve" key="id_PanelA_AFEASolve" />
   </group>
+  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.AnnotateTab" key="Assembly|id_TabAdskMBD">
+    <name name="Analyze" value="id_PanelAdskMBDAnalyze" key="id_PanelAdskMBDAnalyze" />
+    <name name="Export" value="id_PanelAdskMBDExport" key="id_PanelAdskMBDExport" />
+    <name name="GeneralAnnotation" value="id_PanelAdskMBDGeneralAnno" key="id_PanelAdskMBDGeneralAnno" />
+    <name name="Manage" value="id_PanelAdskMBDManage" key="id_PanelAdskMBDManage" />
+    <name name="Notes" value="id_PanelAdskMBDNotes" key="id_PanelAdskMBDNotes" />
+  </group>
+  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.AssembleTab" key="Assembly|id_TabAssemble">
+    <name name="Component" value="id_PanelA_AssembleComponent" key="id_PanelA_AssembleComponent" />
+    <name name="Manage" value="id_PanelA_AssembleManage" key="id_PanelA_AssembleManage" />
+    <name name="Measure" value="id_PanelA_ToolsMeasure" key="id_PanelA_ToolsMeasure" />
+    <name name="Pattern" value="id_PanelA_AssemblePattern" key="id_PanelA_AssemblePattern" />
+    <name name="Position" value="id_PanelA_AssemblePosition" key="id_PanelA_AssemblePosition" />
+    <name name="Productivity" value="id_PanelA_AssembleAssemblyTools" key="id_PanelA_AssembleAssemblyTools" />
+    <name name="Relationships" value="id_PanelA_AssembleRelationships" key="id_PanelA_AssembleRelationships" />
+    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
+    <name name="Simplification" value="id_PanelAssm_Simplification" key="id_PanelAssm_Simplification" />
+    <name name="WorkFeatures" value="id_PanelA_ModelWorkFeatures" key="id_PanelA_ModelWorkFeatures" />
+    <name name="iPart_iAssembly" value="id_PanelA_AssembleIPartIAssembly" key="id_PanelA_AssembleIPartIAssembly" />
+  </group>
+  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.BIMContentTab" key="Assembly|id_TabAECExchange">
+    <name name="Author" value="id_PanelA_AECExchangeAuthor" key="id_PanelA_AECExchangeAuthor" />
+    <name name="MEPConnectors" value="id_PanelA_AECExchangeConnectors" key="id_PanelA_AECExchangeConnectors" />
+    <name name="Publish" value="id_PanelA_AECExchangePublish" key="id_PanelA_AECExchangePublish" />
+    <name name="Simplify" value="id_PanelA_AECExchangeSimplify" key="id_PanelA_AECExchangeSimplify" />
+  </group>
+  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.CableAndHarnessTab" key="Assembly|id_TabCable_Harness">
+    <name name="Create" value="id_PanelA_CableHarnessCreate" key="id_PanelA_CableHarnessCreate" />
+    <name name="Manage" value="id_PanelA_CableHarnessManage" key="id_PanelA_CableHarnessManage" />
+    <name name="Route" value="id_PanelA_CableHarnessRoute" key="id_PanelA_CableHarnessRoute" />
+    <name name="Visibility" value="id_PanelA_CableHarnessVisibility" key="id_PanelA_CableHarnessVisibility" />
+  </group>
+  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.CollaborateTab" key="Assembly|id_OnlineTab">
+    <name name="DataManagement" value="id_PanelP_PDMAndPLM" key="id_PanelP_PDMAndPLM" />
+    <name name="Share" value="id_Panel_OnlineDocument" key="id_Panel_OnlineDocument" />
+    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
+    <name name="Web" value="id_PanelP_ToolsWebTools" key="id_PanelP_ToolsWebTools" />
+  </group>
+  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.CoreCavityTab" key="Assembly|MoldTabCoreCavity">
+    <name name="Insert" value="MoldPanelInsert" key="MoldPanelInsert" />
+    <name name="PartingDesign" value="MoldPanelPartingDesign" key="MoldPanelPartingDesign" />
+    <name name="PlasticPart" value="MoldPanelPlasticPart" key="MoldPanelPlasticPart" />
+    <name name="Tools" value="MoldPanelTools" key="MoldPanelTools" />
+  </group>
+  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.DataStandardTab" key="Assembly|AD:dataStandardAddIn:TabAssembly">
+    <name name="Copy" value="AD:dataStandardAddIn:PanelAssemblyCopy" key="AD:dataStandardAddIn:PanelAssemblyCopy" />
+    <name name="File" value="AD:dataStandardAddIn:PanelAssemblyFile" key="AD:dataStandardAddIn:PanelAssemblyFile" />
+    <name name="Settings" value="AD:dataStandardAddIn:PanelAssemblySettings" key="AD:dataStandardAddIn:PanelAssemblySettings" />
+  </group>
+  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.DesignTab" key="Assembly|id_TabDesign">
+    <name name="Analyze" value="id_PanelP_ToleranceAnalyze" key="id_PanelP_ToleranceAnalyze" />
+    <name name="Fasten" value="id_PanelA_DesignFasten" key="id_PanelA_DesignFasten" />
+    <name name="Frame" value="id_PanelA_DesignFrame" key="id_PanelA_DesignFrame" />
+    <name name="Measure" value="id_PanelA_ToolsMeasure" key="id_PanelA_ToolsMeasure" />
+    <name name="PowerTransmission" value="id_PanelA_DesignPowerTransmission" key="id_PanelA_DesignPowerTransmission" />
+    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
+    <name name="Spring" value="id_PanelA_DesignSpring" key="id_PanelA_DesignSpring" />
+  </group>
+  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.DynamicSimulationTab" key="Assembly|id_TabSimulation">
+    <name name="Animate" value="id_PanelA_SimulationAnimate" key="id_PanelA_SimulationAnimate" />
+    <name name="Joint" value="id_PanelA_SimulationJoint" key="id_PanelA_SimulationJoint" />
+    <name name="Load" value="id_PanelA_SimulationLoad" key="id_PanelA_SimulationLoad" />
+    <name name="Manage" value="id_PanelA_SimulationMaterial" key="id_PanelA_SimulationMaterial" />
+    <name name="Results" value="id_PanelA_SimulationResults" key="id_PanelA_SimulationResults" />
+    <name name="StressAnalysis" value="id_PanelA_SimulationExport" key="id_PanelA_SimulationExport" />
+  </group>
+  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.ElectromechanicalTab" key="Assembly|id_TabMechatronics">
+    <name name="Setup" value="id_PanelA_Mechatronics" key="id_PanelA_Mechatronics" />
+  </group>
+  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.EnvironmentsTab" key="Assembly|id_TabEnvironments">
+    <name name="Begin" value="id_Panel_EnvironmentsBegin" key="id_Panel_EnvironmentsBegin" />
+    <name name="Convert" value="id_PanelA_ConvertWeld" key="id_PanelA_ConvertWeld" />
+    <name name="Manage" value="id_PanelA_EnvironmentsAddIns" key="id_PanelA_EnvironmentsAddIns" />
+    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
+    <name name="k3DPrint" value="id_PanelP_3DPrint_Legacy" key="id_PanelP_3DPrint_Legacy" />
+  </group>
+  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.Exit2DSketchTab" key="Assembly|id_TabSketch_Exit">
+    <name name="Exit" value="id_PanelA_2DSketchExit" key="id_PanelA_2DSketchExit" />
+  </group>
+  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.ExitCableAndHarnessTab" key="Assembly|id_TabCable_Harness_Exit">
+    <name name="Exit" value="id_PanelA_CableHarnessExit" key="id_PanelA_CableHarnessExit" />
+  </group>
+  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.ExitDynamicSimulationTab" key="Assembly|id_TabSimulation_Exit">
+    <name name="Exit" value="id_PanelA_SimulationExit" key="id_PanelA_SimulationExit" />
+  </group>
+  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.ExitFrameAnalysisTab" key="Assembly|id_TabIFA_Exit">
+    <name name="Exit" value="id_PanelA_IFAExit" key="id_PanelA_IFAExit" />
+  </group>
   <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.ExitStressAnalysisTab" key="Assembly|id_TabAFEA_Exit">
     <name name="Exit" value="id_PanelA_AFEAExit" key="id_PanelA_AFEAExit" />
+  </group>
+  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.ExitStudioTab" key="Assembly|id_TabRender_Exit">
+    <name name="Exit" value="id_PanelA_StudioExit" key="id_PanelA_StudioExit" />
+  </group>
+  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.ExitTubeAndPipeRunTab" key="Assembly|id_TabTube_Pipe_Run_Exit">
+    <name name="Exit" value="id_PanelA_TubePipeRunExit" key="id_PanelA_TubePipeRunExit" />
+  </group>
+  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.ExitTubeAndPipeTab" key="Assembly|id_TabTube_Pipe_Exit">
+    <name name="Exit" value="id_PanelA_TubePipeExit" key="id_PanelA_TubePipeExit" />
   </group>
   <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.FrameAnalysisTab" key="Assembly|id_TabIFA">
     <name name="Beams" value="id_PanelA_IFAProperties" key="id_PanelA_IFAProperties" />
@@ -3480,14 +3369,125 @@
     <name name="Settings" value="id_PanelA_IFA_Settings" key="id_PanelA_IFA_Settings" />
     <name name="Solve" value="id_PanelA_IFA_Solve" key="id_PanelA_IFA_Solve" />
   </group>
-  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.ExitFrameAnalysisTab" key="Assembly|id_TabIFA_Exit">
-    <name name="Exit" value="id_PanelA_IFAExit" key="id_PanelA_IFAExit" />
+  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.GetStartedTab" key="Assembly|id_GetStarted">
+    <name name="Help" value="AutodeskTutorialAddInHelpPanel" key="AutodeskTutorialAddInHelpPanel" />
+    <name name="Launch" value="id_Panel_Launch" key="id_Panel_Launch" />
+    <name name="MyHome" value="id_Panel_MyHome" key="id_Panel_MyHome" />
+    <name name="NewFeatures" value="id_Panel_GetStartedWhatsNew" key="id_Panel_GetStartedWhatsNew" />
+    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
   </group>
-  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.BIMContentTab" key="Assembly|id_TabAECExchange">
-    <name name="Author" value="id_PanelA_AECExchangeAuthor" key="id_PanelA_AECExchangeAuthor" />
-    <name name="MEPConnectors" value="id_PanelA_AECExchangeConnectors" key="id_PanelA_AECExchangeConnectors" />
-    <name name="Publish" value="id_PanelA_AECExchangePublish" key="id_PanelA_AECExchangePublish" />
-    <name name="Simplify" value="id_PanelA_AECExchangeSimplify" key="id_PanelA_AECExchangeSimplify" />
+  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.InspectTab" key="Assembly|id_TabInspect">
+    <name name="Analyze" value="id_PanelP_ToleranceAnalyze" key="id_PanelP_ToleranceAnalyze" />
+    <name name="AutoLimits" value="id_PanelA_ToolsAutoLimits" key="id_PanelA_ToolsAutoLimits" />
+    <name name="Interference" value="id_PanelA_ToolsAnalysis" key="id_PanelA_ToolsAnalysis" />
+    <name name="Measure" value="id_PanelA_AnalysisMeasure" key="id_PanelA_AnalysisMeasure" />
+    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
+  </group>
+  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.ManageTab" key="Assembly|id_TabManage">
+    <name name="Author" value="id_PanelA_ToolsAuthor" key="id_PanelA_ToolsAuthor" />
+    <name name="ContentCenter" value="id_PanelA_ToolsContentCenter" key="id_PanelA_ToolsContentCenter" />
+    <name name="Insert" value="id_PanelA_ToolsInsert" key="id_PanelA_ToolsInsert" />
+    <name name="Manage" value="id_PanelA_AssembleManage" key="id_PanelA_AssembleManage" />
+    <name name="PointCloud" value="id_PanelP_ToolsPointCloud" key="id_PanelP_ToolsPointCloud" />
+    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
+    <name name="StylesAndStandards" value="id_PanelA_ToolsStylesAndStandards" key="id_PanelA_ToolsStylesAndStandards" />
+    <name name="Update" value="id_PanelA_ToolsUpdate" key="id_PanelA_ToolsUpdate" />
+    <name name="iLogic" value="iLogic.RibbonPanel" key="iLogic.RibbonPanel" />
+  </group>
+  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.ModeTab" key="Assembly|id_TabExpressMode">
+    <name name="Express" value="id_PanelA_AssembleExpress" key="id_PanelA_AssembleExpress" />
+  </group>
+  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.MoldAssemblyTab" key="Assembly|MoldTabMoldBase">
+    <name name="Author" value="MoldPanelAuthor" key="MoldPanelAuthor" />
+    <name name="Boolean" value="MoldPanelMoldBoolean" key="MoldPanelMoldBoolean" />
+    <name name="MoldAssembly" value="MoldPanelStandardComponents" key="MoldPanelStandardComponents" />
+    <name name="k2DDrawing" value="MoldPanel2DDrawing" key="MoldPanel2DDrawing" />
+  </group>
+  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.MoldLayoutTab" key="Assembly|MoldTabLayout">
+    <name name="MoldLayout" value="MoldPanelLayout" key="MoldPanelLayout" />
+    <name name="MoldSimulation" value="MoldPanelSimulation" key="MoldPanelSimulation" />
+    <name name="RunnersAndChannels" value="MoldPanelRunnerChannel" key="MoldPanelRunnerChannel" />
+    <name name="Tools" value="MoldPanelTools" key="MoldPanelTools" />
+  </group>
+  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.PipeRunTab" key="Assembly|id_TabTube_Pipe_Run">
+    <name name="Content" value="id_PanelA_TubePipeRunContentCenter" key="id_PanelA_TubePipeRunContentCenter" />
+    <name name="Manage" value="id_PanelA_TubePipeRunManage" key="id_PanelA_TubePipeRunManage" />
+    <name name="Parameters" value="id_PanelP_ToolsParameters" key="id_PanelP_ToolsParameters" />
+    <name name="Route" value="id_PanelA_TubePipeRunCreate" key="id_PanelA_TubePipeRunCreate" />
+  </group>
+  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.RenderTab" key="Assembly|id_TabRender">
+    <name name="Animate" value="id_PanelA_StudioAnimate" key="id_PanelA_StudioAnimate" />
+    <name name="Manage" value="id_PanelA_StudioManage" key="id_PanelA_StudioManage" />
+    <name name="Render" value="id_PanelA_StudioRender" key="id_PanelA_StudioRender" />
+    <name name="Scene" value="id_PanelA_StudioScene" key="id_PanelA_StudioScene" />
+  </group>
+  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.ReturnTab" key="Assembly|id_TabReturn">
+    <name name="Return" value="id_PanelA_AssmReturn" key="id_PanelA_AssmReturn" />
+  </group>
+  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.SketchTab" key="Assembly|id_TabSketch">
+    <name name="Constrain" value="id_PanelA_2DSketchConstrain" key="id_PanelA_2DSketchConstrain" />
+    <name name="Create" value="id_PanelA_2DSketchDraw" key="id_PanelA_2DSketchDraw" />
+    <name name="Format" value="id_PanelA_2DSketchFormat" key="id_PanelA_2DSketchFormat" />
+    <name name="Insert" value="id_PanelA_2DSketchInsert" key="id_PanelA_2DSketchInsert" />
+    <name name="Measure" value="id_PanelA_ToolsMeasure" key="id_PanelA_ToolsMeasure" />
+    <name name="Modify" value="id_PanelA_2DSketchModify" key="id_PanelA_2DSketchModify" />
+    <name name="Pattern" value="id_PanelA_2DSketchPattern" key="id_PanelA_2DSketchPattern" />
+    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
+    <name name="Sketch" value="id_PanelA_ModelSketch" key="id_PanelA_ModelSketch" />
+  </group>
+  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.ToolsTab" key="Assembly|id_TabTools">
+    <name name="Clipboard" value="id_PanelP_ToolsClipboard" key="id_PanelP_ToolsClipboard" />
+    <name name="Find" value="id_PanelP_ToolsFind" key="id_PanelP_ToolsFind" />
+    <name name="MaterialAndAppearance" value="id_PanelP_ToolsMaterial" key="id_PanelP_ToolsMaterial" />
+    <name name="Measure" value="id_PanelA_ToolsMeasure" key="id_PanelA_ToolsMeasure" />
+    <name name="Options" value="id_PanelP_ToolsOptions" key="id_PanelP_ToolsOptions" />
+    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
+  </group>
+  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.TubeAndPipeTab" key="Assembly|id_TabTube_Pipe">
+    <name name="Component" value="id_PanelA_TubePipeComponent" key="id_PanelA_TubePipeComponent" />
+    <name name="Content" value="id_PanelA_TubePipeContentCenter" key="id_PanelA_TubePipeContentCenter" />
+    <name name="Manage" value="id_PanelA_TubePipeManage" key="id_PanelA_TubePipeManage" />
+    <name name="Parameters" value="id_PanelP_ToolsParameters" key="id_PanelP_ToolsParameters" />
+    <name name="Position" value="id_PanelA_TubePipePosition" key="id_PanelA_TubePipePosition" />
+    <name name="Relationships" value="id_PanelA_TubePipeRelationships" key="id_PanelA_TubePipeRelationships" />
+    <name name="Run" value="id_PanelA_TubePipeRoute" key="id_PanelA_TubePipeRoute" />
+    <name name="iPart_iAssembly" value="id_PanelA_TubePipeIPartIAssembly" key="id_PanelA_TubePipeIPartIAssembly" />
+  </group>
+  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.VaultTab" key="Assembly|id_TabVault">
+    <name name="Access" value="id_PanelZ_VaultAccess" key="id_PanelZ_VaultAccess" />
+    <name name="Control" value="id_PanelZ_VaultControl" key="id_PanelZ_VaultControl" />
+    <name name="FileStatus" value="id_PanelZ_VaultStatusUpgrade" key="id_PanelZ_VaultStatusUpgrade" />
+    <name name="Find" value="id_PanelZ_VaultFind" key="id_PanelZ_VaultFind" />
+  </group>
+  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.ViewTab" key="Assembly|id_TabView">
+    <name name="Appearance" value="id_PanelA_ViewAppearance" key="id_PanelA_ViewAppearance" />
+    <name name="Navigate" value="id_PanelC_ViewNavigate" key="id_PanelC_ViewNavigate" />
+    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
+    <name name="Visibility" value="id_PanelA_ViewVisibility" key="id_PanelA_ViewVisibility" />
+    <name name="Windows" value="id_PanelP_ViewWindow" key="id_PanelP_ViewWindow" />
+  </group>
+  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.WeldReturnToParentTab" key="Assembly|id_TabWeld_ReturnParent">
+    <name name="Return" value="id_PanelA_WeldReturnToParent" key="id_PanelA_WeldReturnToParent" />
+  </group>
+  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.WeldTab" key="Assembly|id_TabWeld">
+    <name name="Measure" value="id_PanelA_ToolsMeasure" key="id_PanelA_ToolsMeasure" />
+    <name name="Parameters" value="id_PanelA_WeldManage" key="id_PanelA_WeldManage" />
+    <name name="Pattern" value="id_PanelA_WeldPattern" key="id_PanelA_WeldPattern" />
+    <name name="PreparationAndMachining" value="id_PanelA_WeldModify" key="id_PanelA_WeldModify" />
+    <name name="Process" value="id_PanelA_WeldProcess" key="id_PanelA_WeldProcess" />
+    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
+    <name name="Sketch" value="id_PanelA_WeldSketch" key="id_PanelA_WeldSketch" />
+    <name name="Weld" value="id_PanelA_WeldWeld" key="id_PanelA_WeldWeld" />
+    <name name="WorkFeatures" value="id_PanelA_ModelWorkFeatures" key="id_PanelA_ModelWorkFeatures" />
+  </group>
+  <group category="ribbons" file="Ribbon/AssemblyRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonPanels.k3DModelTab" key="Assembly|id_TabModel">
+    <name name="Measure" value="id_PanelA_ToolsMeasure" key="id_PanelA_ToolsMeasure" />
+    <name name="ModifyAssembly" value="id_PanelA_ModelModify" key="id_PanelA_ModelModify" />
+    <name name="Parameters" value="id_PanelA_ModelManage" key="id_PanelA_ModelManage" />
+    <name name="Pattern" value="id_PanelA_ModelPattern" key="id_PanelA_ModelPattern" />
+    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
+    <name name="Sketch" value="id_PanelA_ModelSketch" key="id_PanelA_ModelSketch" />
+    <name name="WorkFeatures" value="id_PanelA_ModelWorkFeatures" key="id_PanelA_ModelWorkFeatures" />
   </group>
   <group category="ribbons" file="Ribbon/AssemblyRibbonTabs.cs" namespace="Inventor.InternalNames.Ribbon" class="AssemblyRibbonTabs" key="AssemblyRibbonTabs">
     <name name="AddIns" value="id_AddInsTab" key="id_AddInsTab" />
@@ -3533,12 +3533,17 @@
     <name name="k3DModel" value="id_TabModel" key="id_TabModel" />
   </group>
   <group category="ribbons" file="Ribbon/DrawingRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="DrawingRibbonPanels" key="DrawingRibbonPanels" />
-  <group category="ribbons" file="Ribbon/DrawingRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="DrawingRibbonPanels.PlaceViewsTab" key="Drawing|id_TabPlaceViews">
-    <name name="Create" value="id_PanelD_PlaceViewsCreate" key="id_PanelD_PlaceViewsCreate" />
-    <name name="Modify" value="id_PanelD_PlaceViewsModify" key="id_PanelD_PlaceViewsModify" />
-    <name name="Sheets" value="id_PanelD_PlaceViewsSheets" key="id_PanelD_PlaceViewsSheets" />
+  <group category="ribbons" file="Ribbon/DrawingRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="DrawingRibbonPanels.AnnotateESKDTab" key="Drawing|id_TabAnnotateESKD">
+    <name name="Dimension" value="id_PanelD_ESKDAnnotateDimension" key="id_PanelD_ESKDAnnotateDimension" />
+    <name name="DrawingSheets" value="id_PanelD_ESKDDrawingSheets" key="id_PanelD_ESKDDrawingSheets" />
+    <name name="FeatureNotes" value="id_PanelD_ESKDAnnotateFeatureNotes" key="id_PanelD_ESKDAnnotateFeatureNotes" />
+    <name name="Format" value="id_PanelD_ESKDAnnotateFormat" key="id_PanelD_ESKDAnnotateFormat" />
+    <name name="Retrieve" value="id_PanelD_ESKDAnnotateRetrieve" key="id_PanelD_ESKDAnnotateRetrieve" />
     <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
-    <name name="Sketch" value="id_PanelD_Annotate2DSketchCreate" key="id_PanelD_Annotate2DSketchCreate" />
+    <name name="Sketch" value="id_PanelD_ESKD2DSketchCreate" key="id_PanelD_ESKD2DSketchCreate" />
+    <name name="Symbols" value="id_PanelD_ESKDAnnotateSymobols" key="id_PanelD_ESKDAnnotateSymobols" />
+    <name name="Table" value="id_PanelD_ESKDAnnotateTable" key="id_PanelD_ESKDAnnotateTable" />
+    <name name="Text" value="id_PanelD_ESKDAnnotateText" key="id_PanelD_ESKDAnnotateText" />
   </group>
   <group category="ribbons" file="Ribbon/DrawingRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="DrawingRibbonPanels.AnnotateTab" key="Drawing|id_TabAnnotate">
     <name name="Dimension" value="id_PanelD_AnnotateDimension" key="id_PanelD_AnnotateDimension" />
@@ -3551,17 +3556,72 @@
     <name name="Table" value="id_PanelD_AnnotateTable" key="id_PanelD_AnnotateTable" />
     <name name="Text" value="id_PanelD_AnnotateText" key="id_PanelD_AnnotateText" />
   </group>
-  <group category="ribbons" file="Ribbon/DrawingRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="DrawingRibbonPanels.AnnotateESKDTab" key="Drawing|id_TabAnnotateESKD">
-    <name name="Dimension" value="id_PanelD_ESKDAnnotateDimension" key="id_PanelD_ESKDAnnotateDimension" />
-    <name name="DrawingSheets" value="id_PanelD_ESKDDrawingSheets" key="id_PanelD_ESKDDrawingSheets" />
-    <name name="FeatureNotes" value="id_PanelD_ESKDAnnotateFeatureNotes" key="id_PanelD_ESKDAnnotateFeatureNotes" />
-    <name name="Format" value="id_PanelD_ESKDAnnotateFormat" key="id_PanelD_ESKDAnnotateFormat" />
-    <name name="Retrieve" value="id_PanelD_ESKDAnnotateRetrieve" key="id_PanelD_ESKDAnnotateRetrieve" />
+  <group category="ribbons" file="Ribbon/DrawingRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="DrawingRibbonPanels.CollaborateTab" key="Drawing|id_OnlineTab">
+    <name name="DataManagement" value="id_PanelP_PDMAndPLM" key="id_PanelP_PDMAndPLM" />
+    <name name="Share" value="id_Panel_OnlineDocument" key="id_Panel_OnlineDocument" />
     <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
-    <name name="Sketch" value="id_PanelD_ESKD2DSketchCreate" key="id_PanelD_ESKD2DSketchCreate" />
-    <name name="Symbols" value="id_PanelD_ESKDAnnotateSymobols" key="id_PanelD_ESKDAnnotateSymobols" />
-    <name name="Table" value="id_PanelD_ESKDAnnotateTable" key="id_PanelD_ESKDAnnotateTable" />
-    <name name="Text" value="id_PanelD_ESKDAnnotateText" key="id_PanelD_ESKDAnnotateText" />
+  </group>
+  <group category="ribbons" file="Ribbon/DrawingRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="DrawingRibbonPanels.DataStandardTab" key="Drawing|AD:dataStandardAddIn:TabDrawing">
+    <name name="Copy" value="AD:dataStandardAddIn:PanelDrawingCopy" key="AD:dataStandardAddIn:PanelDrawingCopy" />
+    <name name="File" value="AD:dataStandardAddIn:PanelDrawingFile" key="AD:dataStandardAddIn:PanelDrawingFile" />
+    <name name="Settings" value="AD:dataStandardAddIn:PanelDrawingSettings" key="AD:dataStandardAddIn:PanelDrawingSettings" />
+  </group>
+  <group category="ribbons" file="Ribbon/DrawingRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="DrawingRibbonPanels.EnvironmentsTab" key="Drawing|id_TabEnvironments">
+    <name name="Begin" value="id_Panel_EnvironmentsBegin" key="id_Panel_EnvironmentsBegin" />
+    <name name="Manage" value="id_PanelD_EnvironmentsAddIns" key="id_PanelD_EnvironmentsAddIns" />
+    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
+  </group>
+  <group category="ribbons" file="Ribbon/DrawingRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="DrawingRibbonPanels.Exit2DSketchTab" key="Drawing|id_TabSketch_Exit">
+    <name name="Exit" value="id_PanelD_2DSketchExit" key="id_PanelD_2DSketchExit" />
+  </group>
+  <group category="ribbons" file="Ribbon/DrawingRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="DrawingRibbonPanels.ExitNailboardSketchTab" key="Drawing|id_TabNailboard_Exit">
+    <name name="Exit" value="id_PanelD_NailboardExit" key="id_PanelD_NailboardExit" />
+  </group>
+  <group category="ribbons" file="Ribbon/DrawingRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="DrawingRibbonPanels.ExitReviewTab" key="Drawing|id_TabNailboard_Review">
+    <name name="Exit" value="id_PanelD_ReviewExit" key="id_PanelD_ReviewExit" />
+  </group>
+  <group category="ribbons" file="Ribbon/DrawingRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="DrawingRibbonPanels.GetStartedTab" key="Drawing|id_GetStarted">
+    <name name="Help" value="AutodeskTutorialAddInHelpPanel" key="AutodeskTutorialAddInHelpPanel" />
+    <name name="Launch" value="id_Panel_Launch" key="id_Panel_Launch" />
+    <name name="MyHome" value="id_Panel_MyHome" key="id_Panel_MyHome" />
+    <name name="NewFeatures" value="id_Panel_GetStartedWhatsNew" key="id_Panel_GetStartedWhatsNew" />
+    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
+  </group>
+  <group category="ribbons" file="Ribbon/DrawingRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="DrawingRibbonPanels.ManageTab" key="Drawing|id_TabManage">
+    <name name="ContentCenter" value="id_PanelD_ToolsContentCenter" key="id_PanelD_ToolsContentCenter" />
+    <name name="Define" value="id_PanelD_ToolsDefine" key="id_PanelD_ToolsDefine" />
+    <name name="Insert" value="id_PanelA_ToolsInsert" key="id_PanelA_ToolsInsert" />
+    <name name="Modify" value="id_Panel_ToolsModify" key="id_Panel_ToolsModify" />
+    <name name="Parameters" value="id_PanelP_ToolsParameters" key="id_PanelP_ToolsParameters" />
+    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
+    <name name="StylesAndStandards" value="id_PanelD_ToolsStylesAndStandards" key="id_PanelD_ToolsStylesAndStandards" />
+    <name name="Update" value="id_PanelP_ToolsUpdate" key="id_PanelP_ToolsUpdate" />
+    <name name="Web" value="id_PanelP_ToolsWebTools" key="id_PanelP_ToolsWebTools" />
+    <name name="iLogic" value="iLogic.RibbonPanel" key="iLogic.RibbonPanel" />
+  </group>
+  <group category="ribbons" file="Ribbon/DrawingRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="DrawingRibbonPanels.NailboardTab" key="Drawing|id_TabNailboard">
+    <name name="Create" value="id_PanelD_NailboardCreate" key="id_PanelD_NailboardCreate" />
+    <name name="Dimension" value="id_PanelD_NailboardDimension" key="id_PanelD_NailboardDimension" />
+    <name name="Edit" value="id_PanelD_NailboardEdit" key="id_PanelD_NailboardEdit" />
+    <name name="Manage" value="id_PanelD_NailboardManage" key="id_PanelD_NailboardManage" />
+    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
+  </group>
+  <group category="ribbons" file="Ribbon/DrawingRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="DrawingRibbonPanels.PlaceViewsTab" key="Drawing|id_TabPlaceViews">
+    <name name="Create" value="id_PanelD_PlaceViewsCreate" key="id_PanelD_PlaceViewsCreate" />
+    <name name="Modify" value="id_PanelD_PlaceViewsModify" key="id_PanelD_PlaceViewsModify" />
+    <name name="Sheets" value="id_PanelD_PlaceViewsSheets" key="id_PanelD_PlaceViewsSheets" />
+    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
+    <name name="Sketch" value="id_PanelD_Annotate2DSketchCreate" key="id_PanelD_Annotate2DSketchCreate" />
+  </group>
+  <group category="ribbons" file="Ribbon/DrawingRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="DrawingRibbonPanels.ReturnTab" key="Drawing|id_TabReturn">
+    <name name="Return" value="id_PanelD_DrawingReturn" key="id_PanelD_DrawingReturn" />
+  </group>
+  <group category="ribbons" file="Ribbon/DrawingRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="DrawingRibbonPanels.ReviewTab" key="Drawing|id_TabReview">
+    <name name="Create" value="id_PanelD_ReviewCreate" key="id_PanelD_ReviewCreate" />
+    <name name="Measure" value="id_PanelD_ReviewMeasure" key="id_PanelD_ReviewMeasure" />
+    <name name="Navigate" value="id_PanelD_ReviewNavigate" key="id_PanelD_ReviewNavigate" />
+    <name name="Print" value="id_PanelD_ReviewPrint" key="id_PanelD_ReviewPrint" />
+    <name name="Sheets" value="id_PanelD_PlaceViewsSheets" key="id_PanelD_PlaceViewsSheets" />
   </group>
   <group category="ribbons" file="Ribbon/DrawingRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="DrawingRibbonPanels.SketchTab" key="Drawing|id_TabSketch">
     <name name="Constrain" value="id_PanelD_2DSketchConstrain" key="id_PanelD_2DSketchConstrain" />
@@ -3580,76 +3640,16 @@
     <name name="Options" value="id_PanelP_ToolsOptions" key="id_PanelP_ToolsOptions" />
     <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
   </group>
-  <group category="ribbons" file="Ribbon/DrawingRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="DrawingRibbonPanels.ManageTab" key="Drawing|id_TabManage">
-    <name name="ContentCenter" value="id_PanelD_ToolsContentCenter" key="id_PanelD_ToolsContentCenter" />
-    <name name="Define" value="id_PanelD_ToolsDefine" key="id_PanelD_ToolsDefine" />
-    <name name="Insert" value="id_PanelA_ToolsInsert" key="id_PanelA_ToolsInsert" />
-    <name name="Modify" value="id_Panel_ToolsModify" key="id_Panel_ToolsModify" />
-    <name name="Parameters" value="id_PanelP_ToolsParameters" key="id_PanelP_ToolsParameters" />
-    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
-    <name name="StylesAndStandards" value="id_PanelD_ToolsStylesAndStandards" key="id_PanelD_ToolsStylesAndStandards" />
-    <name name="Update" value="id_PanelP_ToolsUpdate" key="id_PanelP_ToolsUpdate" />
-    <name name="Web" value="id_PanelP_ToolsWebTools" key="id_PanelP_ToolsWebTools" />
-    <name name="iLogic" value="iLogic.RibbonPanel" key="iLogic.RibbonPanel" />
-  </group>
-  <group category="ribbons" file="Ribbon/DrawingRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="DrawingRibbonPanels.ViewTab" key="Drawing|id_TabView">
-    <name name="Navigate" value="id_PanelD_ViewNavigate" key="id_PanelD_ViewNavigate" />
-    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
-    <name name="Windows" value="id_PanelP_ViewWindow" key="id_PanelP_ViewWindow" />
-  </group>
-  <group category="ribbons" file="Ribbon/DrawingRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="DrawingRibbonPanels.EnvironmentsTab" key="Drawing|id_TabEnvironments">
-    <name name="Begin" value="id_Panel_EnvironmentsBegin" key="id_Panel_EnvironmentsBegin" />
-    <name name="Manage" value="id_PanelD_EnvironmentsAddIns" key="id_PanelD_EnvironmentsAddIns" />
-    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
-  </group>
-  <group category="ribbons" file="Ribbon/DrawingRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="DrawingRibbonPanels.NailboardTab" key="Drawing|id_TabNailboard">
-    <name name="Create" value="id_PanelD_NailboardCreate" key="id_PanelD_NailboardCreate" />
-    <name name="Dimension" value="id_PanelD_NailboardDimension" key="id_PanelD_NailboardDimension" />
-    <name name="Edit" value="id_PanelD_NailboardEdit" key="id_PanelD_NailboardEdit" />
-    <name name="Manage" value="id_PanelD_NailboardManage" key="id_PanelD_NailboardManage" />
-    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
-  </group>
-  <group category="ribbons" file="Ribbon/DrawingRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="DrawingRibbonPanels.DataStandardTab" key="Drawing|AD:dataStandardAddIn:TabDrawing">
-    <name name="Copy" value="AD:dataStandardAddIn:PanelDrawingCopy" key="AD:dataStandardAddIn:PanelDrawingCopy" />
-    <name name="File" value="AD:dataStandardAddIn:PanelDrawingFile" key="AD:dataStandardAddIn:PanelDrawingFile" />
-    <name name="Settings" value="AD:dataStandardAddIn:PanelDrawingSettings" key="AD:dataStandardAddIn:PanelDrawingSettings" />
-  </group>
-  <group category="ribbons" file="Ribbon/DrawingRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="DrawingRibbonPanels.GetStartedTab" key="Drawing|id_GetStarted">
-    <name name="Help" value="AutodeskTutorialAddInHelpPanel" key="AutodeskTutorialAddInHelpPanel" />
-    <name name="Launch" value="id_Panel_Launch" key="id_Panel_Launch" />
-    <name name="MyHome" value="id_Panel_MyHome" key="id_Panel_MyHome" />
-    <name name="NewFeatures" value="id_Panel_GetStartedWhatsNew" key="id_Panel_GetStartedWhatsNew" />
-    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
-  </group>
   <group category="ribbons" file="Ribbon/DrawingRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="DrawingRibbonPanels.VaultTab" key="Drawing|id_TabVault">
     <name name="Access" value="id_PanelZ_VaultAccess" key="id_PanelZ_VaultAccess" />
     <name name="Control" value="id_PanelZ_VaultControl" key="id_PanelZ_VaultControl" />
     <name name="FileStatus" value="id_PanelZ_VaultStatusUpgrade" key="id_PanelZ_VaultStatusUpgrade" />
     <name name="Find" value="id_PanelZ_VaultFind" key="id_PanelZ_VaultFind" />
   </group>
-  <group category="ribbons" file="Ribbon/DrawingRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="DrawingRibbonPanels.CollaborateTab" key="Drawing|id_OnlineTab">
-    <name name="DataManagement" value="id_PanelP_PDMAndPLM" key="id_PanelP_PDMAndPLM" />
-    <name name="Share" value="id_Panel_OnlineDocument" key="id_Panel_OnlineDocument" />
+  <group category="ribbons" file="Ribbon/DrawingRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="DrawingRibbonPanels.ViewTab" key="Drawing|id_TabView">
+    <name name="Navigate" value="id_PanelD_ViewNavigate" key="id_PanelD_ViewNavigate" />
     <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
-  </group>
-  <group category="ribbons" file="Ribbon/DrawingRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="DrawingRibbonPanels.Exit2DSketchTab" key="Drawing|id_TabSketch_Exit">
-    <name name="Exit" value="id_PanelD_2DSketchExit" key="id_PanelD_2DSketchExit" />
-  </group>
-  <group category="ribbons" file="Ribbon/DrawingRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="DrawingRibbonPanels.ExitNailboardSketchTab" key="Drawing|id_TabNailboard_Exit">
-    <name name="Exit" value="id_PanelD_NailboardExit" key="id_PanelD_NailboardExit" />
-  </group>
-  <group category="ribbons" file="Ribbon/DrawingRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="DrawingRibbonPanels.ReviewTab" key="Drawing|id_TabReview">
-    <name name="Create" value="id_PanelD_ReviewCreate" key="id_PanelD_ReviewCreate" />
-    <name name="Measure" value="id_PanelD_ReviewMeasure" key="id_PanelD_ReviewMeasure" />
-    <name name="Navigate" value="id_PanelD_ReviewNavigate" key="id_PanelD_ReviewNavigate" />
-    <name name="Print" value="id_PanelD_ReviewPrint" key="id_PanelD_ReviewPrint" />
-    <name name="Sheets" value="id_PanelD_PlaceViewsSheets" key="id_PanelD_PlaceViewsSheets" />
-  </group>
-  <group category="ribbons" file="Ribbon/DrawingRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="DrawingRibbonPanels.ExitReviewTab" key="Drawing|id_TabNailboard_Review">
-    <name name="Exit" value="id_PanelD_ReviewExit" key="id_PanelD_ReviewExit" />
-  </group>
-  <group category="ribbons" file="Ribbon/DrawingRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="DrawingRibbonPanels.ReturnTab" key="Drawing|id_TabReturn">
-    <name name="Return" value="id_PanelD_DrawingReturn" key="id_PanelD_DrawingReturn" />
+    <name name="Windows" value="id_PanelP_ViewWindow" key="id_PanelP_ViewWindow" />
   </group>
   <group category="ribbons" file="Ribbon/DrawingRibbonTabs.cs" namespace="Inventor.InternalNames.Ribbon" class="DrawingRibbonTabs" key="DrawingRibbonTabs">
     <name name="AddIns" value="id_AddInsTab" key="id_AddInsTab" />
@@ -3684,6 +3684,163 @@
     <name name="iFeatures" value="iFeatures" key="iFeatures" />
   </group>
   <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels" key="PartRibbonPanels" />
+  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.AnalysisTab" key="Part|id_TabAFEA">
+    <name name="Constraints" value="id_PanelA_AFEAConstraints" key="id_PanelA_AFEAConstraints" />
+    <name name="Contacts" value="id_PanelA_AFEAContacts" key="id_PanelA_AFEAContacts" />
+    <name name="Display" value="id_PanelA_AFEAResultDisplay" key="id_PanelA_AFEAResultDisplay" />
+    <name name="Export" value="id_PanelA_AFEAExport" key="id_PanelA_AFEAExport" />
+    <name name="GoalsAndCriteria" value="id_PanelA_AFEAGoalsCriteria" key="id_PanelA_AFEAGoalsCriteria" />
+    <name name="Guide" value="id_PanelA_AFEAGuide" key="id_PanelA_AFEAGuide" />
+    <name name="Loads" value="id_PanelA_AFEALoads" key="id_PanelA_AFEALoads" />
+    <name name="Manage" value="id_PanelA_AFEAManage" key="id_PanelA_AFEAManage" />
+    <name name="Material" value="id_PanelA_AFEAMaterial" key="id_PanelA_AFEAMaterial" />
+    <name name="Mesh" value="id_PanelA_AFEAMesh" key="id_PanelA_AFEAMesh" />
+    <name name="Prepare" value="id_PanelA_AFEAPrepare" key="id_PanelA_AFEAPrepare" />
+    <name name="Report" value="id_PanelA_AFEAReport" key="id_PanelA_AFEAReport" />
+    <name name="Result" value="id_PanelA_AFEAResult" key="id_PanelA_AFEAResult" />
+    <name name="Run" value="id_PanelA_AFEARun" key="id_PanelA_AFEARun" />
+    <name name="Settings" value="id_PanelA_AFEASettings" key="id_PanelA_AFEASettings" />
+    <name name="Solve" value="id_PanelA_AFEASolve" key="id_PanelA_AFEASolve" />
+  </group>
+  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.AnnotateTab" key="Part|id_TabAdskMBD">
+    <name name="Analyze" value="id_PanelAdskMBDAnalyze" key="id_PanelAdskMBDAnalyze" />
+    <name name="Export" value="id_PanelAdskMBDExport" key="id_PanelAdskMBDExport" />
+    <name name="GeneralAnnotation" value="id_PanelAdskMBDGeneralAnno" key="id_PanelAdskMBDGeneralAnno" />
+    <name name="GeometricAnnotation" value="id_PanelAdskMBDGeometricAnno" key="id_PanelAdskMBDGeometricAnno" />
+    <name name="Manage" value="id_PanelAdskMBDManage" key="id_PanelAdskMBDManage" />
+    <name name="Notes" value="id_PanelAdskMBDNotes" key="id_PanelAdskMBDNotes" />
+  </group>
+  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.BIMContentTab" key="Part|id_TabAECExchange">
+    <name name="Author" value="id_PanelA_AECExchangeAuthor" key="id_PanelA_AECExchangeAuthor" />
+    <name name="MEPConnectors" value="id_PanelA_AECExchangeConnectors" key="id_PanelA_AECExchangeConnectors" />
+    <name name="Publish" value="id_PanelA_AECExchangePublish" key="id_PanelA_AECExchangePublish" />
+  </group>
+  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.CollaborateTab" key="Part|id_OnlineTab">
+    <name name="DataManagement" value="id_PanelP_PDMAndPLM" key="id_PanelP_PDMAndPLM" />
+    <name name="Share" value="id_Panel_OnlineDocument" key="id_Panel_OnlineDocument" />
+    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
+    <name name="Web" value="id_PanelP_ToolsWebTools" key="id_PanelP_ToolsWebTools" />
+  </group>
+  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.ConstructionTab" key="Part|id_TabConstruction">
+    <name name="Manage" value="id_PanelP_ConstructionManage" key="id_PanelP_ConstructionManage" />
+    <name name="Surface" value="id_PanelP_ConstructionSurface" key="id_PanelP_ConstructionSurface" />
+  </group>
+  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.DataStandardTab" key="Part|AD:dataStandardAddIn:TabPart">
+    <name name="Copy" value="AD:dataStandardAddIn:PanelPartCopy" key="AD:dataStandardAddIn:PanelPartCopy" />
+    <name name="File" value="AD:dataStandardAddIn:PanelPartFile" key="AD:dataStandardAddIn:PanelPartFile" />
+    <name name="Settings" value="AD:dataStandardAddIn:PanelPartSettings" key="AD:dataStandardAddIn:PanelPartSettings" />
+  </group>
+  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.EditBaseSolidTab" key="Part|id_TabEditBaseSolid">
+    <name name="Manage" value="id_PanelP_ExplicitManage" key="id_PanelP_ExplicitManage" />
+    <name name="Modify" value="id_PanelP_ExplicitModify" key="id_PanelP_ExplicitModify" />
+    <name name="WorkFeatures" value="id_PanelA_ModelWorkFeatures" key="id_PanelA_ModelWorkFeatures" />
+  </group>
+  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.EnvironmentsTab" key="Part|id_TabEnvironments">
+    <name name="Begin" value="id_Panel_EnvironmentsBegin" key="id_Panel_EnvironmentsBegin" />
+    <name name="Convert" value="id_PanelP_ConvertSheetMetal" key="id_PanelP_ConvertSheetMetal" />
+    <name name="Fusion360" value="id_Fusion_Interop" key="id_Fusion_Interop" />
+    <name name="Manage" value="id_PanelP_EnvironmentsAddIns" key="id_PanelP_EnvironmentsAddIns" />
+    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
+    <name name="k3DPrint" value="id_PanelP_3DPrint" key="id_PanelP_3DPrint" />
+  </group>
+  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.Exit2DSketchTab" key="Part|id_TabSketch_Exit">
+    <name name="Exit" value="id_PanelP_2DSketchExit" key="id_PanelP_2DSketchExit" />
+  </group>
+  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.Exit3DPrintTab" key="Part|id_TabPrint3D_Exit">
+    <name name="Exit" value="id_PanelP_3DPrintExit" key="id_PanelP_3DPrintExit" />
+  </group>
+  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.Exit3DSketchTab" key="Part|id_Tab3DSketch_Exit">
+    <name name="Exit" value="id_PanelP_3DSketchExit" key="id_PanelP_3DSketchExit" />
+  </group>
+  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.ExitBaseSolidTab" key="Part|id_TabEditBaseSolid_Exit">
+    <name name="Exit" value="id_PanelP_ExplicitExit" key="id_PanelP_ExplicitExit" />
+  </group>
+  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.ExitConstructionTab" key="Part|id_TabConstruction_Exit">
+    <name name="Exit" value="id_PanelP_ConstructionExit" key="id_PanelP_ConstructionExit" />
+  </group>
+  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.ExitRepairTab" key="Part|id_TabSurfaceRepair_Exit">
+    <name name="Exit" value="id_PanelP_SurfaceRepairExit" key="id_PanelP_SurfaceRepairExit" />
+  </group>
+  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.ExitRouteTab" key="Part|id_TabRoute_Exit">
+    <name name="Exit" value="id_PanelP_RouteExit" key="id_PanelP_RouteExit" />
+  </group>
+  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.ExitStressAnalysisAFEATab" key="Part|id_TabAFEA_Exit">
+    <name name="Exit" value="id_PanelP_AFEAExit" key="id_PanelP_AFEAExit" />
+  </group>
+  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.ExitStressAnalysisTab" key="Part|id_TabStressAnalysis_Exit">
+    <name name="Exit" value="id_PanelP_StressAnalysisExit" key="id_PanelP_StressAnalysisExit" />
+  </group>
+  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.ExitStudioTab" key="Part|id_TabRender_Exit">
+    <name name="Exit" value="id_PanelP_StuidoExit" key="id_PanelP_StuidoExit" />
+  </group>
+  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.ExitTab" key="Part|id_TabTSpline_Exit">
+    <name name="Exit" value="id_PanelP_TSplineExit" key="id_PanelP_TSplineExit" />
+  </group>
+  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.FlatPatternTab" key="Part|id_TabFlatPattern">
+    <name name="Create" value="id_PanelP_FlatPatternCreate" key="id_PanelP_FlatPatternCreate" />
+    <name name="FoldedPart" value="id_PanelP_FlatPatternExit" key="id_PanelP_FlatPatternExit" />
+    <name name="Insert" value="id_PanelP_FlatPatternInsert" key="id_PanelP_FlatPatternInsert" />
+    <name name="Manage" value="id_PanelP_FlatPatternManage" key="id_PanelP_FlatPatternManage" />
+    <name name="Modify" value="id_PanelP_FlatPatternModify" key="id_PanelP_FlatPatternModify" />
+    <name name="Pattern" value="id_PanelP_FlatPatternPattern" key="id_PanelP_FlatPatternPattern" />
+    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
+    <name name="Sketch" value="id_PanelP_Model2DSketchCreate" key="id_PanelP_Model2DSketchCreate" />
+    <name name="WorkFeatures" value="id_PanelA_ModelWorkFeatures" key="id_PanelA_ModelWorkFeatures" />
+  </group>
+  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.FreeformTab" key="Part|id_TabTSpline">
+    <name name="Check" value="id_PanelP_FreeformCheck" key="id_PanelP_FreeformCheck" />
+    <name name="CreateFreeform" value="id_PanelP_FreeformCreate" key="id_PanelP_FreeformCreate" />
+    <name name="Edit" value="id_PanelP_FreeformEdit" key="id_PanelP_FreeformEdit" />
+    <name name="Modify" value="id_PanelP_FreeformModify" key="id_PanelP_FreeformModify" />
+    <name name="Symmetry" value="id_PanelP_FreeformSymmetry" key="id_PanelP_FreeformSymmetry" />
+    <name name="Tools" value="id_PanelP_FreeformTools" key="id_PanelP_FreeformTools" />
+    <name name="WorkFeatures" value="id_PanelA_ModelWorkFeatures" key="id_PanelA_ModelWorkFeatures" />
+  </group>
+  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.GetStartedTab" key="Part|id_GetStarted">
+    <name name="Help" value="AutodeskTutorialAddInHelpPanel" key="AutodeskTutorialAddInHelpPanel" />
+    <name name="Launch" value="id_Panel_Launch" key="id_Panel_Launch" />
+    <name name="MyHome" value="id_Panel_MyHome" key="id_Panel_MyHome" />
+    <name name="NewFeatures" value="id_Panel_GetStartedWhatsNew" key="id_Panel_GetStartedWhatsNew" />
+    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
+  </group>
+  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.InspectTab" key="Part|id_TabInspect">
+    <name name="Analyze" value="id_PanelP_ToolsAnalysis" key="id_PanelP_ToolsAnalysis" />
+    <name name="AutoLimits" value="id_PanelP_ToolsAutoLimits" key="id_PanelP_ToolsAutoLimits" />
+    <name name="Measure" value="id_PanelP_AnalysisMeasure" key="id_PanelP_AnalysisMeasure" />
+    <name name="Parameters" value="id_PanelP_ToolsParameters" key="id_PanelP_ToolsParameters" />
+    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
+  </group>
+  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.ManageTab" key="Part|id_TabManage">
+    <name name="Author" value="id_PanelP_ToolsAuthor" key="id_PanelP_ToolsAuthor" />
+    <name name="ContentCenter" value="id_PanelP_ToolsContentCenter" key="id_PanelP_ToolsContentCenter" />
+    <name name="Insert" value="id_PanelP_ToolsInsert" key="id_PanelP_ToolsInsert" />
+    <name name="Layout" value="id_PanelP_ToolsLayout" key="id_PanelP_ToolsLayout" />
+    <name name="Parameters" value="id_PanelP_ToolsParameters" key="id_PanelP_ToolsParameters" />
+    <name name="PointCloud" value="id_PanelP_ToolsPointCloud" key="id_PanelP_ToolsPointCloud" />
+    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
+    <name name="StylesAndStandards" value="id_PanelP_ToolsStylesAndStandards" key="id_PanelP_ToolsStylesAndStandards" />
+    <name name="Update" value="id_PanelP_ToolsUpdate" key="id_PanelP_ToolsUpdate" />
+    <name name="iLogic" value="iLogic.RibbonPanel" key="iLogic.RibbonPanel" />
+  </group>
+  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.RenderTab" key="Part|id_TabRender">
+    <name name="Animate" value="id_PanelP_StudioAnimate" key="id_PanelP_StudioAnimate" />
+    <name name="Manage" value="id_PanelP_StudioManage" key="id_PanelP_StudioManage" />
+    <name name="Render" value="id_PanelP_StudioRender" key="id_PanelP_StudioRender" />
+    <name name="Scene" value="id_PanelP_StudioScene" key="id_PanelP_StudioScene" />
+  </group>
+  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.RepairTab" key="Part|id_TabSurfaceRepair">
+    <name name="Modify" value="id_PanelP_SurfaceRepairModify" key="id_PanelP_SurfaceRepairModify" />
+    <name name="Repair" value="id_PanelP_SurfaceRepairRepair" key="id_PanelP_SurfaceRepairRepair" />
+  </group>
+  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.ReturnTab" key="Part|id_TabReturn">
+    <name name="Return" value="id_PanelP_PartReturn" key="id_PanelP_PartReturn" />
+  </group>
+  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.RouteTab" key="Part|id_TabRoute">
+    <name name="Constrain" value="id_PanelP_RouteConstrain" key="id_PanelP_RouteConstrain" />
+    <name name="Create" value="id_PanelP_RouteCreate" key="id_PanelP_RouteCreate" />
+    <name name="Manage" value="id_PanelP_RouteManage" key="id_PanelP_RouteManage" />
+    <name name="Parameters" value="id_PanelP_ToolsParameters" key="id_PanelP_ToolsParameters" />
+  </group>
   <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.SheetMetalTab" key="Part|id_TabSheetMetal">
     <name name="Create" value="id_PanelP_SheetMetalCreate" key="id_PanelP_SheetMetalCreate" />
     <name name="FlatPattern" value="id_PanelP_SheetMetalManageUnfold" key="id_PanelP_SheetMetalManageUnfold" />
@@ -3696,16 +3853,42 @@
     <name name="Sketch" value="id_PanelP_Model2DSketchCreate" key="id_PanelP_Model2DSketchCreate" />
     <name name="WorkFeatures" value="id_PanelA_ModelWorkFeatures" key="id_PanelA_ModelWorkFeatures" />
   </group>
-  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.FlatPatternTab" key="Part|id_TabFlatPattern">
-    <name name="Create" value="id_PanelP_FlatPatternCreate" key="id_PanelP_FlatPatternCreate" />
-    <name name="FoldedPart" value="id_PanelP_FlatPatternExit" key="id_PanelP_FlatPatternExit" />
-    <name name="Insert" value="id_PanelP_FlatPatternInsert" key="id_PanelP_FlatPatternInsert" />
-    <name name="Manage" value="id_PanelP_FlatPatternManage" key="id_PanelP_FlatPatternManage" />
-    <name name="Modify" value="id_PanelP_FlatPatternModify" key="id_PanelP_FlatPatternModify" />
-    <name name="Pattern" value="id_PanelP_FlatPatternPattern" key="id_PanelP_FlatPatternPattern" />
+  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.SketchTab" key="Part|id_TabSketch">
+    <name name="Constrain" value="id_PanelP_2DSketchConstrain" key="id_PanelP_2DSketchConstrain" />
+    <name name="Create" value="id_PanelP_2DSketchDraw" key="id_PanelP_2DSketchDraw" />
+    <name name="Format" value="id_PanelP_2DSketchFormat" key="id_PanelP_2DSketchFormat" />
+    <name name="Insert" value="id_PanelA_2DSketchInsert" key="id_PanelA_2DSketchInsert" />
+    <name name="Layout" value="id_PanelP_2DSketchLayout" key="id_PanelP_2DSketchLayout" />
+    <name name="Modify" value="id_PanelP_2DSketchModify" key="id_PanelP_2DSketchModify" />
+    <name name="Parameters" value="id_PanelP_ToolsParameters" key="id_PanelP_ToolsParameters" />
+    <name name="Pattern" value="id_PanelP_2DSketchPattern" key="id_PanelP_2DSketchPattern" />
     <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
     <name name="Sketch" value="id_PanelP_Model2DSketchCreate" key="id_PanelP_Model2DSketchCreate" />
-    <name name="WorkFeatures" value="id_PanelA_ModelWorkFeatures" key="id_PanelA_ModelWorkFeatures" />
+  </group>
+  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.ToolsTab" key="Part|id_TabTools">
+    <name name="Begin" value="id_PanelP_ToolsEnvironments" key="id_PanelP_ToolsEnvironments" />
+    <name name="Clipboard" value="id_PanelP_ToolsClipboard" key="id_PanelP_ToolsClipboard" />
+    <name name="Find" value="id_PanelP_ToolsFind" key="id_PanelP_ToolsFind" />
+    <name name="MaterialAndAppearance" value="id_PanelP_ToolsMaterial" key="id_PanelP_ToolsMaterial" />
+    <name name="Measure" value="id_PanelP_ToolsMeasure" key="id_PanelP_ToolsMeasure" />
+    <name name="Options" value="id_PanelP_ToolsOptions" key="id_PanelP_ToolsOptions" />
+    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
+  </group>
+  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.VaultTab" key="Part|id_TabVault">
+    <name name="Access" value="id_PanelZ_VaultAccess" key="id_PanelZ_VaultAccess" />
+    <name name="Control" value="id_PanelZ_VaultControl" key="id_PanelZ_VaultControl" />
+    <name name="FileStatus" value="id_PanelZ_VaultStatusUpgrade" key="id_PanelZ_VaultStatusUpgrade" />
+    <name name="Find" value="id_PanelZ_VaultFind" key="id_PanelZ_VaultFind" />
+  </group>
+  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.ViewTab" key="Part|id_TabView">
+    <name name="Appearance" value="id_PanelA_ViewAppearance" key="id_PanelA_ViewAppearance" />
+    <name name="Navigate" value="id_PanelC_ViewNavigate" key="id_PanelC_ViewNavigate" />
+    <name name="ShowPanel" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
+    <name name="Visibility" value="id_PanelP_ViewVisibility" key="id_PanelP_ViewVisibility" />
+    <name name="Windows" value="id_PanelP_ViewWindow" key="id_PanelP_ViewWindow" />
+  </group>
+  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.k3DAnnotationTab" key="Part|id_Tab3DA">
+    <name name="Dimension" value="id_PanelP_3DADIM" key="id_PanelP_3DADIM" />
   </group>
   <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.k3DModelTab" key="Part|id_TabModel">
     <name name="Convert" value="id_PanelP_ConvertSheetMetal" key="id_PanelP_ConvertSheetMetal" />
@@ -3729,95 +3912,11 @@
     <name name="iPart_iAssembly" value="id_PanelA_AssembleIPartIAssembly" key="id_PanelA_AssembleIPartIAssembly" />
     <name name="k3DPrint" value="id_PanelP_3DPrint" key="id_PanelP_3DPrint" />
   </group>
-  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.SketchTab" key="Part|id_TabSketch">
-    <name name="Constrain" value="id_PanelP_2DSketchConstrain" key="id_PanelP_2DSketchConstrain" />
-    <name name="Create" value="id_PanelP_2DSketchDraw" key="id_PanelP_2DSketchDraw" />
-    <name name="Format" value="id_PanelP_2DSketchFormat" key="id_PanelP_2DSketchFormat" />
-    <name name="Insert" value="id_PanelA_2DSketchInsert" key="id_PanelA_2DSketchInsert" />
-    <name name="Layout" value="id_PanelP_2DSketchLayout" key="id_PanelP_2DSketchLayout" />
-    <name name="Modify" value="id_PanelP_2DSketchModify" key="id_PanelP_2DSketchModify" />
-    <name name="Parameters" value="id_PanelP_ToolsParameters" key="id_PanelP_ToolsParameters" />
-    <name name="Pattern" value="id_PanelP_2DSketchPattern" key="id_PanelP_2DSketchPattern" />
-    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
-    <name name="Sketch" value="id_PanelP_Model2DSketchCreate" key="id_PanelP_Model2DSketchCreate" />
-  </group>
-  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.AnnotateTab" key="Part|id_TabAdskMBD">
-    <name name="Analyze" value="id_PanelAdskMBDAnalyze" key="id_PanelAdskMBDAnalyze" />
-    <name name="Export" value="id_PanelAdskMBDExport" key="id_PanelAdskMBDExport" />
-    <name name="GeneralAnnotation" value="id_PanelAdskMBDGeneralAnno" key="id_PanelAdskMBDGeneralAnno" />
-    <name name="GeometricAnnotation" value="id_PanelAdskMBDGeometricAnno" key="id_PanelAdskMBDGeometricAnno" />
-    <name name="Manage" value="id_PanelAdskMBDManage" key="id_PanelAdskMBDManage" />
-    <name name="Notes" value="id_PanelAdskMBDNotes" key="id_PanelAdskMBDNotes" />
-  </group>
-  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.InspectTab" key="Part|id_TabInspect">
-    <name name="Analyze" value="id_PanelP_ToolsAnalysis" key="id_PanelP_ToolsAnalysis" />
-    <name name="AutoLimits" value="id_PanelP_ToolsAutoLimits" key="id_PanelP_ToolsAutoLimits" />
-    <name name="Measure" value="id_PanelP_AnalysisMeasure" key="id_PanelP_AnalysisMeasure" />
-    <name name="Parameters" value="id_PanelP_ToolsParameters" key="id_PanelP_ToolsParameters" />
-    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
-  </group>
-  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.ToolsTab" key="Part|id_TabTools">
-    <name name="Begin" value="id_PanelP_ToolsEnvironments" key="id_PanelP_ToolsEnvironments" />
-    <name name="Clipboard" value="id_PanelP_ToolsClipboard" key="id_PanelP_ToolsClipboard" />
-    <name name="Find" value="id_PanelP_ToolsFind" key="id_PanelP_ToolsFind" />
-    <name name="MaterialAndAppearance" value="id_PanelP_ToolsMaterial" key="id_PanelP_ToolsMaterial" />
-    <name name="Measure" value="id_PanelP_ToolsMeasure" key="id_PanelP_ToolsMeasure" />
-    <name name="Options" value="id_PanelP_ToolsOptions" key="id_PanelP_ToolsOptions" />
-    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
-  </group>
-  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.ManageTab" key="Part|id_TabManage">
-    <name name="Author" value="id_PanelP_ToolsAuthor" key="id_PanelP_ToolsAuthor" />
-    <name name="ContentCenter" value="id_PanelP_ToolsContentCenter" key="id_PanelP_ToolsContentCenter" />
-    <name name="Insert" value="id_PanelP_ToolsInsert" key="id_PanelP_ToolsInsert" />
-    <name name="Layout" value="id_PanelP_ToolsLayout" key="id_PanelP_ToolsLayout" />
-    <name name="Parameters" value="id_PanelP_ToolsParameters" key="id_PanelP_ToolsParameters" />
-    <name name="PointCloud" value="id_PanelP_ToolsPointCloud" key="id_PanelP_ToolsPointCloud" />
-    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
-    <name name="StylesAndStandards" value="id_PanelP_ToolsStylesAndStandards" key="id_PanelP_ToolsStylesAndStandards" />
-    <name name="Update" value="id_PanelP_ToolsUpdate" key="id_PanelP_ToolsUpdate" />
-    <name name="iLogic" value="iLogic.RibbonPanel" key="iLogic.RibbonPanel" />
-  </group>
-  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.ViewTab" key="Part|id_TabView">
-    <name name="Appearance" value="id_PanelA_ViewAppearance" key="id_PanelA_ViewAppearance" />
-    <name name="Navigate" value="id_PanelC_ViewNavigate" key="id_PanelC_ViewNavigate" />
-    <name name="ShowPanel" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
-    <name name="Visibility" value="id_PanelP_ViewVisibility" key="id_PanelP_ViewVisibility" />
-    <name name="Windows" value="id_PanelP_ViewWindow" key="id_PanelP_ViewWindow" />
-  </group>
-  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.EnvironmentsTab" key="Part|id_TabEnvironments">
-    <name name="Begin" value="id_Panel_EnvironmentsBegin" key="id_Panel_EnvironmentsBegin" />
-    <name name="Convert" value="id_PanelP_ConvertSheetMetal" key="id_PanelP_ConvertSheetMetal" />
-    <name name="Fusion360" value="id_Fusion_Interop" key="id_Fusion_Interop" />
-    <name name="Manage" value="id_PanelP_EnvironmentsAddIns" key="id_PanelP_EnvironmentsAddIns" />
-    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
-    <name name="k3DPrint" value="id_PanelP_3DPrint" key="id_PanelP_3DPrint" />
-  </group>
-  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.DataStandardTab" key="Part|AD:dataStandardAddIn:TabPart">
-    <name name="Copy" value="AD:dataStandardAddIn:PanelPartCopy" key="AD:dataStandardAddIn:PanelPartCopy" />
-    <name name="File" value="AD:dataStandardAddIn:PanelPartFile" key="AD:dataStandardAddIn:PanelPartFile" />
-    <name name="Settings" value="AD:dataStandardAddIn:PanelPartSettings" key="AD:dataStandardAddIn:PanelPartSettings" />
-  </group>
-  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.GetStartedTab" key="Part|id_GetStarted">
-    <name name="Help" value="AutodeskTutorialAddInHelpPanel" key="AutodeskTutorialAddInHelpPanel" />
-    <name name="Launch" value="id_Panel_Launch" key="id_Panel_Launch" />
-    <name name="MyHome" value="id_Panel_MyHome" key="id_Panel_MyHome" />
-    <name name="NewFeatures" value="id_Panel_GetStartedWhatsNew" key="id_Panel_GetStartedWhatsNew" />
-    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
-  </group>
-  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.VaultTab" key="Part|id_TabVault">
-    <name name="Access" value="id_PanelZ_VaultAccess" key="id_PanelZ_VaultAccess" />
-    <name name="Control" value="id_PanelZ_VaultControl" key="id_PanelZ_VaultControl" />
-    <name name="FileStatus" value="id_PanelZ_VaultStatusUpgrade" key="id_PanelZ_VaultStatusUpgrade" />
-    <name name="Find" value="id_PanelZ_VaultFind" key="id_PanelZ_VaultFind" />
-  </group>
-  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.CollaborateTab" key="Part|id_OnlineTab">
-    <name name="DataManagement" value="id_PanelP_PDMAndPLM" key="id_PanelP_PDMAndPLM" />
-    <name name="Share" value="id_Panel_OnlineDocument" key="id_Panel_OnlineDocument" />
-    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
-    <name name="Web" value="id_PanelP_ToolsWebTools" key="id_PanelP_ToolsWebTools" />
-  </group>
-  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.Exit2DSketchTab" key="Part|id_TabSketch_Exit">
-    <name name="Exit" value="id_PanelP_2DSketchExit" key="id_PanelP_2DSketchExit" />
+  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.k3DPrintTab" key="Part|id_TabPrint3D">
+    <name name="Locate" value="id_PanelA_3DPrintPosition" key="id_PanelA_3DPrintPosition" />
+    <name name="Modify" value="id_PanelB_3DPrintPosition" key="id_PanelB_3DPrintPosition" />
+    <name name="Print" value="id_PanelC_3DPrintPosition" key="id_PanelC_3DPrintPosition" />
+    <name name="WorkFeatures" value="id_PanelA_ModelWorkFeatures" key="id_PanelA_ModelWorkFeatures" />
   </group>
   <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.k3DSketchTab" key="Part|id_Tab3DSketch">
     <name name="Constrain" value="id_PanelP_3DSketchConstrain" key="id_PanelP_3DSketchConstrain" />
@@ -3828,105 +3927,6 @@
     <name name="Parameters" value="id_PanelP_ToolsParameters" key="id_PanelP_ToolsParameters" />
     <name name="Pattern" value="id_PanelP_3DSketchPattern" key="id_PanelP_3DSketchPattern" />
     <name name="WorkFeatures" value="id_PanelA_ModelWorkFeatures" key="id_PanelA_ModelWorkFeatures" />
-  </group>
-  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.Exit3DSketchTab" key="Part|id_Tab3DSketch_Exit">
-    <name name="Exit" value="id_PanelP_3DSketchExit" key="id_PanelP_3DSketchExit" />
-  </group>
-  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.ConstructionTab" key="Part|id_TabConstruction">
-    <name name="Manage" value="id_PanelP_ConstructionManage" key="id_PanelP_ConstructionManage" />
-    <name name="Surface" value="id_PanelP_ConstructionSurface" key="id_PanelP_ConstructionSurface" />
-  </group>
-  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.ExitConstructionTab" key="Part|id_TabConstruction_Exit">
-    <name name="Exit" value="id_PanelP_ConstructionExit" key="id_PanelP_ConstructionExit" />
-  </group>
-  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.EditBaseSolidTab" key="Part|id_TabEditBaseSolid">
-    <name name="Manage" value="id_PanelP_ExplicitManage" key="id_PanelP_ExplicitManage" />
-    <name name="Modify" value="id_PanelP_ExplicitModify" key="id_PanelP_ExplicitModify" />
-    <name name="WorkFeatures" value="id_PanelA_ModelWorkFeatures" key="id_PanelA_ModelWorkFeatures" />
-  </group>
-  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.ExitBaseSolidTab" key="Part|id_TabEditBaseSolid_Exit">
-    <name name="Exit" value="id_PanelP_ExplicitExit" key="id_PanelP_ExplicitExit" />
-  </group>
-  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.RepairTab" key="Part|id_TabSurfaceRepair">
-    <name name="Modify" value="id_PanelP_SurfaceRepairModify" key="id_PanelP_SurfaceRepairModify" />
-    <name name="Repair" value="id_PanelP_SurfaceRepairRepair" key="id_PanelP_SurfaceRepairRepair" />
-  </group>
-  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.ExitRepairTab" key="Part|id_TabSurfaceRepair_Exit">
-    <name name="Exit" value="id_PanelP_SurfaceRepairExit" key="id_PanelP_SurfaceRepairExit" />
-  </group>
-  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.ExitTab" key="Part|id_TabTSpline_Exit">
-    <name name="Exit" value="id_PanelP_TSplineExit" key="id_PanelP_TSplineExit" />
-  </group>
-  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.RouteTab" key="Part|id_TabRoute">
-    <name name="Constrain" value="id_PanelP_RouteConstrain" key="id_PanelP_RouteConstrain" />
-    <name name="Create" value="id_PanelP_RouteCreate" key="id_PanelP_RouteCreate" />
-    <name name="Manage" value="id_PanelP_RouteManage" key="id_PanelP_RouteManage" />
-    <name name="Parameters" value="id_PanelP_ToolsParameters" key="id_PanelP_ToolsParameters" />
-  </group>
-  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.ExitRouteTab" key="Part|id_TabRoute_Exit">
-    <name name="Exit" value="id_PanelP_RouteExit" key="id_PanelP_RouteExit" />
-  </group>
-  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.RenderTab" key="Part|id_TabRender">
-    <name name="Animate" value="id_PanelP_StudioAnimate" key="id_PanelP_StudioAnimate" />
-    <name name="Manage" value="id_PanelP_StudioManage" key="id_PanelP_StudioManage" />
-    <name name="Render" value="id_PanelP_StudioRender" key="id_PanelP_StudioRender" />
-    <name name="Scene" value="id_PanelP_StudioScene" key="id_PanelP_StudioScene" />
-  </group>
-  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.ExitStudioTab" key="Part|id_TabRender_Exit">
-    <name name="Exit" value="id_PanelP_StuidoExit" key="id_PanelP_StuidoExit" />
-  </group>
-  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.ExitStressAnalysisTab" key="Part|id_TabStressAnalysis_Exit">
-    <name name="Exit" value="id_PanelP_StressAnalysisExit" key="id_PanelP_StressAnalysisExit" />
-  </group>
-  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.AnalysisTab" key="Part|id_TabAFEA">
-    <name name="Constraints" value="id_PanelA_AFEAConstraints" key="id_PanelA_AFEAConstraints" />
-    <name name="Contacts" value="id_PanelA_AFEAContacts" key="id_PanelA_AFEAContacts" />
-    <name name="Display" value="id_PanelA_AFEAResultDisplay" key="id_PanelA_AFEAResultDisplay" />
-    <name name="Export" value="id_PanelA_AFEAExport" key="id_PanelA_AFEAExport" />
-    <name name="GoalsAndCriteria" value="id_PanelA_AFEAGoalsCriteria" key="id_PanelA_AFEAGoalsCriteria" />
-    <name name="Guide" value="id_PanelA_AFEAGuide" key="id_PanelA_AFEAGuide" />
-    <name name="Loads" value="id_PanelA_AFEALoads" key="id_PanelA_AFEALoads" />
-    <name name="Manage" value="id_PanelA_AFEAManage" key="id_PanelA_AFEAManage" />
-    <name name="Material" value="id_PanelA_AFEAMaterial" key="id_PanelA_AFEAMaterial" />
-    <name name="Mesh" value="id_PanelA_AFEAMesh" key="id_PanelA_AFEAMesh" />
-    <name name="Prepare" value="id_PanelA_AFEAPrepare" key="id_PanelA_AFEAPrepare" />
-    <name name="Report" value="id_PanelA_AFEAReport" key="id_PanelA_AFEAReport" />
-    <name name="Result" value="id_PanelA_AFEAResult" key="id_PanelA_AFEAResult" />
-    <name name="Run" value="id_PanelA_AFEARun" key="id_PanelA_AFEARun" />
-    <name name="Settings" value="id_PanelA_AFEASettings" key="id_PanelA_AFEASettings" />
-    <name name="Solve" value="id_PanelA_AFEASolve" key="id_PanelA_AFEASolve" />
-  </group>
-  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.ExitStressAnalysisAFEATab" key="Part|id_TabAFEA_Exit">
-    <name name="Exit" value="id_PanelP_AFEAExit" key="id_PanelP_AFEAExit" />
-  </group>
-  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.ReturnTab" key="Part|id_TabReturn">
-    <name name="Return" value="id_PanelP_PartReturn" key="id_PanelP_PartReturn" />
-  </group>
-  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.k3DPrintTab" key="Part|id_TabPrint3D">
-    <name name="Locate" value="id_PanelA_3DPrintPosition" key="id_PanelA_3DPrintPosition" />
-    <name name="Modify" value="id_PanelB_3DPrintPosition" key="id_PanelB_3DPrintPosition" />
-    <name name="Print" value="id_PanelC_3DPrintPosition" key="id_PanelC_3DPrintPosition" />
-    <name name="WorkFeatures" value="id_PanelA_ModelWorkFeatures" key="id_PanelA_ModelWorkFeatures" />
-  </group>
-  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.FreeformTab" key="Part|id_TabTSpline">
-    <name name="Check" value="id_PanelP_FreeformCheck" key="id_PanelP_FreeformCheck" />
-    <name name="CreateFreeform" value="id_PanelP_FreeformCreate" key="id_PanelP_FreeformCreate" />
-    <name name="Edit" value="id_PanelP_FreeformEdit" key="id_PanelP_FreeformEdit" />
-    <name name="Modify" value="id_PanelP_FreeformModify" key="id_PanelP_FreeformModify" />
-    <name name="Symmetry" value="id_PanelP_FreeformSymmetry" key="id_PanelP_FreeformSymmetry" />
-    <name name="Tools" value="id_PanelP_FreeformTools" key="id_PanelP_FreeformTools" />
-    <name name="WorkFeatures" value="id_PanelA_ModelWorkFeatures" key="id_PanelA_ModelWorkFeatures" />
-  </group>
-  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.Exit3DPrintTab" key="Part|id_TabPrint3D_Exit">
-    <name name="Exit" value="id_PanelP_3DPrintExit" key="id_PanelP_3DPrintExit" />
-  </group>
-  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.k3DAnnotationTab" key="Part|id_Tab3DA">
-    <name name="Dimension" value="id_PanelP_3DADIM" key="id_PanelP_3DADIM" />
-  </group>
-  <group category="ribbons" file="Ribbon/PartRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonPanels.BIMContentTab" key="Part|id_TabAECExchange">
-    <name name="Author" value="id_PanelA_AECExchangeAuthor" key="id_PanelA_AECExchangeAuthor" />
-    <name name="MEPConnectors" value="id_PanelA_AECExchangeConnectors" key="id_PanelA_AECExchangeConnectors" />
-    <name name="Publish" value="id_PanelA_AECExchangePublish" key="id_PanelA_AECExchangePublish" />
   </group>
   <group category="ribbons" file="Ribbon/PartRibbonTabs.cs" namespace="Inventor.InternalNames.Ribbon" class="PartRibbonTabs" key="PartRibbonTabs">
     <name name="AddIns" value="id_AddInsTab" key="id_AddInsTab" />
@@ -3972,14 +3972,15 @@
     <name name="k3DSketch" value="id_Tab3DSketch" key="id_Tab3DSketch" />
   </group>
   <group category="ribbons" file="Ribbon/PresentationRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PresentationRibbonPanels" key="PresentationRibbonPanels" />
-  <group category="ribbons" file="Ribbon/PresentationRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PresentationRibbonPanels.PresentationTab" key="Presentation|id_TabManage">
-    <name name="Camera" value="Publisher:PresentationCameraPanel" key="Publisher:PresentationCameraPanel" />
-    <name name="Component" value="Publisher:PresentationTransformPanel" key="Publisher:PresentationTransformPanel" />
-    <name name="Drawing" value="Publisher:PresentationDrawingPanel" key="Publisher:PresentationDrawingPanel" />
-    <name name="Model" value="Publisher:PresentationModelPanel" key="Publisher:PresentationModelPanel" />
-    <name name="Publish" value="Publisher:PresentationPublishPanel" key="Publisher:PresentationPublishPanel" />
+  <group category="ribbons" file="Ribbon/PresentationRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PresentationRibbonPanels.Collaborate" key="Presentation|id_OnlineTab">
+    <name name="DataManagement" value="id_PanelP_PDMAndPLM" key="id_PanelP_PDMAndPLM" />
+    <name name="Share" value="id_Panel_OnlineDocument" key="id_Panel_OnlineDocument" />
     <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
-    <name name="Workshop" value="Publisher:PresentationWorkshopPanel" key="Publisher:PresentationWorkshopPanel" />
+  </group>
+  <group category="ribbons" file="Ribbon/PresentationRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PresentationRibbonPanels.DataStandardTab" key="Presentation|AD:dataStandardAddIn:TabPresentation">
+    <name name="Copy" value="AD:dataStandardAddIn:PanelPresentationCopy" key="AD:dataStandardAddIn:PanelPresentationCopy" />
+    <name name="File" value="AD:dataStandardAddIn:PanelPresentationFile" key="AD:dataStandardAddIn:PanelPresentationFile" />
+    <name name="Settings" value="AD:dataStandardAddIn:PanelPresentationSettings" key="AD:dataStandardAddIn:PanelPresentationSettings" />
   </group>
   <group category="ribbons" file="Ribbon/PresentationRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PresentationRibbonPanels.EditViewTab" key="Presentation|id_TabEditView">
     <name name="Camera" value="Publisher:PresentationCameraPanel" key="Publisher:PresentationCameraPanel" />
@@ -3989,9 +3990,33 @@
     <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
     <name name="Workshop" value="Publisher:PresentationWorkshopPanel" key="Publisher:PresentationWorkshopPanel" />
   </group>
+  <group category="ribbons" file="Ribbon/PresentationRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PresentationRibbonPanels.EnvironmentsTab" key="Presentation|id_TabEnvironments">
+    <name name="Begin" value="id_Panel_EnvironmentsBegin" key="id_Panel_EnvironmentsBegin" />
+    <name name="Manage" value="id_PanelD_EnvironmentsAddIns" key="id_PanelD_EnvironmentsAddIns" />
+    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
+  </group>
   <group category="ribbons" file="Ribbon/PresentationRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PresentationRibbonPanels.ExitTabs" key="Presentation|id_TabEditView_Exit">
     <name name="Exit" value="Publisher:PresentationExitPanel" key="Publisher:PresentationExitPanel" />
     <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
+  </group>
+  <group category="ribbons" file="Ribbon/PresentationRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PresentationRibbonPanels.GetStartedTab" key="Presentation|id_GetStarted">
+    <name name="Help" value="AutodeskTutorialAddInHelpPanel" key="AutodeskTutorialAddInHelpPanel" />
+    <name name="Launch" value="id_Panel_Launch" key="id_Panel_Launch" />
+    <name name="MyHome" value="id_Panel_MyHome" key="id_Panel_MyHome" />
+    <name name="NewFeatures" value="id_Panel_GetStartedWhatsNew" key="id_Panel_GetStartedWhatsNew" />
+    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
+  </group>
+  <group category="ribbons" file="Ribbon/PresentationRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PresentationRibbonPanels.PresentationTab" key="Presentation|id_TabManage">
+    <name name="Camera" value="Publisher:PresentationCameraPanel" key="Publisher:PresentationCameraPanel" />
+    <name name="Component" value="Publisher:PresentationTransformPanel" key="Publisher:PresentationTransformPanel" />
+    <name name="Drawing" value="Publisher:PresentationDrawingPanel" key="Publisher:PresentationDrawingPanel" />
+    <name name="Model" value="Publisher:PresentationModelPanel" key="Publisher:PresentationModelPanel" />
+    <name name="Publish" value="Publisher:PresentationPublishPanel" key="Publisher:PresentationPublishPanel" />
+    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
+    <name name="Workshop" value="Publisher:PresentationWorkshopPanel" key="Publisher:PresentationWorkshopPanel" />
+  </group>
+  <group category="ribbons" file="Ribbon/PresentationRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PresentationRibbonPanels.ReturnTab" key="Presentation|id_TabReturn">
+    <name name="Return" value="id_PanelPn_PnReturnPanel" key="id_PanelPn_PnReturnPanel" />
   </group>
   <group category="ribbons" file="Ribbon/PresentationRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PresentationRibbonPanels.ToolsTab" key="Presentation|id_TabTools">
     <name name="Clipboard" value="id_PanelP_ToolsClipboard" key="id_PanelP_ToolsClipboard" />
@@ -4002,42 +4027,17 @@
     <name name="StylesAndStandards" value="id_PanelPn_ToolsStylesAndStandards" key="id_PanelPn_ToolsStylesAndStandards" />
     <name name="Web" value="id_PanelP_ToolsWebTools" key="id_PanelP_ToolsWebTools" />
   </group>
-  <group category="ribbons" file="Ribbon/PresentationRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PresentationRibbonPanels.ViewTab" key="Presentation|id_TabView">
-    <name name="Appearance" value="id_PanelA_ViewAppearance" key="id_PanelA_ViewAppearance" />
-    <name name="Navigate" value="id_PanelC_ViewNavigate" key="id_PanelC_ViewNavigate" />
-    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
-    <name name="Windows" value="id_PanelP_ViewWindow" key="id_PanelP_ViewWindow" />
-  </group>
-  <group category="ribbons" file="Ribbon/PresentationRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PresentationRibbonPanels.EnvironmentsTab" key="Presentation|id_TabEnvironments">
-    <name name="Begin" value="id_Panel_EnvironmentsBegin" key="id_Panel_EnvironmentsBegin" />
-    <name name="Manage" value="id_PanelD_EnvironmentsAddIns" key="id_PanelD_EnvironmentsAddIns" />
-    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
-  </group>
-  <group category="ribbons" file="Ribbon/PresentationRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PresentationRibbonPanels.DataStandardTab" key="Presentation|AD:dataStandardAddIn:TabPresentation">
-    <name name="Copy" value="AD:dataStandardAddIn:PanelPresentationCopy" key="AD:dataStandardAddIn:PanelPresentationCopy" />
-    <name name="File" value="AD:dataStandardAddIn:PanelPresentationFile" key="AD:dataStandardAddIn:PanelPresentationFile" />
-    <name name="Settings" value="AD:dataStandardAddIn:PanelPresentationSettings" key="AD:dataStandardAddIn:PanelPresentationSettings" />
-  </group>
-  <group category="ribbons" file="Ribbon/PresentationRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PresentationRibbonPanels.GetStartedTab" key="Presentation|id_GetStarted">
-    <name name="Help" value="AutodeskTutorialAddInHelpPanel" key="AutodeskTutorialAddInHelpPanel" />
-    <name name="Launch" value="id_Panel_Launch" key="id_Panel_Launch" />
-    <name name="MyHome" value="id_Panel_MyHome" key="id_Panel_MyHome" />
-    <name name="NewFeatures" value="id_Panel_GetStartedWhatsNew" key="id_Panel_GetStartedWhatsNew" />
-    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
-  </group>
   <group category="ribbons" file="Ribbon/PresentationRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PresentationRibbonPanels.VaultTab" key="Presentation|id_TabVault">
     <name name="Access" value="id_PanelZ_VaultAccess" key="id_PanelZ_VaultAccess" />
     <name name="Control" value="id_PanelZ_VaultControl" key="id_PanelZ_VaultControl" />
     <name name="FileStatus" value="id_PanelZ_VaultStatusUpgrade" key="id_PanelZ_VaultStatusUpgrade" />
     <name name="Find" value="id_PanelZ_VaultFind" key="id_PanelZ_VaultFind" />
   </group>
-  <group category="ribbons" file="Ribbon/PresentationRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PresentationRibbonPanels.ReturnTab" key="Presentation|id_TabReturn">
-    <name name="Return" value="id_PanelPn_PnReturnPanel" key="id_PanelPn_PnReturnPanel" />
-  </group>
-  <group category="ribbons" file="Ribbon/PresentationRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PresentationRibbonPanels.Collaborate" key="Presentation|id_OnlineTab">
-    <name name="DataManagement" value="id_PanelP_PDMAndPLM" key="id_PanelP_PDMAndPLM" />
-    <name name="Share" value="id_Panel_OnlineDocument" key="id_Panel_OnlineDocument" />
+  <group category="ribbons" file="Ribbon/PresentationRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="PresentationRibbonPanels.ViewTab" key="Presentation|id_TabView">
+    <name name="Appearance" value="id_PanelA_ViewAppearance" key="id_PanelA_ViewAppearance" />
+    <name name="Navigate" value="id_PanelC_ViewNavigate" key="id_PanelC_ViewNavigate" />
     <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
+    <name name="Windows" value="id_PanelP_ViewWindow" key="id_PanelP_ViewWindow" />
   </group>
   <group category="ribbons" file="Ribbon/PresentationRibbonTabs.cs" namespace="Inventor.InternalNames.Ribbon" class="PresentationRibbonTabs" key="PresentationRibbonTabs">
     <name name="AddIns" value="id_AddInsTab" key="id_AddInsTab" />
@@ -4056,6 +4056,11 @@
     <name name="View" value="id_TabView" key="id_TabView" />
   </group>
   <group category="ribbons" file="Ribbon/UnknownDocumentRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="UnknownDocumentRibbonPanels" key="UnknownDocumentRibbonPanels" />
+  <group category="ribbons" file="Ribbon/UnknownDocumentRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="UnknownDocumentRibbonPanels.CollaborateTab" key="UnknownDocument|id_OnlineTab">
+    <name name="DataManagement" value="id_PanelP_PDMAndPLM" key="id_PanelP_PDMAndPLM" />
+    <name name="Share" value="id_Panel_OnlineDocument" key="id_Panel_OnlineDocument" />
+    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
+  </group>
   <group category="ribbons" file="Ribbon/UnknownDocumentRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="UnknownDocumentRibbonPanels.CustomViewTab" key="UnknownDocument|id_TabCustomView">
     <name name="Appearance" value="id_PanelU_CustomViewAppearance" key="id_PanelU_CustomViewAppearance" />
     <name name="Exit" value="id_PanelU_CustomViewExit" key="id_PanelU_CustomViewExit" />
@@ -4069,19 +4074,6 @@
     <name name="Notes" value="id_PanelU_EngineersNotebookNotes" key="id_PanelU_EngineersNotebookNotes" />
     <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
   </group>
-  <group category="ribbons" file="Ribbon/UnknownDocumentRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="UnknownDocumentRibbonPanels.ToolsTab" key="UnknownDocument|id_TabEngineersNotebookTools">
-    <name name="Clipboard" value="id_PanelP_ToolsClipboard" key="id_PanelP_ToolsClipboard" />
-    <name name="ContentCenter" value="id_PanelU_ToolsContentCenter" key="id_PanelU_ToolsContentCenter" />
-    <name name="Options" value="id_PanelP_ToolsOptions" key="id_PanelP_ToolsOptions" />
-    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
-    <name name="Web" value="id_PanelP_ToolsWebTools" key="id_PanelP_ToolsWebTools" />
-  </group>
-  <group category="ribbons" file="Ribbon/UnknownDocumentRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="UnknownDocumentRibbonPanels.ViewTab" key="UnknownDocument|id_TabEngineersNotebookView">
-    <name name="Appearance" value="id_PanelU_ViewAppearance" key="id_PanelU_ViewAppearance" />
-    <name name="Navigate" value="id_PanelC_ViewNavigate" key="id_PanelC_ViewNavigate" />
-    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
-    <name name="Windows" value="id_PanelP_ViewWindow" key="id_PanelP_ViewWindow" />
-  </group>
   <group category="ribbons" file="Ribbon/UnknownDocumentRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="UnknownDocumentRibbonPanels.GetStartedTab" key="UnknownDocument|id_GetStarted">
     <name name="Help" value="AutodeskTutorialAddInHelpPanel" key="AutodeskTutorialAddInHelpPanel" />
     <name name="Launch" value="id_Panel_Launch" key="id_Panel_Launch" />
@@ -4089,16 +4081,24 @@
     <name name="NewFeatures" value="id_Panel_GetStartedWhatsNew" key="id_Panel_GetStartedWhatsNew" />
     <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
   </group>
+  <group category="ribbons" file="Ribbon/UnknownDocumentRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="UnknownDocumentRibbonPanels.ToolsTab" key="UnknownDocument|id_TabEngineersNotebookTools">
+    <name name="Clipboard" value="id_PanelP_ToolsClipboard" key="id_PanelP_ToolsClipboard" />
+    <name name="ContentCenter" value="id_PanelU_ToolsContentCenter" key="id_PanelU_ToolsContentCenter" />
+    <name name="Options" value="id_PanelP_ToolsOptions" key="id_PanelP_ToolsOptions" />
+    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
+    <name name="Web" value="id_PanelP_ToolsWebTools" key="id_PanelP_ToolsWebTools" />
+  </group>
   <group category="ribbons" file="Ribbon/UnknownDocumentRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="UnknownDocumentRibbonPanels.VaultTab" key="UnknownDocument|id_TabVault">
     <name name="Access" value="id_PanelZ_VaultAccess" key="id_PanelZ_VaultAccess" />
     <name name="Control" value="id_PanelZ_VaultControl" key="id_PanelZ_VaultControl" />
     <name name="FileStatus" value="id_PanelZ_VaultStatusUpgrade" key="id_PanelZ_VaultStatusUpgrade" />
     <name name="Find" value="id_PanelZ_VaultFind" key="id_PanelZ_VaultFind" />
   </group>
-  <group category="ribbons" file="Ribbon/UnknownDocumentRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="UnknownDocumentRibbonPanels.CollaborateTab" key="UnknownDocument|id_OnlineTab">
-    <name name="DataManagement" value="id_PanelP_PDMAndPLM" key="id_PanelP_PDMAndPLM" />
-    <name name="Share" value="id_Panel_OnlineDocument" key="id_Panel_OnlineDocument" />
+  <group category="ribbons" file="Ribbon/UnknownDocumentRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="UnknownDocumentRibbonPanels.ViewTab" key="UnknownDocument|id_TabEngineersNotebookView">
+    <name name="Appearance" value="id_PanelU_ViewAppearance" key="id_PanelU_ViewAppearance" />
+    <name name="Navigate" value="id_PanelC_ViewNavigate" key="id_PanelC_ViewNavigate" />
     <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
+    <name name="Windows" value="id_PanelP_ViewWindow" key="id_PanelP_ViewWindow" />
   </group>
   <group category="ribbons" file="Ribbon/UnknownDocumentRibbonTabs.cs" namespace="Inventor.InternalNames.Ribbon" class="UnknownDocumentRibbonTabs" key="UnknownDocumentRibbonTabs">
     <name name="Collaborate" value="id_OnlineTab" key="id_OnlineTab" />
@@ -4112,6 +4112,11 @@
     <name name="View" value="id_TabEngineersNotebookView" key="id_TabEngineersNotebookView" />
   </group>
   <group category="ribbons" file="Ribbon/ZeroDocRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="ZeroDocRibbonPanels" key="ZeroDocRibbonPanels" />
+  <group category="ribbons" file="Ribbon/ZeroDocRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="ZeroDocRibbonPanels.CollaborateTab" key="ZeroDoc|id_OnlineTab">
+    <name name="DataManagement" value="id_PanelP_PDMAndPLM" key="id_PanelP_PDMAndPLM" />
+    <name name="Share" value="id_Panel_OnlineDocument" key="id_Panel_OnlineDocument" />
+    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
+  </group>
   <group category="ribbons" file="Ribbon/ZeroDocRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="ZeroDocRibbonPanels.GetStartedTab" key="ZeroDoc|id_GetStarted">
     <name name="Help" value="AutodeskTutorialAddInHelpPanel" key="AutodeskTutorialAddInHelpPanel" />
     <name name="Launch" value="id_Panel_Launch" key="id_Panel_Launch" />
@@ -4133,11 +4138,6 @@
     <name name="FileStatus" value="id_PanelZ_VaultStatusUpgrade" key="id_PanelZ_VaultStatusUpgrade" />
     <name name="Find" value="id_PanelZ_VaultFind" key="id_PanelZ_VaultFind" />
   </group>
-  <group category="ribbons" file="Ribbon/ZeroDocRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="ZeroDocRibbonPanels.CollaborateTab" key="ZeroDoc|id_OnlineTab">
-    <name name="DataManagement" value="id_PanelP_PDMAndPLM" key="id_PanelP_PDMAndPLM" />
-    <name name="Share" value="id_Panel_OnlineDocument" key="id_Panel_OnlineDocument" />
-    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
-  </group>
   <group category="ribbons" file="Ribbon/ZeroDocRibbonTabs.cs" namespace="Inventor.InternalNames.Ribbon" class="ZeroDocRibbonTabs" key="ZeroDocRibbonTabs">
     <name name="AddIns" value="id_AddInsTab" key="id_AddInsTab" />
     <name name="Collaborate" value="id_OnlineTab" key="id_OnlineTab" />
@@ -4148,22 +4148,10 @@
     <name name="VaultUpgrade" value="id_TabVault_Upgrade" key="id_TabVault_Upgrade" />
   </group>
   <group category="ribbons" file="Ribbon/iFeatureRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="iFeatureRibbonPanels" key="iFeatureRibbonPanels" />
-  <group category="ribbons" file="Ribbon/iFeatureRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="iFeatureRibbonPanels.iFeatureTab" key="iFeatures|id_TabiFeature">
-    <name name="iFeature" value="id_PaneliF_iFeaturesIFeature" key="id_PaneliF_iFeaturesIFeature" />
-  </group>
-  <group category="ribbons" file="Ribbon/iFeatureRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="iFeatureRibbonPanels.ToolsTab" key="iFeatures|id_TabTools">
-    <name name="ContentCenter" value="id_PaneliF_ToolsContentCenter" key="id_PaneliF_ToolsContentCenter" />
-    <name name="Find" value="id_PanelP_ToolsFind" key="id_PanelP_ToolsFind" />
-    <name name="Insert" value="id_PanelPn_ToolsInsert" key="id_PanelPn_ToolsInsert" />
-    <name name="Options" value="id_PanelP_ToolsOptions" key="id_PanelP_ToolsOptions" />
+  <group category="ribbons" file="Ribbon/iFeatureRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="iFeatureRibbonPanels.CollaborateTab" key="iFeatures|id_OnlineTab">
+    <name name="DataManagement" value="id_PanelP_PDMAndPLM" key="id_PanelP_PDMAndPLM" />
+    <name name="Share" value="id_Panel_OnlineDocument" key="id_Panel_OnlineDocument" />
     <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
-    <name name="Web" value="id_PanelP_ToolsWebTools" key="id_PanelP_ToolsWebTools" />
-  </group>
-  <group category="ribbons" file="Ribbon/iFeatureRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="iFeatureRibbonPanels.ViewTab" key="iFeatures|id_TabView">
-    <name name="Appearance" value="id_PaneliF_ViewAppearance" key="id_PaneliF_ViewAppearance" />
-    <name name="Navigate" value="id_PanelC_ViewNavigate" key="id_PanelC_ViewNavigate" />
-    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
-    <name name="Windows" value="id_PanelP_ViewWindow" key="id_PanelP_ViewWindow" />
   </group>
   <group category="ribbons" file="Ribbon/iFeatureRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="iFeatureRibbonPanels.EnvironmentsTab" key="iFeatures|id_TabEnvironments">
     <name name="Begin" value="id_Panel_EnvironmentsBegin" key="id_Panel_EnvironmentsBegin" />
@@ -4177,16 +4165,28 @@
     <name name="NewFeatures" value="id_Panel_GetStartedWhatsNew" key="id_Panel_GetStartedWhatsNew" />
     <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
   </group>
+  <group category="ribbons" file="Ribbon/iFeatureRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="iFeatureRibbonPanels.ToolsTab" key="iFeatures|id_TabTools">
+    <name name="ContentCenter" value="id_PaneliF_ToolsContentCenter" key="id_PaneliF_ToolsContentCenter" />
+    <name name="Find" value="id_PanelP_ToolsFind" key="id_PanelP_ToolsFind" />
+    <name name="Insert" value="id_PanelPn_ToolsInsert" key="id_PanelPn_ToolsInsert" />
+    <name name="Options" value="id_PanelP_ToolsOptions" key="id_PanelP_ToolsOptions" />
+    <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
+    <name name="Web" value="id_PanelP_ToolsWebTools" key="id_PanelP_ToolsWebTools" />
+  </group>
   <group category="ribbons" file="Ribbon/iFeatureRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="iFeatureRibbonPanels.VaultTab" key="iFeatures|id_TabVault">
     <name name="Access" value="id_PanelZ_VaultAccess" key="id_PanelZ_VaultAccess" />
     <name name="Control" value="id_PanelZ_VaultControl" key="id_PanelZ_VaultControl" />
     <name name="FileStatus" value="id_PanelZ_VaultStatusUpgrade" key="id_PanelZ_VaultStatusUpgrade" />
     <name name="Find" value="id_PanelZ_VaultFind" key="id_PanelZ_VaultFind" />
   </group>
-  <group category="ribbons" file="Ribbon/iFeatureRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="iFeatureRibbonPanels.CollaborateTab" key="iFeatures|id_OnlineTab">
-    <name name="DataManagement" value="id_PanelP_PDMAndPLM" key="id_PanelP_PDMAndPLM" />
-    <name name="Share" value="id_Panel_OnlineDocument" key="id_Panel_OnlineDocument" />
+  <group category="ribbons" file="Ribbon/iFeatureRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="iFeatureRibbonPanels.ViewTab" key="iFeatures|id_TabView">
+    <name name="Appearance" value="id_PaneliF_ViewAppearance" key="id_PaneliF_ViewAppearance" />
+    <name name="Navigate" value="id_PanelC_ViewNavigate" key="id_PanelC_ViewNavigate" />
     <name name="ShowPanels" value="id_PanelP_ShowPanels" key="id_PanelP_ShowPanels" />
+    <name name="Windows" value="id_PanelP_ViewWindow" key="id_PanelP_ViewWindow" />
+  </group>
+  <group category="ribbons" file="Ribbon/iFeatureRibbonPanels.cs" namespace="Inventor.InternalNames.Ribbon" class="iFeatureRibbonPanels.iFeatureTab" key="iFeatures|id_TabiFeature">
+    <name name="iFeature" value="id_PaneliF_iFeaturesIFeature" key="id_PaneliF_iFeaturesIFeature" />
   </group>
   <group category="ribbons" file="Ribbon/iFeatureRibbonTabs.cs" namespace="Inventor.InternalNames.Ribbon" class="iFeatureRibbonTabs" key="iFeatureRibbonTabs">
     <name name="AddIns" value="id_AddInsTab" key="id_AddInsTab" />
