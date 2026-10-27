@@ -2,6 +2,8 @@
 
 A Windows x64 console application that extracts names through Inventor's COM API and updates the `Inventor.InternalNames` source files. No add-in installation or copying generated text is required.
 
+The CLI uses `System.CommandLine` for option parsing, generated help, and validation. Run `--help` (or `-h`) to see available options and defaults.
+
 ## Build and run
 
 Build with the .NET 10 SDK, then run on an Inventor workstation from the repository root:
@@ -32,7 +34,7 @@ Use an explicit `--catalog` when maintaining another checkout or output director
 | `--dry-run` | Extract and validate, then report proposed changes without writing |
 | `--check` | Write nothing; return exit code 2 when updates are needed |
 | `--from-catalog` | Regenerate without Inventor; also works on non-Windows systems using the modern DLL |
-| `--only commands,ribbons` | Run selected categories and generate their files |
+| `--only commands,ribbons` | Run selected categories and generate their files; space-separated IDs are also accepted |
 | `--list` | List category IDs without connecting to Inventor |
 | `--connect auto`, `existing`, or `new` | Attach or start, require a running instance, or start a dedicated instance |
 | `--timeout 120` | Readiness and rejected-call retry timeout in seconds; does not bound a hung COM activation or method call |
@@ -41,6 +43,7 @@ Use an explicit `--catalog` when maintaining another checkout or output director
 | `--catalog PATH` | Override the persistent catalog |
 | `--build` | Compile the destination library after writing; requires its `.csproj` and a .NET SDK |
 | `--help` | Show usage |
+| `--version` | Show version information without connecting to Inventor |
 
 Exit codes: **0** success, **1** failure, **2** differences under `--check`. Preview modes still create temporary documents during live extraction. `--from-catalog` avoids Inventor entirely.
 

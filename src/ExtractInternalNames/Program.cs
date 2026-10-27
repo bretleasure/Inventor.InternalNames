@@ -1,4 +1,5 @@
 using System.Diagnostics;
+using System.CommandLine;
 using ExtractInternalNames.Core;
 using ExtractInternalNames.Extractors;
 
@@ -9,7 +10,11 @@ internal static class Program
     [STAThread]
     private static int Main(string[] args)
     {
-        try { return Run(CommandLineOptions.Parse(args)); }
+        try
+        {
+            var command = ExtractorCommand.Create(Run, ExtractorRegistry.Create().Select(e => e.Id));
+            return command.Parse(args).Invoke(new InvocationConfiguration { EnableDefaultExceptionHandler = false });
+        }
         catch (Exception exception)
         {
             Console.Error.WriteLine("Extraction failed: " + exception.Message);
@@ -20,34 +25,12 @@ internal static class Program
     private static int Run(CommandLineOptions options)
     {
         var extractors = ExtractorRegistry.Create();
-        if (options.Help)
-        {
-            Console.WriteLine(@"ExtractInternalNames [options]
-  --output PATH            Destination for generated .cs files (default: repository library)
-  --catalog PATH           Persistent name catalog (default: repository or bundled Names.xml)
-  --only IDS               Comma-separated category IDs; use --list to see available IDs
-  --connect MODE           auto (attach or start), existing, or new
-  --timeout SECONDS        Readiness timeout, default 120
-  --template TYPE=PATH     Use a template for part, assembly, drawing, or presentation
-  --from-catalog           Regenerate without connecting to Inventor
-  --dry-run                Report changes without writing
-  --check                  Write nothing; return 2 when updates are needed
-  --build                  Run dotnet build on the destination library after writing
-  --list                   List extractors without connecting to Inventor
-  --help                   Show usage
-
-Live extraction requires Windows x64 and a registered Inventor installation.
-Exit codes: 0 success, 1 failure, 2 updates needed (--check).");
-            return 0;
-        }
         if (options.List)
         {
             foreach (var extractor in extractors) Console.WriteLine($"{extractor.Id,-20} {extractor.Description}");
             return 0;
         }
         var selected = options.Only ?? new HashSet<string>(extractors.Select(e => e.Id), StringComparer.Ordinal);
-        var unknown = selected.Except(extractors.Select(e => e.Id), StringComparer.Ordinal).ToArray();
-        if (unknown.Length != 0) throw new ArgumentException("Unknown categories: " + string.Join(", ", unknown));
         var repository = CommandLineOptions.FindRepository(Directory.GetCurrentDirectory()) ??
                          CommandLineOptions.FindRepository(AppContext.BaseDirectory);
         var output = options.Output ?? (repository == null ? null : Path.Combine(repository, "src", "Inventor.InternalNames"));
