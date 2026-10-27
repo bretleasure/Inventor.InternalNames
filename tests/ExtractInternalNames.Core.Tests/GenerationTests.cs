@@ -92,6 +92,33 @@ public sealed class GenerationTests
         Assert.Throws<InvalidDataException>(() => SourceGenerator.Generate(catalog));
     }
 
+    [Fact]
+    public void CatalogRoundTripsControlCharactersAndAliases()
+    {
+        var catalog = Baseline();
+        catalog.Groups[0].Names.Add(new NameEntry { Name = "Escaped", Value = "a\u0000\n\t\"\\\uD83D\uDE00", Key = "key\u0000" });
+        var path = Path.GetTempFileName();
+        try
+        {
+            File.WriteAllText(path, catalog.Serialize());
+            var loaded = NameCatalog.Load(path);
+            Assert.Equal(catalog.Groups[0].Names[1].Value, loaded.Groups[0].Names.Single(n => n.Name == "Escaped").Value);
+            Assert.Equal(catalog.Serialize(), loaded.Serialize());
+            SourceGenerator.Generate(loaded);
+        }
+        finally { File.Delete(path); }
+    }
+
+    [Fact]
+    public void CategorySelectionDoesNotGenerateUnselectedFiles()
+    {
+        var catalog = Baseline();
+        catalog.Groups.Add(new NameGroup { Category = "other", Key = "Other", File = "Other.cs",
+            Namespace = "Example.Names", Class = "Other" });
+        var generated = SourceGenerator.Generate(catalog, new HashSet<string> { "test" });
+        Assert.Equal(new[] { "Example.cs" }, generated.Keys);
+    }
+
     [Theory]
     [InlineData("../escape.cs")]
     [InlineData("/escape.cs")]

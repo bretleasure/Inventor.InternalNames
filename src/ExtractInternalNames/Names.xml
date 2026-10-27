@@ -3217,7 +3217,7 @@
     <name name="PipingRunsEnvironment" value="Piping Runs Environment" key="Piping Runs Environment" />
   </group>
   <group category="defaults" file="ModelStates.cs" namespace="Inventor.InternalNames" class="ModelStates" key="ModelStates">
-    <name name="Primary" value="[Primary]" key="[Primary]" />
+    <name name="Primary" value="[Primary]" key="primary" />
   </group>
   <group category="properties" file="PropertySets/Assembly.cs" namespace="Inventor.InternalNames.PropertySets" class="Assembly" key="PropertySets.Assembly">
     <name name="DesignTracking" value="Design Tracking Properties" />
@@ -4201,21 +4201,21 @@
     <name name="iFeature" value="id_TabiFeature" key="id_TabiFeature" />
   </group>
   <group category="defaults" file="ViewRepresentations.cs" namespace="Inventor.InternalNames" class="ViewRepresentations" key="ViewRepresentations">
-    <name name="Default" value="Default" key="Default" />
-    <name name="Primary" value="[Primary]" key="[Primary]" />
+    <name name="Default" value="Default" key="default" />
+    <name name="Primary" value="[Primary]" key="primary" />
   </group>
   <group category="defaults" file="WorkAxes.cs" namespace="Inventor.InternalNames" class="WorkAxes" key="WorkAxes">
-    <name name="X" value="X Axis" key="X Axis" />
-    <name name="Y" value="Y Axis" key="Y Axis" />
-    <name name="Z" value="Z Axis" key="Z Axis" />
+    <name name="X" value="X Axis" key="X" />
+    <name name="Y" value="Y Axis" key="Y" />
+    <name name="Z" value="Z Axis" key="Z" />
   </group>
   <group category="defaults" file="WorkPlanes.cs" namespace="Inventor.InternalNames" class="WorkPlanes" key="WorkPlanes">
-    <name name="XY" value="XY Plane" key="XY Plane" />
-    <name name="XZ" value="XZ Plane" key="XZ Plane" />
-    <name name="YZ" value="YZ Plane" key="YZ Plane" />
+    <name name="XY" value="XY Plane" key="XY" />
+    <name name="XZ" value="XZ Plane" key="XZ" />
+    <name name="YZ" value="YZ Plane" key="YZ" />
   </group>
   <group category="defaults" file="WorkPoints.cs" namespace="Inventor.InternalNames" class="WorkPoints" key="WorkPoints">
-    <name name="CenterPoint" value="Center Point" key="Center Point" />
+    <name name="CenterPoint" value="Center Point" key="origin" />
   </group>
   <group category="defaults" file="iLogic.cs" namespace="Inventor.InternalNames" class="iLogic" key="iLogic">
     <name name="iLogicEntityName" value="iLogicEntityName" key="iLogicEntityName" />

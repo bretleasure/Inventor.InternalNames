@@ -1,43 +1,23 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
-    <PropertyGroup>
-        <TargetFramework>net472</TargetFramework>
-        <LangVersion>latest</LangVersion>
-        <ImplicitUsings>enable</ImplicitUsings>
-        <UseWindowsForms>true</UseWindowsForms>
-    </PropertyGroup>
-
-    <PropertyGroup>
-        <LocalizeTemplates>false</LocalizeTemplates>
-    </PropertyGroup>
-
-    <ItemGroup>
-        <Reference Include="Autodesk.Inventor.Interop">
-            <HintPath>lib\Autodesk.Inventor.Interop.dll</HintPath>
-        </Reference>
-    </ItemGroup>
-
-    <ItemGroup>
-        <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3">
-            <PrivateAssets>all</PrivateAssets>
-            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-        </PackageReference>
-        <PackageReference Include="stdole" Version="17.13.40008"/>
-        <PackageReference Include="System.Resources.Extensions" Version="9.0.3"/>
-    </ItemGroup>
-
-    <ItemGroup>
-        <None Update="ExtractInternalNames.addin">
-            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </None>
-    </ItemGroup>
-
-    <ItemGroup>
-        <EmbeddedResource Include="Buttons\Assets\Default-Light.png"/>
-        <EmbeddedResource Include="Buttons\Assets\Default-Dark.png"/>
-    </ItemGroup>
-
-    <ItemGroup>
-      <ProjectReference Include="..\Inventor.InternalNames\Inventor.InternalNames.csproj" />
-    </ItemGroup>
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFrameworks>net472;net10.0-windows</TargetFrameworks>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>latest</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Autodesk.Inventor.Interop">
+      <HintPath>lib/Autodesk.Inventor.Interop.dll</HintPath>
+      <EmbedInteropTypes>false</EmbedInteropTypes>
+      <Private>true</Private>
+    </Reference>
+    <ProjectReference Include="../ExtractInternalNames.Core/ExtractInternalNames.Core.csproj" />
+    <None Update="Names.xml" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)' == 'net472'">
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="all" />
+  </ItemGroup>
 </Project>
